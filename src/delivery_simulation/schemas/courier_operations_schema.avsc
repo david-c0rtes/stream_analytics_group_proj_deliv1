@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "name": "CourierOperationsEvent",
+  "namespace": "com.madrid.delivery.courier.v1",
+  "doc": "Courier operational events for availability, pickup delays, assignment efficiency, abandonment patterns, and zone congestion analytics.",
+  "fields": [
+    {"name": "event_id", "type": "string", "doc": "Unique identifier for this event"},
+    {"name": "event_type", "type": {"type": "enum", "name": "CourierEventType", "symbols": ["courier_online", "courier_offline", "courier_location_update", "courier_assigned_order", "courier_arrived_restaurant", "courier_pickup_completed", "courier_arrived_customer_zone", "courier_delivery_completed", "courier_abandoned_delivery", "courier_reassigned", "courier_offline_mid_delivery"]}, "doc": "Courier operational state"},
+    {"name": "event_version", "type": "string", "default": "1.0", "doc": "Schema version for evolution"},
+    {"name": "event_time", "type": "long", "doc": "Business event timestamp (epoch milliseconds)"},
+    {"name": "ingestion_time", "type": "long", "doc": "When event was ingested (epoch milliseconds)"},
+    {"name": "is_late_event", "type": "boolean", "default": false, "doc": "True if event arrived out-of-order"},
+    {"name": "event_delay_seconds", "type": ["null", "int"], "default": null, "doc": "Delay in seconds if late"},
+    {"name": "courier_id", "type": "string", "doc": "Courier identifier for joins"},
+    {"name": "courier_zone_id", "type": "string", "doc": "Current courier zone"},
+    {"name": "order_id", "type": ["null", "string"], "default": null, "doc": "Order identifier when assigned"},
+    {"name": "restaurant_id", "type": ["null", "string"], "default": null, "doc": "Restaurant identifier when handling an order"},
+    {"name": "restaurant_zone_id", "type": ["null", "string"], "default": null, "doc": "Restaurant zone when on delivery"},
+    {"name": "user_zone_id", "type": ["null", "string"], "default": null, "doc": "Customer zone when on delivery"},
+    {"name": "shift_id", "type": "string", "doc": "Courier shift identifier"},
+    {"name": "courier_status", "type": "string", "doc": "Current courier status: online, busy, offline"},
+    {"name": "zone_hops_to_restaurant", "type": ["null", "int"], "default": null, "doc": "Zone hops from courier to restaurant"},
+    {"name": "zone_hops_to_user", "type": ["null", "int"], "default": null, "doc": "Zone hops from restaurant to user"},
+    {"name": "estimated_travel_time", "type": ["null", "int"], "default": null, "doc": "Estimated travel time in minutes"},
+    {"name": "actual_travel_time", "type": ["null", "int"], "default": null, "doc": "Actual travel time in minutes"},
+    {"name": "offline_reason", "type": ["null", "string"], "default": null, "doc": "Reason if courier went offline"}
+  ]
+}

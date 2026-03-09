@@ -1,0 +1,2001 @@
+restaurant_id,name,zone_id,district,category,price_level,base_prep_time_mean_min,base_prep_time_std_min,capacity_tier,has_consistent_promo,promo_pattern,matchday_sensitivity,latency_pressure_factor
+R0001,Cara Hub 0001,Z11,Carabanchel,fast_food,1,11.2,2.2,medium,false,random_flash,high,1.06
+R0002,River Stack 0002,Z02,Arganzuela,burger,1,14.4,2.4,small,false,random_flash,low,1.25
+R0003,Central Mesón 0003,Z01,Centro,spanish_tapas,3,17.9,3.3,small,false,none,medium,1.22
+R0004,Bernabeu Burger 0004,Z05,Chamartín,burger,3,11.9,2.3,medium,false,none,medium,0.99
+R0005,Horta Taquería 0005,Z16,Hortaleza,mexican,1,12.2,3.2,large,false,none,medium,0.74
+R0006,Chamberi Casa 0006,Z07,Chamberí,spanish_tapas,3,18.2,3.5,medium,false,none,medium,1.24
+R0007,Vallecas Patty 0007,Z13,Puente de Vallecas,burger,1,15.1,2.1,small,false,none,high,0.88
+R0008,Lineal Taberna 0008,Z15,Ciudad Lineal,spanish_tapas,1,18.6,3.5,small,false,none,medium,1.42
+R0009,Villa Tokyo 0009,Z18,Villa de Vallecas,sushi,1,20.9,4.4,medium,false,none,medium,0.78
+R0010,Aero Corner 0010,Z21,Barajas,fast_food,1,11.3,2.1,medium,true,lunch_combo,high,1.03
+R0011,Norte Daily 0011,Z06,Tetuán,grocery_convenience,1,5.9,1.6,small,false,none,low,0.86
+R0012,Morata Oven 0012,Z14,Moratalaz,pizza,2,13.8,3.2,small,false,random_flash,medium,1.13
+R0013,Villa Cookie 0013,Z18,Villa de Vallecas,dessert,3,7.6,1.7,small,false,none,low,0.99
+R0014,Villa Wrap 0014,Z18,Villa de Vallecas,kebab,1,10.1,2.0,small,true,healthy_lunch,low,0.84
+R0015,Metropolitano Corner 0015,Z20,San Blas-Canillejas,fast_food,2,11.8,1.7,medium,false,none,high,0.97
+R0016,Monte Doner 0016,Z08,Fuencarral-El Pardo,kebab,3,9.0,2.0,small,false,none,medium,0.72
+R0017,Verde Zen 0017,Z17,Villaverde,sushi,1,20.1,3.6,small,true,healthy_lunch,low,1.2
+R0018,Golden Cookie 0018,Z04,Salamanca,dessert,1,8.1,1.6,small,false,none,medium,1.37
+R0019,Chamberi Taberna 0019,Z07,Chamberí,spanish_tapas,3,18.9,2.9,medium,false,none,medium,1.21
+R0020,Metropolitano Corner 0020,Z20,San Blas-Canillejas,fast_food,2,11.1,1.8,medium,true,weekend_discount,high,0.92
+R0021,Chamberi Sweet 0021,Z07,Chamberí,dessert,2,8.5,1.5,large,false,none,low,0.93
+R0022,Vical Casa 0022,Z19,Vicálvaro,spanish_tapas,2,16.0,3.5,small,true,healthy_lunch,medium,1.04
+R0023,Vical Bodega 0023,Z19,Vicálvaro,spanish_tapas,2,21.2,3.1,medium,false,random_flash,medium,0.84
+R0024,Metropolitano Azteca 0024,Z20,San Blas-Canillejas,mexican,1,12.9,2.7,large,true,weekend_discount,high,1.05
+R0025,Monte Sweet 0025,Z08,Fuencarral-El Pardo,dessert,2,7.8,1.5,large,true,weekend_discount,low,0.88
+R0026,Latina Napoli 0026,Z10,Latina,pizza,2,15.7,3.0,small,true,lunch_combo,medium,1.13
+R0027,Cara Sushi 0027,Z11,Carabanchel,sushi,1,19.8,3.4,medium,false,none,medium,0.84
+R0028,Bernabeu Express 0028,Z05,Chamartín,fast_food,2,11.7,2.2,medium,false,none,medium,1.39
+R0029,Central Bodega 0029,Z01,Centro,spanish_tapas,4,19.6,2.7,large,false,none,medium,1.32
+R0030,Bernabeu Smash 0030,Z05,Chamartín,burger,2,13.6,2.4,large,false,none,high,0.99
+R0031,Norte Burger 0031,Z06,Tetuán,burger,2,15.5,2.1,medium,false,none,medium,1.37
+R0032,River Now 0032,Z02,Arganzuela,grocery_convenience,3,6.1,1.5,small,true,healthy_lunch,medium,0.9
+R0033,Verde Tapas 0033,Z17,Villaverde,spanish_tapas,3,18.2,2.5,medium,false,none,medium,1.13
+R0034,Latina Express 0034,Z10,Latina,fast_food,3,12.2,2.3,small,false,none,medium,0.95
+R0035,Vical Mesón 0035,Z19,Vicálvaro,spanish_tapas,2,17.8,2.5,large,false,none,medium,1.31
+R0036,Lineal Tokyo 0036,Z15,Ciudad Lineal,sushi,3,21.7,4.3,small,false,random_flash,high,0.91
+R0037,Morata Napoli 0037,Z14,Moratalaz,pizza,2,17.1,3.3,small,false,none,medium,0.97
+R0038,Metropolitano Burger 0038,Z20,San Blas-Canillejas,burger,2,13.2,2.3,large,true,weekend_discount,low,1.26
+R0039,Park Corner 0039,Z03,Retiro,fast_food,1,11.7,2.2,medium,false,random_flash,medium,0.9
+R0040,Central Shawarma 0040,Z01,Centro,kebab,2,8.8,2.1,medium,false,none,medium,1.02
+R0041,Usera Cantina 0041,Z12,Usera,mexican,2,14.3,3.1,medium,true,taco_tuesday_2x1,low,0.9
+R0042,Central Patty 0042,Z01,Centro,burger,3,13.4,2.3,medium,false,random_flash,low,1.0
+R0043,Metropolitano Roots 0043,Z20,San Blas-Canillejas,healthy,1,11.0,2.0,medium,false,none,medium,0.98
+R0044,Golden Burger 0044,Z04,Salamanca,burger,1,15.1,2.7,medium,false,none,medium,1.08
+R0045,Vallecas Roma 0045,Z13,Puente de Vallecas,pizza,1,15.9,3.1,medium,true,weekend_discount,low,0.98
+R0046,Park Daily 0046,Z03,Retiro,grocery_convenience,2,6.0,1.3,small,false,none,low,0.86
+R0047,Aravaca Roma 0047,Z09,Moncloa-Aravaca,pizza,2,15.8,3.2,medium,false,none,low,0.79
+R0048,Chamberi Grill 0048,Z07,Chamberí,burger,3,13.8,2.4,small,true,lunch_combo,low,1.41
+R0049,Golden Napoli 0049,Z04,Salamanca,pizza,1,16.5,2.4,small,true,lunch_combo,medium,1.24
+R0050,Chamberi Corner 0050,Z07,Chamberí,fast_food,2,11.2,1.6,large,false,random_flash,medium,0.7
+R0051,Vical Roma 0051,Z19,Vicálvaro,pizza,3,16.9,3.1,medium,false,random_flash,medium,0.95
+R0052,Golden Sushi 0052,Z04,Salamanca,sushi,3,19.8,4.4,medium,false,none,low,0.82
+R0053,Monte Cream 0053,Z08,Fuencarral-El Pardo,dessert,2,8.8,1.5,medium,true,weekend_discount,medium,1.04
+R0054,Golden Roma 0054,Z04,Salamanca,pizza,2,16.9,3.2,medium,false,none,high,1.04
+R0055,Metropolitano Burger 0055,Z20,San Blas-Canillejas,burger,2,13.2,2.8,small,true,weekend_discount,high,0.75
+R0056,River Grill 0056,Z02,Arganzuela,kebab,3,8.5,1.7,medium,false,none,low,1.03
+R0057,Morata Smash 0057,Z14,Moratalaz,burger,1,14.7,2.6,large,true,lunch_combo,low,1.03
+R0058,Central Roots 0058,Z01,Centro,healthy,3,11.8,2.3,medium,false,none,low,0.96
+R0059,Central Taquería 0059,Z01,Centro,mexican,2,12.2,3.1,medium,true,taco_tuesday_2x1,low,1.09
+R0060,Latina Mesón 0060,Z10,Latina,spanish_tapas,1,18.5,3.2,medium,false,none,low,1.2
+R0061,Chamberi LaPlaza 0061,Z07,Chamberí,spanish_tapas,3,19.1,2.5,large,false,random_flash,medium,0.83
+R0062,Latina Pizza 0062,Z10,Latina,pizza,2,15.5,2.6,small,true,lunch_combo,low,1.19
+R0063,Verde Azteca 0063,Z17,Villaverde,mexican,3,14.2,2.7,medium,false,random_flash,low,1.15
+R0064,Chamberi Tapas 0064,Z07,Chamberí,spanish_tapas,3,17.4,3.2,small,false,none,medium,1.18
+R0065,Aero Loco 0065,Z21,Barajas,mexican,2,12.9,2.3,small,true,taco_tuesday_2x1,medium,1.14
+R0066,Morata Grill 0066,Z14,Moratalaz,burger,2,13.8,2.6,medium,false,none,low,1.24
+R0067,Bernabeu Oven 0067,Z05,Chamartín,pizza,1,15.3,3.3,medium,false,random_flash,high,1.07
+R0068,Horta Sushi 0068,Z16,Hortaleza,sushi,2,19.6,3.5,small,false,none,low,1.04
+R0069,Lineal Pizza 0069,Z15,Ciudad Lineal,pizza,2,15.8,3.1,large,true,weekend_discount,medium,0.9
+R0070,Aravaca Napoli 0070,Z09,Moncloa-Aravaca,pizza,2,16.2,2.7,medium,false,none,low,1.22
+R0071,Bernabeu Grill 0071,Z05,Chamartín,kebab,4,9.8,1.9,small,true,healthy_lunch,high,1.28
+R0072,Aravaca Corner 0072,Z09,Moncloa-Aravaca,fast_food,2,10.5,1.8,medium,false,none,low,0.92
+R0073,Usera Now 0073,Z12,Usera,grocery_convenience,2,7.1,1.3,small,true,healthy_lunch,medium,0.89
+R0074,Park Hub 0074,Z03,Retiro,fast_food,2,11.7,2.0,medium,true,lunch_combo,medium,0.7
+R0075,Golden Burrito 0075,Z04,Salamanca,mexican,1,13.9,2.5,small,true,taco_tuesday_2x1,low,1.15
+R0076,Horta Taco 0076,Z16,Hortaleza,mexican,4,12.7,2.2,medium,true,weekend_discount,low,0.87
+R0077,Villa Stack 0077,Z18,Villa de Vallecas,burger,2,14.8,2.4,small,true,lunch_combo,medium,0.7
+R0078,Park Roma 0078,Z03,Retiro,pizza,2,17.6,2.9,medium,true,lunch_combo,medium,0.89
+R0079,Metropolitano Napoli 0079,Z20,San Blas-Canillejas,pizza,3,17.9,2.8,small,false,random_flash,medium,1.0
+R0080,Chamberi Sushi 0080,Z07,Chamberí,sushi,3,18.1,3.9,medium,true,healthy_lunch,low,0.97
+R0081,Latina Grill 0081,Z10,Latina,burger,1,14.8,2.1,medium,true,weekend_discount,low,1.02
+R0082,Cara Box 0082,Z11,Carabanchel,fast_food,1,10.8,2.0,medium,true,lunch_combo,medium,0.82
+R0083,Park Brothers 0083,Z03,Retiro,kebab,3,9.3,2.0,small,false,none,low,0.89
+R0084,Lineal Smash 0084,Z15,Ciudad Lineal,burger,3,13.0,2.8,medium,true,lunch_combo,medium,0.87
+R0085,Morata Oven 0085,Z14,Moratalaz,pizza,3,16.7,2.7,large,true,lunch_combo,medium,0.98
+R0086,Chamberi Gelato 0086,Z07,Chamberí,dessert,2,7.4,2.1,medium,true,weekend_discount,medium,0.81
+R0087,Aravaca Gelato 0087,Z09,Moncloa-Aravaca,dessert,1,8.1,1.5,large,false,none,medium,0.98
+R0088,Morata Stack 0088,Z14,Moratalaz,burger,2,13.1,2.7,large,true,lunch_combo,medium,0.72
+R0089,Vallecas LaPlaza 0089,Z13,Puente de Vallecas,spanish_tapas,1,19.3,3.5,large,false,none,low,1.11
+R0090,River Kebab 0090,Z02,Arganzuela,kebab,2,8.6,1.5,medium,false,random_flash,medium,0.7
+R0091,Park Azteca 0091,Z03,Retiro,mexican,2,13.2,2.8,small,false,random_flash,low,1.1
+R0092,Aravaca District 0092,Z09,Moncloa-Aravaca,burger,1,14.0,2.7,large,false,random_flash,medium,1.02
+R0093,Chamberi Napoli 0093,Z07,Chamberí,pizza,2,17.4,2.8,small,false,none,low,1.03
+R0094,River Oven 0094,Z02,Arganzuela,pizza,2,16.8,3.3,medium,true,lunch_combo,low,0.99
+R0095,Usera Tapas 0095,Z12,Usera,spanish_tapas,3,17.9,3.5,medium,false,random_flash,low,0.7
+R0096,Golden Smash 0096,Z04,Salamanca,burger,2,13.8,2.7,medium,false,none,medium,0.84
+R0097,Bernabeu Roll 0097,Z05,Chamartín,sushi,3,23.0,3.7,small,false,random_flash,medium,1.39
+R0098,Horta Napoli 0098,Z16,Hortaleza,pizza,3,16.3,3.2,medium,false,none,low,0.88
+R0099,Bernabeu Go 0099,Z05,Chamartín,fast_food,1,12.3,2.2,large,false,none,medium,1.03
+R0100,Norte Tapas 0100,Z06,Tetuán,spanish_tapas,1,18.7,3.3,small,false,none,medium,1.12
+R0101,Norte Garden 0101,Z06,Tetuán,healthy,1,12.7,2.4,small,true,healthy_lunch,low,0.85
+R0102,Villa Roma 0102,Z18,Villa de Vallecas,pizza,1,16.2,3.4,small,true,weekend_discount,low,1.01
+R0103,Norte Pizzeria 0103,Z06,Tetuán,pizza,2,14.8,3.1,large,false,random_flash,low,0.94
+R0104,Latina Mart 0104,Z10,Latina,grocery_convenience,1,6.6,1.8,large,true,healthy_lunch,low,1.14
+R0105,Monte Mart 0105,Z08,Fuencarral-El Pardo,grocery_convenience,1,6.8,1.8,medium,true,healthy_lunch,medium,1.47
+R0106,Cara Market 0106,Z11,Carabanchel,grocery_convenience,2,7.0,1.5,small,false,none,medium,1.09
+R0107,Golden Cookie 0107,Z04,Salamanca,dessert,3,8.2,1.6,large,false,none,medium,0.86
+R0108,Lineal Go 0108,Z15,Ciudad Lineal,fast_food,1,10.3,2.1,small,true,lunch_combo,high,1.25
+R0109,Norte Go 0109,Z06,Tetuán,fast_food,2,11.1,1.7,medium,false,none,high,0.79
+R0110,Morata Cream 0110,Z14,Moratalaz,dessert,1,7.9,2.2,medium,true,lunch_combo,medium,0.96
+R0111,Usera Sushi 0111,Z12,Usera,sushi,2,21.4,4.2,medium,false,none,medium,1.08
+R0112,Latina Napoli 0112,Z10,Latina,pizza,2,17.2,3.2,medium,false,none,low,1.16
+R0113,Golden Zen 0113,Z04,Salamanca,sushi,3,21.6,4.4,small,false,none,medium,0.94
+R0114,Metropolitano Garden 0114,Z20,San Blas-Canillejas,healthy,1,12.2,1.8,medium,false,none,medium,0.93
+R0115,Aravaca Loco 0115,Z09,Moncloa-Aravaca,mexican,2,11.4,3.2,medium,false,none,high,1.19
+R0116,Bernabeu Pizza 0116,Z05,Chamartín,pizza,2,16.3,2.5,small,false,none,high,1.36
+R0117,Morata Burrito 0117,Z14,Moratalaz,mexican,3,14.6,2.8,medium,true,taco_tuesday_2x1,low,0.95
+R0118,Lineal Grill 0118,Z15,Ciudad Lineal,burger,1,14.1,2.3,small,true,weekend_discount,medium,0.7
+R0119,Central Tapas 0119,Z01,Centro,spanish_tapas,2,17.0,2.9,small,false,none,medium,1.07
+R0120,Vical Kebab 0120,Z19,Vicálvaro,kebab,1,9.0,1.5,medium,false,none,medium,0.94
+R0121,Norte Stack 0121,Z06,Tetuán,burger,1,13.4,2.6,medium,false,random_flash,high,1.06
+R0122,Norte Kebab 0122,Z06,Tetuán,kebab,1,10.0,2.0,small,true,healthy_lunch,medium,0.9
+R0123,Chamberi Bites 0123,Z07,Chamberí,fast_food,3,9.7,2.2,small,false,none,high,1.1
+R0124,Central Mart 0124,Z01,Centro,grocery_convenience,2,6.3,1.5,small,true,healthy_lunch,medium,0.97
+R0125,Lineal Brothers 0125,Z15,Ciudad Lineal,kebab,3,10.0,1.6,medium,false,none,medium,1.18
+R0126,Bernabeu Oven 0126,Z05,Chamartín,pizza,3,17.2,2.8,small,false,none,high,1.22
+R0127,Metropolitano Doner 0127,Z20,San Blas-Canillejas,kebab,1,9.2,1.9,medium,false,none,high,1.09
+R0128,Morata Roll 0128,Z14,Moratalaz,sushi,2,18.1,4.1,medium,false,none,low,1.13
+R0129,Latina Go 0129,Z10,Latina,fast_food,2,10.2,2.1,small,true,weekend_discount,low,0.76
+R0130,Central Oven 0130,Z01,Centro,pizza,1,17.2,2.9,medium,true,lunch_combo,low,0.83
+R0131,Lineal Gelato 0131,Z15,Ciudad Lineal,dessert,3,7.7,1.9,medium,false,none,medium,0.95
+R0132,Lineal Mesón 0132,Z15,Ciudad Lineal,spanish_tapas,1,17.8,3.2,large,false,none,medium,0.96
+R0133,Norte Gelato 0133,Z06,Tetuán,dessert,2,7.6,2.0,medium,true,weekend_discount,high,1.21
+R0134,Cara District 0134,Z11,Carabanchel,burger,3,15.1,2.1,small,false,random_flash,low,0.95
+R0135,Bernabeu Brothers 0135,Z05,Chamartín,kebab,2,7.8,1.7,small,false,none,medium,0.86
+R0136,Cara Mesón 0136,Z11,Carabanchel,spanish_tapas,4,18.4,3.2,medium,true,healthy_lunch,medium,0.96
+R0137,Metropolitano Roma 0137,Z20,San Blas-Canillejas,pizza,1,16.5,2.6,medium,false,random_flash,medium,1.0
+R0138,Vallecas Taquería 0138,Z13,Puente de Vallecas,mexican,2,13.0,2.6,small,false,none,low,0.91
+R0139,Lineal Patty 0139,Z15,Ciudad Lineal,burger,1,13.2,2.9,medium,false,none,low,1.22
+R0140,Golden Patty 0140,Z04,Salamanca,burger,3,14.4,2.5,medium,false,none,low,1.35
+R0141,Chamberi Slice 0141,Z07,Chamberí,pizza,3,16.2,2.5,medium,false,none,medium,1.01
+R0142,River Tapas 0142,Z02,Arganzuela,spanish_tapas,1,18.1,3.5,small,false,none,low,0.86
+R0143,Golden Tokyo 0143,Z04,Salamanca,sushi,4,19.8,3.8,small,true,healthy_lunch,medium,1.19
+R0144,Bernabeu Box 0144,Z05,Chamartín,fast_food,2,11.1,1.8,medium,false,random_flash,high,1.01
+R0145,Usera Sushi 0145,Z12,Usera,sushi,3,21.9,3.4,large,false,none,low,1.01
+R0146,Morata Burger 0146,Z14,Moratalaz,burger,1,12.8,2.4,small,false,none,low,1.15
+R0147,Central Cantina 0147,Z01,Centro,mexican,3,13.0,2.5,medium,true,taco_tuesday_2x1,low,1.11
+R0148,Monte Napoli 0148,Z08,Fuencarral-El Pardo,pizza,2,16.3,2.3,large,true,weekend_discount,medium,0.79
+R0149,Norte Bodega 0149,Z06,Tetuán,spanish_tapas,2,17.1,3.2,medium,false,none,medium,1.24
+R0150,Central Taquería 0150,Z01,Centro,mexican,1,13.2,2.9,medium,false,none,high,0.9
+R0151,Morata Tokyo 0151,Z14,Moratalaz,sushi,1,21.7,3.7,small,false,none,low,0.7
+R0152,Chamberi Box 0152,Z07,Chamberí,fast_food,2,10.3,2.3,small,true,weekend_discount,medium,1.35
+R0153,Verde Taberna 0153,Z17,Villaverde,spanish_tapas,2,18.6,2.8,medium,false,random_flash,medium,1.25
+R0154,Norte Zen 0154,Z06,Tetuán,sushi,2,20.8,4.3,small,false,none,medium,1.07
+R0155,Usera Pizza 0155,Z12,Usera,pizza,2,17.1,2.7,medium,false,none,high,0.87
+R0156,Cara Napoli 0156,Z11,Carabanchel,pizza,2,15.0,2.4,medium,false,none,high,0.7
+R0157,Central Bodega 0157,Z01,Centro,spanish_tapas,3,18.2,2.6,medium,false,none,low,1.09
+R0158,Central Hub 0158,Z01,Centro,fast_food,2,10.7,1.7,medium,true,lunch_combo,medium,0.99
+R0159,Aravaca Smash 0159,Z09,Moncloa-Aravaca,burger,2,14.2,2.6,large,true,weekend_discount,medium,1.24
+R0160,Central District 0160,Z01,Centro,burger,2,15.0,2.7,small,true,lunch_combo,high,1.24
+R0161,Monte Churro 0161,Z08,Fuencarral-El Pardo,dessert,2,8.8,2.0,medium,true,weekend_discount,medium,0.89
+R0162,Park Tapas 0162,Z03,Retiro,spanish_tapas,3,17.0,3.6,small,false,none,high,0.91
+R0163,Norte Garden 0163,Z06,Tetuán,healthy,2,12.2,1.7,large,false,none,medium,0.7
+R0164,Usera Napoli 0164,Z12,Usera,pizza,2,17.0,2.7,large,true,weekend_discount,medium,1.43
+R0165,Park Smash 0165,Z03,Retiro,burger,3,14.3,2.4,small,true,weekend_discount,medium,1.43
+R0166,Metropolitano District 0166,Z20,San Blas-Canillejas,burger,1,13.1,2.1,large,true,weekend_discount,medium,0.96
+R0167,Vallecas Grill 0167,Z13,Puente de Vallecas,kebab,1,9.2,2.1,medium,false,random_flash,medium,0.94
+R0168,Aravaca Kebab 0168,Z09,Moncloa-Aravaca,kebab,2,8.7,2.1,medium,false,none,low,0.89
+R0169,Bernabeu Go 0169,Z05,Chamartín,fast_food,1,10.4,1.9,small,false,none,high,1.2
+R0170,Aero Roma 0170,Z21,Barajas,pizza,1,15.2,2.6,medium,true,lunch_combo,medium,1.17
+R0171,River Roma 0171,Z02,Arganzuela,pizza,3,13.9,3.3,medium,false,none,low,1.23
+R0172,Park Bites 0172,Z03,Retiro,fast_food,2,11.6,1.7,small,true,lunch_combo,medium,0.85
+R0173,Aravaca Hub 0173,Z09,Moncloa-Aravaca,fast_food,2,11.7,2.0,medium,false,none,low,0.82
+R0174,Verde Garden 0174,Z17,Villaverde,healthy,2,11.3,1.8,medium,true,healthy_lunch,low,1.14
+R0175,Morata Stack 0175,Z14,Moratalaz,burger,2,15.6,2.3,medium,true,lunch_combo,low,1.33
+R0176,Vallecas Stack 0176,Z13,Puente de Vallecas,burger,2,14.2,2.6,medium,false,random_flash,medium,1.01
+R0177,Verde Bites 0177,Z17,Villaverde,fast_food,1,10.3,2.3,medium,false,random_flash,low,1.16
+R0178,Chamberi Burrito 0178,Z07,Chamberí,mexican,3,12.1,3.2,medium,false,random_flash,low,1.3
+R0179,Usera Corner 0179,Z12,Usera,fast_food,1,10.0,2.1,small,true,weekend_discount,low,0.7
+R0180,Monte Garden 0180,Z08,Fuencarral-El Pardo,healthy,1,11.9,2.5,small,true,healthy_lunch,medium,0.96
+R0181,Park Garden 0181,Z03,Retiro,healthy,3,11.4,2.4,medium,false,none,low,0.87
+R0182,Aravaca Go 0182,Z09,Moncloa-Aravaca,grocery_convenience,2,6.9,1.7,small,false,none,low,1.1
+R0183,Vallecas Brothers 0183,Z13,Puente de Vallecas,kebab,1,7.5,1.6,small,false,none,low,1.04
+R0184,Morata Roots 0184,Z14,Moratalaz,healthy,2,11.7,2.5,medium,false,random_flash,medium,1.15
+R0185,Cara Roma 0185,Z11,Carabanchel,pizza,2,17.6,2.6,small,false,none,medium,0.91
+R0186,Chamberi Patty 0186,Z07,Chamberí,burger,2,14.3,2.5,small,true,weekend_discount,low,0.97
+R0187,Golden Bites 0187,Z04,Salamanca,fast_food,2,11.0,1.9,medium,false,random_flash,high,1.18
+R0188,Metropolitano Express 0188,Z20,San Blas-Canillejas,grocery_convenience,1,7.9,1.5,small,false,none,high,0.85
+R0189,Cara Sweet 0189,Z11,Carabanchel,dessert,2,8.1,2.1,small,false,none,medium,1.29
+R0190,Horta Market 0190,Z16,Hortaleza,grocery_convenience,3,6.5,1.8,large,false,none,low,1.13
+R0191,Central Taco 0191,Z01,Centro,mexican,3,12.5,2.9,medium,false,none,medium,1.27
+R0192,Chamberi Burger 0192,Z07,Chamberí,burger,2,13.9,2.6,small,true,lunch_combo,medium,0.84
+R0193,Cara Stack 0193,Z11,Carabanchel,burger,3,15.2,2.4,small,false,random_flash,medium,0.8
+R0194,Park Slice 0194,Z03,Retiro,pizza,1,15.2,2.5,small,false,random_flash,low,1.13
+R0195,Golden Slice 0195,Z04,Salamanca,pizza,1,16.6,2.7,medium,false,none,low,1.2
+R0196,Bernabeu Hub 0196,Z05,Chamartín,fast_food,2,11.3,2.0,medium,false,none,high,1.54
+R0197,Usera Cream 0197,Z12,Usera,dessert,2,8.5,1.9,medium,false,none,low,0.73
+R0198,Monte Napoli 0198,Z08,Fuencarral-El Pardo,pizza,1,17.0,2.5,medium,true,weekend_discount,low,0.7
+R0199,Chamberi Roots 0199,Z07,Chamberí,healthy,3,12.7,2.4,medium,false,none,medium,1.22
+R0200,Central Tokyo 0200,Z01,Centro,sushi,4,19.1,4.4,medium,true,healthy_lunch,medium,1.3
+R0201,Central Market 0201,Z01,Centro,grocery_convenience,3,6.6,1.3,small,false,none,low,1.13
+R0202,Metropolitano Roma 0202,Z20,San Blas-Canillejas,pizza,2,16.8,2.3,large,false,none,high,0.91
+R0203,Horta Bites 0203,Z16,Hortaleza,fast_food,2,12.3,2.3,medium,false,none,low,1.36
+R0204,Vallecas Wasabi 0204,Z13,Puente de Vallecas,sushi,3,21.0,3.6,large,false,none,medium,1.17
+R0205,Lineal Pizza 0205,Z15,Ciudad Lineal,pizza,1,17.1,2.7,medium,false,none,medium,1.1
+R0206,Central Roll 0206,Z01,Centro,sushi,3,21.3,4.0,small,false,none,low,1.05
+R0207,Bernabeu Brothers 0207,Z05,Chamartín,kebab,3,9.1,2.1,medium,false,none,high,1.47
+R0208,Aravaca Brothers 0208,Z09,Moncloa-Aravaca,kebab,3,8.6,1.8,large,false,none,low,0.86
+R0209,Morata Roma 0209,Z14,Moratalaz,pizza,2,15.8,2.8,small,true,weekend_discount,low,1.11
+R0210,Park Sushi 0210,Z03,Retiro,sushi,3,22.7,3.4,small,false,random_flash,low,0.95
+R0211,Villa Tapas 0211,Z18,Villa de Vallecas,spanish_tapas,2,18.2,2.9,medium,true,healthy_lunch,medium,0.95
+R0212,Lineal Taquería 0212,Z15,Ciudad Lineal,mexican,2,11.2,2.5,large,true,taco_tuesday_2x1,low,1.05
+R0213,Metropolitano Corner 0213,Z20,San Blas-Canillejas,fast_food,3,10.7,1.9,small,true,lunch_combo,high,0.74
+R0214,Chamberi Shawarma 0214,Z07,Chamberí,kebab,2,8.3,1.5,large,false,none,low,1.08
+R0215,Villa Roma 0215,Z18,Villa de Vallecas,pizza,1,17.0,2.3,medium,false,random_flash,low,0.78
+R0216,Bernabeu Grill 0216,Z05,Chamartín,burger,2,14.5,2.5,medium,true,lunch_combo,medium,0.92
+R0217,Metropolitano Wrap 0217,Z20,San Blas-Canillejas,kebab,2,8.9,1.5,medium,false,random_flash,low,0.83
+R0218,Aero Daily 0218,Z21,Barajas,grocery_convenience,1,7.7,1.6,medium,false,none,low,0.7
+R0219,Golden Green 0219,Z04,Salamanca,healthy,3,11.8,2.2,large,false,none,medium,1.12
+R0220,Central Burrito 0220,Z01,Centro,mexican,1,12.3,3.2,small,false,none,low,1.07
+R0221,Lineal Sweet 0221,Z15,Ciudad Lineal,dessert,3,7.6,1.9,small,true,lunch_combo,low,0.98
+R0222,Central Go 0222,Z01,Centro,grocery_convenience,2,7.4,1.6,medium,false,none,low,1.09
+R0223,Morata Corner 0223,Z14,Moratalaz,fast_food,2,10.1,2.2,small,false,none,low,1.04
+R0224,Bernabeu Market 0224,Z05,Chamartín,grocery_convenience,2,7.3,1.7,medium,false,none,high,1.04
+R0225,Villa Fresh 0225,Z18,Villa de Vallecas,healthy,3,11.8,2.5,small,false,none,low,0.98
+R0226,Vallecas Garden 0226,Z13,Puente de Vallecas,healthy,3,11.7,2.2,medium,false,none,low,1.22
+R0227,Norte Roots 0227,Z06,Tetuán,healthy,2,10.1,1.7,medium,false,none,medium,1.0
+R0228,Morata Go 0228,Z14,Moratalaz,grocery_convenience,3,6.7,1.7,medium,false,random_flash,low,1.23
+R0229,Norte Stack 0229,Z06,Tetuán,burger,2,15.0,2.7,medium,true,weekend_discount,medium,1.13
+R0230,Usera Brothers 0230,Z12,Usera,kebab,2,8.8,2.1,medium,false,none,medium,1.06
+R0231,River Roll 0231,Z02,Arganzuela,sushi,2,20.7,3.8,small,false,none,medium,1.02
+R0232,Norte Roma 0232,Z06,Tetuán,pizza,2,15.8,3.4,small,false,random_flash,medium,0.77
+R0233,Park Smash 0233,Z03,Retiro,burger,2,14.8,2.3,medium,true,weekend_discount,medium,1.07
+R0234,Golden Grill 0234,Z04,Salamanca,kebab,2,8.7,1.4,small,false,none,medium,1.13
+R0235,Horta Wasabi 0235,Z16,Hortaleza,sushi,2,23.3,3.4,small,false,none,medium,0.7
+R0236,Bernabeu Mart 0236,Z05,Chamartín,grocery_convenience,1,6.8,1.5,small,false,none,medium,0.9
+R0237,Norte Bites 0237,Z06,Tetuán,fast_food,1,11.4,2.2,small,false,none,low,1.0
+R0238,Golden Mesón 0238,Z04,Salamanca,spanish_tapas,2,19.0,3.2,small,false,none,medium,0.84
+R0239,Park Wasabi 0239,Z03,Retiro,sushi,2,22.5,3.8,medium,false,none,low,0.99
+R0240,Monte Bodega 0240,Z08,Fuencarral-El Pardo,spanish_tapas,2,18.5,3.5,small,false,random_flash,low,0.78
+R0241,Park Grill 0241,Z03,Retiro,kebab,4,8.7,2.0,large,false,none,high,0.84
+R0242,Golden Azteca 0242,Z04,Salamanca,mexican,2,12.8,2.6,medium,false,random_flash,medium,0.98
+R0243,Park Go 0243,Z03,Retiro,grocery_convenience,1,5.9,1.3,large,true,healthy_lunch,medium,1.23
+R0244,Chamberi Patty 0244,Z07,Chamberí,burger,2,15.0,2.4,small,true,weekend_discount,low,1.27
+R0245,Central Pizza 0245,Z01,Centro,pizza,2,17.4,2.5,small,true,weekend_discount,low,1.54
+R0246,Metropolitano Patty 0246,Z20,San Blas-Canillejas,burger,2,14.5,2.3,medium,false,none,medium,1.24
+R0247,Chamberi Express 0247,Z07,Chamberí,fast_food,2,11.0,1.7,small,false,none,medium,0.77
+R0248,Bernabeu Tokyo 0248,Z05,Chamartín,sushi,3,17.5,3.7,small,false,none,high,1.13
+R0249,Norte Zen 0249,Z06,Tetuán,sushi,2,20.7,4.2,small,true,healthy_lunch,high,0.85
+R0250,Bernabeu District 0250,Z05,Chamartín,burger,1,13.2,2.5,medium,true,lunch_combo,medium,1.26
+R0251,Villa Express 0251,Z18,Villa de Vallecas,grocery_convenience,2,6.7,1.4,medium,true,healthy_lunch,medium,1.01
+R0252,Central Corner 0252,Z01,Centro,fast_food,4,10.2,2.1,small,false,none,low,1.09
+R0253,River Express 0253,Z02,Arganzuela,fast_food,1,10.9,1.7,medium,false,none,low,1.22
+R0254,Monte Go 0254,Z08,Fuencarral-El Pardo,fast_food,1,9.0,2.0,medium,false,none,low,0.85
+R0255,Golden Sakura 0255,Z04,Salamanca,sushi,4,21.0,4.8,medium,false,none,low,0.95
+R0256,Chamberi Express 0256,Z07,Chamberí,grocery_convenience,1,6.9,1.7,medium,false,none,medium,0.83
+R0257,Morata Tapas 0257,Z14,Moratalaz,spanish_tapas,2,16.7,2.6,large,false,random_flash,low,0.95
+R0258,Metropolitano Taquería 0258,Z20,San Blas-Canillejas,mexican,2,14.0,2.6,small,true,taco_tuesday_2x1,medium,1.23
+R0259,Usera Express 0259,Z12,Usera,fast_food,2,11.5,2.1,medium,false,random_flash,medium,0.73
+R0260,Norte Sakura 0260,Z06,Tetuán,sushi,2,21.2,4.4,medium,false,none,medium,0.82
+R0261,Chamberi Taquería 0261,Z07,Chamberí,mexican,1,14.3,2.9,large,false,random_flash,medium,1.06
+R0262,Metropolitano Taberna 0262,Z20,San Blas-Canillejas,spanish_tapas,1,18.4,3.1,medium,false,none,high,0.86
+R0263,Usera Go 0263,Z12,Usera,fast_food,2,11.1,2.3,small,true,lunch_combo,low,0.97
+R0264,Chamberi Express 0264,Z07,Chamberí,grocery_convenience,2,6.7,1.7,small,false,none,high,1.45
+R0265,Cara Kebab 0265,Z11,Carabanchel,kebab,2,8.7,1.6,medium,false,none,high,1.26
+R0266,Chamberi Express 0266,Z07,Chamberí,fast_food,2,10.9,1.9,small,false,none,medium,1.11
+R0267,Chamberi Burger 0267,Z07,Chamberí,burger,3,14.6,2.8,small,false,none,low,1.19
+R0268,River Express 0268,Z02,Arganzuela,grocery_convenience,1,6.4,1.3,small,false,random_flash,low,0.9
+R0269,Villa Wrap 0269,Z18,Villa de Vallecas,kebab,3,9.2,2.0,medium,false,none,low,1.04
+R0270,Bernabeu Hub 0270,Z05,Chamartín,fast_food,2,11.0,2.2,small,false,none,high,1.34
+R0271,Horta Churro 0271,Z16,Hortaleza,dessert,2,7.0,1.7,small,false,none,low,0.98
+R0272,Chamberi Corner 0272,Z07,Chamberí,fast_food,2,12.3,1.6,small,true,lunch_combo,medium,1.26
+R0273,Horta Roll 0273,Z16,Hortaleza,sushi,2,21.3,4.4,small,true,healthy_lunch,medium,0.7
+R0274,Central Corner 0274,Z01,Centro,fast_food,2,10.5,1.9,medium,true,weekend_discount,low,0.95
+R0275,Latina Smash 0275,Z10,Latina,burger,1,15.9,2.1,small,false,random_flash,low,0.77
+R0276,Cara Shawarma 0276,Z11,Carabanchel,kebab,2,8.9,1.5,small,false,none,low,0.7
+R0277,Latina Pizzeria 0277,Z10,Latina,pizza,2,16.1,2.4,small,true,lunch_combo,medium,1.03
+R0278,Monte Bodega 0278,Z08,Fuencarral-El Pardo,spanish_tapas,1,19.2,2.7,large,false,none,high,1.22
+R0279,Lineal Burger 0279,Z15,Ciudad Lineal,burger,1,15.1,2.4,medium,true,weekend_discount,low,0.96
+R0280,Park Go 0280,Z03,Retiro,fast_food,3,10.8,2.2,small,false,none,high,0.92
+R0281,Central Slice 0281,Z01,Centro,pizza,1,16.2,3.1,medium,false,random_flash,medium,1.09
+R0282,Golden Cookie 0282,Z04,Salamanca,dessert,2,8.5,1.8,large,true,weekend_discount,low,1.18
+R0283,Metropolitano Market 0283,Z20,San Blas-Canillejas,grocery_convenience,2,7.6,1.4,small,false,none,high,0.77
+R0284,Bernabeu Mesón 0284,Z05,Chamartín,spanish_tapas,3,16.7,3.0,medium,false,random_flash,low,1.15
+R0285,Morata Burger 0285,Z14,Moratalaz,burger,3,15.0,2.5,medium,true,weekend_discount,medium,1.03
+R0286,Morata Pizzeria 0286,Z14,Moratalaz,pizza,2,16.9,2.5,medium,true,weekend_discount,low,1.13
+R0287,Usera Express 0287,Z12,Usera,fast_food,3,10.0,1.9,large,true,weekend_discount,medium,0.97
+R0288,River Tapas 0288,Z02,Arganzuela,spanish_tapas,2,19.4,2.6,small,false,none,low,1.1
+R0289,Norte Bodega 0289,Z06,Tetuán,spanish_tapas,1,17.9,2.6,medium,false,none,medium,1.07
+R0290,Park Wasabi 0290,Z03,Retiro,sushi,2,19.6,3.9,medium,false,none,medium,1.24
+R0291,Lineal Pizzeria 0291,Z15,Ciudad Lineal,pizza,2,17.7,2.6,small,true,weekend_discount,medium,1.09
+R0292,Monte Fresh 0292,Z08,Fuencarral-El Pardo,healthy,3,12.8,2.4,medium,false,none,medium,1.39
+R0293,River Tapas 0293,Z02,Arganzuela,spanish_tapas,1,19.4,2.6,medium,false,none,low,0.7
+R0294,Cara Loco 0294,Z11,Carabanchel,mexican,3,15.7,2.4,medium,false,none,medium,1.28
+R0295,Horta Tapas 0295,Z16,Hortaleza,spanish_tapas,1,17.4,3.1,medium,false,none,high,1.03
+R0296,Usera Grill 0296,Z12,Usera,burger,3,13.9,2.1,medium,false,random_flash,low,1.19
+R0297,Chamberi Gelato 0297,Z07,Chamberí,dessert,1,7.9,1.6,large,false,random_flash,medium,1.2
+R0298,Lineal Taberna 0298,Z15,Ciudad Lineal,spanish_tapas,2,17.2,3.0,large,false,none,medium,1.17
+R0299,Park Slice 0299,Z03,Retiro,pizza,1,16.3,3.1,medium,true,lunch_combo,low,0.86
+R0300,Golden Express 0300,Z04,Salamanca,fast_food,2,10.9,2.3,small,false,none,medium,1.43
+R0301,Horta Bodega 0301,Z16,Hortaleza,spanish_tapas,3,18.6,2.7,small,false,none,medium,0.99
+R0302,Aravaca Fresh 0302,Z09,Moncloa-Aravaca,healthy,3,11.2,1.8,large,false,none,low,0.91
+R0303,Bernabeu Sushi 0303,Z05,Chamartín,sushi,2,20.8,4.0,small,false,none,medium,1.08
+R0304,Bernabeu Smash 0304,Z05,Chamartín,burger,1,14.7,2.1,small,false,random_flash,high,1.33
+R0305,Central Roots 0305,Z01,Centro,healthy,3,12.5,1.8,small,false,none,low,1.19
+R0306,Metropolitano Doner 0306,Z20,San Blas-Canillejas,kebab,2,7.8,1.9,small,false,none,low,0.86
+R0307,Norte Fresh 0307,Z06,Tetuán,healthy,1,11.8,2.5,small,false,none,low,0.7
+R0308,Central Grill 0308,Z01,Centro,kebab,2,7.7,1.5,medium,false,random_flash,low,0.93
+R0309,Park Sweet 0309,Z03,Retiro,dessert,3,7.5,1.7,small,true,weekend_discount,low,0.74
+R0310,Bernabeu Mesón 0310,Z05,Chamartín,spanish_tapas,2,16.8,3.6,large,false,none,high,1.29
+R0311,Monte Corner 0311,Z08,Fuencarral-El Pardo,fast_food,2,10.0,1.8,medium,false,none,high,0.86
+R0312,Central Burger 0312,Z01,Centro,burger,1,14.4,2.6,medium,false,none,medium,1.25
+R0313,Latina Wrap 0313,Z10,Latina,kebab,2,8.2,1.9,medium,true,healthy_lunch,medium,1.11
+R0314,Metropolitano Napoli 0314,Z20,San Blas-Canillejas,pizza,2,15.9,2.6,small,true,weekend_discount,medium,0.86
+R0315,Horta Hub 0315,Z16,Hortaleza,fast_food,1,12.1,2.1,medium,true,weekend_discount,medium,1.18
+R0316,Latina Go 0316,Z10,Latina,grocery_convenience,2,6.8,1.5,medium,true,healthy_lunch,low,1.17
+R0317,Park Cookie 0317,Z03,Retiro,dessert,2,8.6,1.6,medium,false,random_flash,medium,1.05
+R0318,Usera Box 0318,Z12,Usera,fast_food,2,9.3,2.1,medium,false,none,low,0.88
+R0319,Norte Burrito 0319,Z06,Tetuán,mexican,2,13.1,2.6,large,true,taco_tuesday_2x1,medium,1.15
+R0320,Monte Azteca 0320,Z08,Fuencarral-El Pardo,mexican,1,13.9,3.2,small,true,taco_tuesday_2x1,medium,0.94
+R0321,Central Box 0321,Z01,Centro,fast_food,2,11.9,2.3,small,false,none,low,1.1
+R0322,Central Roma 0322,Z01,Centro,pizza,2,16.7,3.3,small,false,none,low,0.93
+R0323,Morata Express 0323,Z14,Moratalaz,fast_food,1,10.0,2.4,large,false,random_flash,medium,0.84
+R0324,Bernabeu Loco 0324,Z05,Chamartín,mexican,3,12.9,2.8,medium,true,taco_tuesday_2x1,high,1.36
+R0325,Latina Garden 0325,Z10,Latina,healthy,1,12.5,1.9,medium,false,none,low,0.9
+R0326,Central Bodega 0326,Z01,Centro,spanish_tapas,3,19.1,3.2,large,false,random_flash,medium,0.8
+R0327,Vallecas Bodega 0327,Z13,Puente de Vallecas,spanish_tapas,1,16.8,2.6,small,false,none,low,1.13
+R0328,Morata Sweet 0328,Z14,Moratalaz,dessert,2,8.3,1.8,small,false,none,low,1.13
+R0329,Central Grill 0329,Z01,Centro,burger,3,14.0,2.8,medium,true,lunch_combo,low,1.3
+R0330,Chamberi Kebab 0330,Z07,Chamberí,kebab,2,9.0,1.8,large,false,none,medium,1.31
+R0331,Bernabeu Bodega 0331,Z05,Chamartín,spanish_tapas,4,17.7,2.9,small,false,none,low,0.96
+R0332,Horta Brothers 0332,Z16,Hortaleza,kebab,1,8.6,2.1,large,false,none,low,0.82
+R0333,River Burger 0333,Z02,Arganzuela,burger,1,12.5,2.6,medium,true,lunch_combo,low,0.73
+R0334,Horta Zen 0334,Z16,Hortaleza,sushi,2,19.9,3.8,small,false,none,low,0.7
+R0335,Horta Pizzeria 0335,Z16,Hortaleza,pizza,2,15.7,2.8,small,true,lunch_combo,medium,1.27
+R0336,Bernabeu Brothers 0336,Z05,Chamartín,kebab,2,9.6,2.1,medium,false,none,medium,1.35
+R0337,Cara Roots 0337,Z11,Carabanchel,healthy,1,11.4,2.4,small,false,none,low,1.0
+R0338,Aero Bodega 0338,Z21,Barajas,spanish_tapas,2,18.2,3.3,large,false,none,medium,1.22
+R0339,Horta LaPlaza 0339,Z16,Hortaleza,spanish_tapas,1,18.4,2.7,medium,false,none,medium,1.05
+R0340,Cara Pizza 0340,Z11,Carabanchel,pizza,1,16.3,2.7,large,true,lunch_combo,low,1.36
+R0341,Chamberi Go 0341,Z07,Chamberí,fast_food,3,9.6,1.7,large,false,random_flash,low,0.88
+R0342,Norte Pizza 0342,Z06,Tetuán,pizza,3,17.7,2.6,large,false,none,low,1.46
+R0343,Park Churro 0343,Z03,Retiro,dessert,3,7.2,1.6,medium,true,weekend_discount,medium,1.02
+R0344,Morata Grill 0344,Z14,Moratalaz,burger,2,14.0,2.5,medium,true,lunch_combo,low,0.92
+R0345,Norte Express 0345,Z06,Tetuán,fast_food,2,12.3,2.2,medium,true,weekend_discount,high,0.88
+R0346,Vallecas Smash 0346,Z13,Puente de Vallecas,burger,1,14.8,2.2,small,true,weekend_discount,low,1.13
+R0347,Chamberi Azteca 0347,Z07,Chamberí,mexican,2,15.3,2.5,large,true,taco_tuesday_2x1,medium,0.72
+R0348,Metropolitano Gelato 0348,Z20,San Blas-Canillejas,dessert,1,8.3,1.6,small,false,random_flash,high,1.51
+R0349,Usera Taberna 0349,Z12,Usera,spanish_tapas,3,18.0,2.5,large,false,none,low,1.22
+R0350,Central Garden 0350,Z01,Centro,healthy,3,12.4,2.3,small,false,none,high,1.2
+R0351,Norte Bites 0351,Z06,Tetuán,fast_food,1,10.7,2.3,small,false,none,high,0.94
+R0352,River Express 0352,Z02,Arganzuela,fast_food,2,11.2,2.4,small,true,lunch_combo,medium,0.7
+R0353,Monte Dessert 0353,Z08,Fuencarral-El Pardo,dessert,3,8.0,1.9,large,false,none,low,1.01
+R0354,Park Bites 0354,Z03,Retiro,fast_food,1,10.8,2.1,medium,false,none,medium,0.7
+R0355,Central Tapas 0355,Z01,Centro,spanish_tapas,4,17.0,2.9,small,false,none,low,1.31
+R0356,Central Box 0356,Z01,Centro,fast_food,1,10.6,2.1,large,true,weekend_discount,low,1.25
+R0357,Park Roma 0357,Z03,Retiro,pizza,2,14.6,3.1,medium,false,none,medium,1.23
+R0358,Usera Express 0358,Z12,Usera,fast_food,1,11.6,2.1,medium,false,random_flash,low,0.89
+R0359,Latina Dessert 0359,Z10,Latina,dessert,4,8.9,1.5,small,true,weekend_discount,medium,1.3
+R0360,Bernabeu Roots 0360,Z05,Chamartín,healthy,3,12.0,1.9,large,false,none,medium,0.81
+R0361,Usera Wrap 0361,Z12,Usera,kebab,2,9.0,1.9,small,false,none,low,1.17
+R0362,Aero Box 0362,Z21,Barajas,fast_food,3,10.3,2.0,small,false,none,medium,0.99
+R0363,Bernabeu Stack 0363,Z05,Chamartín,burger,2,13.5,2.1,medium,false,none,high,0.96
+R0364,Horta Sushi 0364,Z16,Hortaleza,sushi,4,21.0,3.8,small,false,none,low,0.97
+R0365,Lineal Now 0365,Z15,Ciudad Lineal,grocery_convenience,1,6.7,1.6,large,false,none,high,0.99
+R0366,Golden Roll 0366,Z04,Salamanca,sushi,4,19.3,3.8,medium,true,healthy_lunch,medium,0.93
+R0367,Central Pizzeria 0367,Z01,Centro,pizza,4,15.7,3.0,small,true,weekend_discount,medium,1.31
+R0368,Vallecas Green 0368,Z13,Puente de Vallecas,healthy,1,12.1,2.4,small,false,none,medium,1.09
+R0369,Bernabeu Tapas 0369,Z05,Chamartín,spanish_tapas,4,18.7,3.3,medium,false,none,low,0.9
+R0370,River Roll 0370,Z02,Arganzuela,sushi,2,19.7,4.1,large,false,none,low,0.94
+R0371,Usera Grill 0371,Z12,Usera,burger,1,13.4,2.2,large,true,lunch_combo,low,0.79
+R0372,Usera Patty 0372,Z12,Usera,burger,3,14.9,2.0,small,false,none,low,0.96
+R0373,Bernabeu Fresh 0373,Z05,Chamartín,healthy,4,12.9,1.8,medium,false,random_flash,high,1.0
+R0374,Cara Now 0374,Z11,Carabanchel,grocery_convenience,3,7.3,1.6,medium,false,none,low,1.2
+R0375,Aravaca Now 0375,Z09,Moncloa-Aravaca,grocery_convenience,1,7.0,1.4,medium,false,none,low,0.7
+R0376,Central Box 0376,Z01,Centro,fast_food,1,10.9,2.4,medium,true,weekend_discount,high,1.41
+R0377,Morata Stack 0377,Z14,Moratalaz,burger,1,14.1,2.8,medium,false,none,low,0.92
+R0378,Aravaca District 0378,Z09,Moncloa-Aravaca,burger,1,13.1,2.3,large,false,none,medium,0.7
+R0379,Aravaca Hub 0379,Z09,Moncloa-Aravaca,fast_food,1,11.9,2.0,small,false,random_flash,low,0.74
+R0380,Norte Taquería 0380,Z06,Tetuán,mexican,2,13.4,2.5,small,false,random_flash,medium,0.7
+R0381,Park Burrito 0381,Z03,Retiro,mexican,1,12.9,2.3,medium,true,taco_tuesday_2x1,low,1.14
+R0382,Vical Hub 0382,Z19,Vicálvaro,fast_food,2,11.1,2.3,small,false,none,medium,0.75
+R0383,Central Fit 0383,Z01,Centro,healthy,3,12.1,2.1,small,false,none,medium,1.16
+R0384,Golden Smash 0384,Z04,Salamanca,burger,2,13.5,2.5,medium,false,random_flash,low,1.52
+R0385,Cara Hub 0385,Z11,Carabanchel,fast_food,2,11.8,2.1,large,false,random_flash,medium,0.86
+R0386,Villa Go 0386,Z18,Villa de Vallecas,grocery_convenience,1,7.0,1.5,medium,false,none,low,0.96
+R0387,Chamberi Pizzeria 0387,Z07,Chamberí,pizza,2,13.7,2.4,large,false,random_flash,high,1.06
+R0388,Central Bowl 0388,Z01,Centro,healthy,4,11.7,2.1,medium,false,none,low,1.14
+R0389,Cara Now 0389,Z11,Carabanchel,grocery_convenience,2,7.8,1.2,small,false,random_flash,medium,1.04
+R0390,Central Bodega 0390,Z01,Centro,spanish_tapas,3,17.0,2.8,small,true,healthy_lunch,high,1.16
+R0391,Vallecas Box 0391,Z13,Puente de Vallecas,fast_food,2,10.9,2.3,small,false,none,medium,0.93
+R0392,River Taberna 0392,Z02,Arganzuela,spanish_tapas,2,18.1,2.6,small,false,none,low,0.96
+R0393,Horta Pizzeria 0393,Z16,Hortaleza,pizza,1,15.1,3.1,medium,true,lunch_combo,low,0.7
+R0394,Aravaca Taco 0394,Z09,Moncloa-Aravaca,mexican,1,12.2,2.8,small,true,taco_tuesday_2x1,low,0.92
+R0395,Vallecas District 0395,Z13,Puente de Vallecas,burger,3,14.3,2.5,small,true,weekend_discount,low,1.09
+R0396,Aravaca Bites 0396,Z09,Moncloa-Aravaca,fast_food,2,10.5,1.7,small,false,none,low,0.95
+R0397,Bernabeu Box 0397,Z05,Chamartín,fast_food,2,10.9,1.8,medium,true,lunch_combo,medium,1.17
+R0398,Usera Bites 0398,Z12,Usera,fast_food,2,10.7,1.6,small,true,weekend_discount,low,1.17
+R0399,Chamberi Casa 0399,Z07,Chamberí,spanish_tapas,3,17.4,2.9,medium,false,none,high,1.28
+R0400,Cara Hub 0400,Z11,Carabanchel,fast_food,3,11.5,1.8,large,true,weekend_discount,medium,1.17
+R0401,Central Taco 0401,Z01,Centro,mexican,3,11.6,2.4,small,true,taco_tuesday_2x1,low,0.95
+R0402,Monte Doner 0402,Z08,Fuencarral-El Pardo,kebab,2,9.2,2.0,small,false,none,low,1.31
+R0403,Norte Taquería 0403,Z06,Tetuán,mexican,1,15.5,2.9,medium,true,taco_tuesday_2x1,medium,0.89
+R0404,Aravaca Cantina 0404,Z09,Moncloa-Aravaca,mexican,2,12.2,2.4,medium,true,taco_tuesday_2x1,medium,1.02
+R0405,Central Smash 0405,Z01,Centro,burger,2,15.4,2.0,medium,true,weekend_discount,low,0.92
+R0406,Latina District 0406,Z10,Latina,burger,1,13.5,2.5,small,false,random_flash,low,0.97
+R0407,Monte Slice 0407,Z08,Fuencarral-El Pardo,pizza,2,14.9,2.8,medium,false,random_flash,low,1.29
+R0408,Park Burger 0408,Z03,Retiro,burger,2,13.9,2.1,medium,false,none,low,1.1
+R0409,Norte Pizza 0409,Z06,Tetuán,pizza,2,15.4,2.4,medium,true,weekend_discount,high,1.02
+R0410,Aravaca District 0410,Z09,Moncloa-Aravaca,burger,2,14.3,2.1,large,false,random_flash,medium,0.94
+R0411,Metropolitano Brothers 0411,Z20,San Blas-Canillejas,kebab,2,9.6,1.6,medium,false,none,medium,0.7
+R0412,Golden Slice 0412,Z04,Salamanca,pizza,3,16.3,3.0,small,false,none,medium,1.0
+R0413,Chamberi Doner 0413,Z07,Chamberí,kebab,2,9.1,1.8,large,false,none,low,1.12
+R0414,Latina Stack 0414,Z10,Latina,burger,2,14.7,2.6,small,false,random_flash,low,0.85
+R0415,Monte Box 0415,Z08,Fuencarral-El Pardo,fast_food,2,10.4,1.6,medium,true,weekend_discount,low,0.98
+R0416,Lineal Napoli 0416,Z15,Ciudad Lineal,pizza,2,17.5,2.9,medium,true,lunch_combo,low,0.81
+R0417,Villa Bites 0417,Z18,Villa de Vallecas,fast_food,3,10.6,2.2,medium,false,random_flash,medium,1.06
+R0418,Central Brothers 0418,Z01,Centro,kebab,3,8.8,1.7,medium,false,random_flash,low,1.15
+R0419,Aravaca Brothers 0419,Z09,Moncloa-Aravaca,kebab,2,9.2,1.8,small,false,none,low,1.22
+R0420,Aero Taquería 0420,Z21,Barajas,mexican,2,14.2,2.3,small,false,random_flash,low,1.27
+R0421,River Loco 0421,Z02,Arganzuela,mexican,2,12.0,2.2,small,false,random_flash,low,0.82
+R0422,Lineal Roll 0422,Z15,Ciudad Lineal,sushi,2,21.9,3.3,small,false,none,low,1.05
+R0423,Latina Taquería 0423,Z10,Latina,mexican,3,14.5,2.3,medium,true,taco_tuesday_2x1,low,1.11
+R0424,Vical Cantina 0424,Z19,Vicálvaro,mexican,1,12.1,2.4,small,true,taco_tuesday_2x1,medium,0.87
+R0425,Central Hub 0425,Z01,Centro,fast_food,3,10.6,2.1,medium,false,none,high,1.24
+R0426,River Stack 0426,Z02,Arganzuela,burger,3,12.8,2.2,medium,true,weekend_discount,low,1.38
+R0427,Aravaca Patty 0427,Z09,Moncloa-Aravaca,burger,2,13.1,2.2,small,false,random_flash,medium,0.92
+R0428,Monte Bodega 0428,Z08,Fuencarral-El Pardo,spanish_tapas,2,19.3,3.3,medium,false,none,low,0.95
+R0429,Chamberi Taco 0429,Z07,Chamberí,mexican,2,13.0,3.0,small,false,random_flash,low,1.28
+R0430,Norte Napoli 0430,Z06,Tetuán,pizza,1,16.3,2.3,medium,false,none,high,0.88
+R0431,Vical Tokyo 0431,Z19,Vicálvaro,sushi,1,20.2,4.4,large,false,random_flash,low,0.95
+R0432,Golden Smash 0432,Z04,Salamanca,burger,2,14.2,2.5,small,true,weekend_discount,low,1.23
+R0433,Cara Grill 0433,Z11,Carabanchel,kebab,1,9.9,2.1,small,false,none,low,0.7
+R0434,Verde Loco 0434,Z17,Villaverde,mexican,2,15.0,2.5,small,true,weekend_discount,high,0.96
+R0435,Lineal Roll 0435,Z15,Ciudad Lineal,sushi,1,19.5,4.4,medium,true,healthy_lunch,medium,1.29
+R0436,Bernabeu Box 0436,Z05,Chamartín,fast_food,2,10.5,2.1,small,false,random_flash,high,1.02
+R0437,Chamberi Shawarma 0437,Z07,Chamberí,kebab,2,8.4,2.0,small,false,none,medium,1.19
+R0438,Aravaca Now 0438,Z09,Moncloa-Aravaca,grocery_convenience,1,7.3,1.3,medium,false,none,medium,1.08
+R0439,Metropolitano Go 0439,Z20,San Blas-Canillejas,fast_food,1,8.8,2.3,medium,false,none,medium,1.0
+R0440,Bernabeu Azteca 0440,Z05,Chamartín,mexican,1,13.4,2.4,small,false,none,high,1.16
+R0441,Vallecas Smash 0441,Z13,Puente de Vallecas,burger,2,14.6,1.9,small,false,none,low,0.94
+R0442,Golden Taquería 0442,Z04,Salamanca,mexican,2,13.7,2.5,medium,false,random_flash,medium,1.08
+R0443,Central Wrap 0443,Z01,Centro,kebab,2,9.2,2.0,small,false,none,low,1.19
+R0444,Horta Express 0444,Z16,Hortaleza,fast_food,2,10.6,2.2,medium,true,lunch_combo,low,1.24
+R0445,Morata Now 0445,Z14,Moratalaz,grocery_convenience,2,7.5,1.3,small,false,none,low,0.96
+R0446,Vical Green 0446,Z19,Vicálvaro,healthy,1,11.7,2.5,medium,true,healthy_lunch,low,1.05
+R0447,Monte Market 0447,Z08,Fuencarral-El Pardo,grocery_convenience,1,7.4,1.7,small,false,random_flash,medium,1.22
+R0448,Latina Express 0448,Z10,Latina,fast_food,1,10.3,1.9,medium,false,none,low,0.7
+R0449,Golden Sakura 0449,Z04,Salamanca,sushi,3,19.8,4.4,large,false,none,medium,0.99
+R0450,Monte Gelato 0450,Z08,Fuencarral-El Pardo,dessert,2,8.2,1.7,small,true,lunch_combo,high,0.82
+R0451,Lineal Bodega 0451,Z15,Ciudad Lineal,spanish_tapas,1,16.5,3.0,medium,false,random_flash,low,0.94
+R0452,Lineal Kebab 0452,Z15,Ciudad Lineal,kebab,2,9.5,1.8,small,false,none,medium,1.34
+R0453,Lineal Burger 0453,Z15,Ciudad Lineal,burger,2,14.1,2.8,medium,false,random_flash,medium,1.31
+R0454,Vallecas Taberna 0454,Z13,Puente de Vallecas,spanish_tapas,1,18.5,2.5,medium,false,none,low,1.04
+R0455,Chamberi Slice 0455,Z07,Chamberí,pizza,1,15.4,2.4,small,false,none,low,1.07
+R0456,Golden Corner 0456,Z04,Salamanca,fast_food,2,10.0,2.0,small,false,random_flash,high,1.25
+R0457,Central Casa 0457,Z01,Centro,spanish_tapas,2,18.1,3.0,small,false,none,low,1.03
+R0458,Lineal Box 0458,Z15,Ciudad Lineal,fast_food,1,11.1,2.2,small,true,lunch_combo,low,0.81
+R0459,Monte Go 0459,Z08,Fuencarral-El Pardo,grocery_convenience,1,8.1,1.3,medium,false,none,low,0.9
+R0460,River Tokyo 0460,Z02,Arganzuela,sushi,1,23.0,3.5,small,false,none,medium,0.77
+R0461,Park Burger 0461,Z03,Retiro,burger,2,14.1,2.5,medium,false,random_flash,medium,1.47
+R0462,Morata Patty 0462,Z14,Moratalaz,burger,1,12.6,2.9,medium,true,weekend_discount,low,0.72
+R0463,Usera Casa 0463,Z12,Usera,spanish_tapas,2,17.5,3.2,small,false,none,low,1.21
+R0464,Central Pizzeria 0464,Z01,Centro,pizza,1,16.9,2.7,small,false,random_flash,medium,0.98
+R0465,Park Pizzeria 0465,Z03,Retiro,pizza,2,16.8,3.2,small,false,random_flash,low,0.82
+R0466,Lineal Burrito 0466,Z15,Ciudad Lineal,mexican,1,12.4,2.4,small,false,none,low,0.87
+R0467,Golden Roots 0467,Z04,Salamanca,healthy,4,12.2,2.3,medium,false,random_flash,medium,0.99
+R0468,Norte Pizza 0468,Z06,Tetuán,pizza,2,17.6,2.4,large,true,weekend_discount,medium,1.14
+R0469,River Burrito 0469,Z02,Arganzuela,mexican,2,11.6,2.4,small,false,random_flash,medium,0.95
+R0470,Vical Patty 0470,Z19,Vicálvaro,burger,3,14.4,2.5,small,false,none,low,0.82
+R0471,Lineal Tapas 0471,Z15,Ciudad Lineal,spanish_tapas,3,18.0,2.5,small,false,none,low,1.05
+R0472,River Fit 0472,Z02,Arganzuela,healthy,2,12.4,2.2,large,false,none,low,1.25
+R0473,Vallecas LaPlaza 0473,Z13,Puente de Vallecas,spanish_tapas,2,16.6,3.5,small,false,random_flash,medium,1.07
+R0474,Bernabeu Bites 0474,Z05,Chamartín,fast_food,2,10.7,2.4,small,true,lunch_combo,medium,1.23
+R0475,Chamberi Fit 0475,Z07,Chamberí,healthy,3,11.3,2.1,medium,false,none,medium,1.05
+R0476,Metropolitano Go 0476,Z20,San Blas-Canillejas,fast_food,4,10.3,2.4,small,true,lunch_combo,high,0.88
+R0477,Horta Box 0477,Z16,Hortaleza,fast_food,3,11.7,2.1,medium,true,weekend_discount,low,0.9
+R0478,Park Stack 0478,Z03,Retiro,burger,2,14.0,2.5,medium,true,weekend_discount,medium,1.15
+R0479,Bernabeu Wasabi 0479,Z05,Chamartín,sushi,4,20.4,4.7,medium,false,none,medium,0.88
+R0480,Aravaca Go 0480,Z09,Moncloa-Aravaca,fast_food,3,10.3,1.9,large,true,weekend_discount,low,1.32
+R0481,Vallecas Tapas 0481,Z13,Puente de Vallecas,spanish_tapas,2,17.8,3.0,small,false,none,medium,0.96
+R0482,Usera Box 0482,Z12,Usera,fast_food,2,10.4,2.1,medium,true,weekend_discount,medium,1.12
+R0483,Norte Go 0483,Z06,Tetuán,fast_food,2,11.0,1.8,small,true,lunch_combo,medium,0.77
+R0484,Morata Zen 0484,Z14,Moratalaz,sushi,2,20.5,4.2,medium,false,random_flash,medium,0.9
+R0485,Morata Napoli 0485,Z14,Moratalaz,pizza,1,15.5,2.6,small,false,random_flash,high,0.83
+R0486,Bernabeu Daily 0486,Z05,Chamartín,grocery_convenience,2,7.2,1.5,large,false,random_flash,medium,0.86
+R0487,Park Green 0487,Z03,Retiro,healthy,2,13.6,2.5,large,false,none,high,1.15
+R0488,Usera Corner 0488,Z12,Usera,fast_food,2,10.5,1.8,medium,false,none,low,1.26
+R0489,Latina Now 0489,Z10,Latina,grocery_convenience,2,7.7,1.6,small,false,random_flash,medium,1.03
+R0490,Lineal Kebab 0490,Z15,Ciudad Lineal,kebab,2,9.2,1.9,medium,false,none,medium,0.98
+R0491,River Pizzeria 0491,Z02,Arganzuela,pizza,2,17.1,3.0,large,true,lunch_combo,low,0.97
+R0492,River Patty 0492,Z02,Arganzuela,burger,2,13.9,2.8,small,true,lunch_combo,low,0.95
+R0493,Central Fresh 0493,Z01,Centro,healthy,3,12.2,2.1,medium,false,none,low,1.6
+R0494,Verde Tapas 0494,Z17,Villaverde,spanish_tapas,3,18.7,2.8,small,true,healthy_lunch,low,0.96
+R0495,Monte Roots 0495,Z08,Fuencarral-El Pardo,healthy,2,11.2,2.0,small,false,none,low,1.12
+R0496,River Grill 0496,Z02,Arganzuela,kebab,2,9.4,1.7,medium,false,none,medium,0.7
+R0497,Aero Express 0497,Z21,Barajas,grocery_convenience,2,6.7,1.2,medium,false,none,medium,0.96
+R0498,Horta Go 0498,Z16,Hortaleza,fast_food,2,11.5,1.9,medium,false,none,low,0.87
+R0499,Vical Grill 0499,Z19,Vicálvaro,burger,1,14.5,2.5,small,false,random_flash,medium,1.28
+R0500,Golden Fresh 0500,Z04,Salamanca,healthy,2,12.1,2.4,medium,false,none,medium,1.01
+R0501,Norte Zen 0501,Z06,Tetuán,sushi,1,23.2,3.2,small,false,none,low,1.06
+R0502,Aero Tapas 0502,Z21,Barajas,spanish_tapas,1,19.0,3.1,medium,false,none,low,0.95
+R0503,Chamberi LaPlaza 0503,Z07,Chamberí,spanish_tapas,4,17.4,3.1,medium,false,none,medium,1.21
+R0504,Horta LaPlaza 0504,Z16,Hortaleza,spanish_tapas,1,16.0,3.5,small,false,none,low,1.1
+R0505,Central Pizzeria 0505,Z01,Centro,pizza,4,16.4,3.2,medium,true,lunch_combo,medium,1.28
+R0506,Bernabeu Dessert 0506,Z05,Chamartín,dessert,2,8.7,1.8,medium,true,weekend_discount,medium,1.36
+R0507,Vical Bowl 0507,Z19,Vicálvaro,healthy,2,11.9,2.1,large,false,none,low,1.04
+R0508,River Pizzeria 0508,Z02,Arganzuela,pizza,3,16.4,2.4,small,true,lunch_combo,medium,0.73
+R0509,Monte Napoli 0509,Z08,Fuencarral-El Pardo,pizza,2,16.6,2.3,small,true,lunch_combo,low,1.19
+R0510,Horta Grill 0510,Z16,Hortaleza,burger,1,13.8,2.2,medium,true,lunch_combo,low,0.82
+R0511,River Express 0511,Z02,Arganzuela,fast_food,1,11.0,2.0,medium,false,none,low,0.97
+R0512,Chamberi District 0512,Z07,Chamberí,burger,2,13.7,2.5,small,false,random_flash,medium,1.14
+R0513,Aravaca Tapas 0513,Z09,Moncloa-Aravaca,spanish_tapas,1,18.9,2.6,small,false,none,low,1.06
+R0514,Bernabeu Go 0514,Z05,Chamartín,fast_food,2,11.4,2.1,medium,false,random_flash,medium,1.34
+R0515,Park Roll 0515,Z03,Retiro,sushi,3,23.2,3.7,large,false,none,low,1.07
+R0516,Horta Corner 0516,Z16,Hortaleza,fast_food,1,10.8,2.0,medium,false,random_flash,low,0.86
+R0517,River Roots 0517,Z02,Arganzuela,healthy,2,13.0,2.2,medium,false,none,low,1.15
+R0518,Horta Stack 0518,Z16,Hortaleza,burger,4,13.7,2.5,medium,false,random_flash,low,1.08
+R0519,Park Brothers 0519,Z03,Retiro,kebab,2,9.1,1.8,medium,false,none,medium,1.08
+R0520,Latina Pizza 0520,Z10,Latina,pizza,2,14.8,2.3,small,true,lunch_combo,low,0.9
+R0521,Bernabeu Loco 0521,Z05,Chamartín,mexican,3,13.6,2.6,medium,false,none,medium,1.21
+R0522,Park Mesón 0522,Z03,Retiro,spanish_tapas,3,17.7,2.6,small,false,none,low,1.01
+R0523,Verde Wasabi 0523,Z17,Villaverde,sushi,3,22.5,4.1,medium,false,none,high,1.08
+R0524,Aravaca Oven 0524,Z09,Moncloa-Aravaca,pizza,1,17.1,2.6,small,false,random_flash,medium,1.28
+R0525,Latina Burger 0525,Z10,Latina,burger,3,14.0,2.2,small,true,lunch_combo,low,0.72
+R0526,Golden Tokyo 0526,Z04,Salamanca,sushi,3,20.8,4.5,medium,false,none,medium,1.18
+R0527,Central Roll 0527,Z01,Centro,sushi,3,20.2,4.6,small,false,none,low,1.27
+R0528,River Daily 0528,Z02,Arganzuela,grocery_convenience,2,7.5,1.5,medium,false,none,high,1.21
+R0529,Vical Fit 0529,Z19,Vicálvaro,healthy,3,11.3,1.8,medium,false,none,high,1.33
+R0530,Morata Doner 0530,Z14,Moratalaz,kebab,2,9.2,1.7,medium,true,healthy_lunch,medium,1.14
+R0531,Golden Bites 0531,Z04,Salamanca,fast_food,2,11.7,2.0,small,false,none,low,1.24
+R0532,Aravaca Smash 0532,Z09,Moncloa-Aravaca,burger,2,13.5,2.0,medium,false,random_flash,medium,1.17
+R0533,Central Zen 0533,Z01,Centro,sushi,4,22.5,4.3,medium,false,none,medium,0.94
+R0534,Golden LaPlaza 0534,Z04,Salamanca,spanish_tapas,2,19.5,3.1,small,false,none,medium,0.96
+R0535,River Pizzeria 0535,Z02,Arganzuela,pizza,2,15.3,2.5,large,false,random_flash,low,1.03
+R0536,Norte Roots 0536,Z06,Tetuán,healthy,2,12.4,2.1,small,true,healthy_lunch,medium,0.88
+R0537,Horta Smash 0537,Z16,Hortaleza,burger,2,14.3,2.7,medium,true,lunch_combo,low,1.06
+R0538,Lineal Burrito 0538,Z15,Ciudad Lineal,mexican,2,13.0,2.3,medium,true,taco_tuesday_2x1,medium,1.13
+R0539,Usera Wasabi 0539,Z12,Usera,sushi,2,19.9,3.5,medium,false,none,low,1.23
+R0540,Horta Bites 0540,Z16,Hortaleza,fast_food,2,9.8,1.7,large,true,weekend_discount,medium,0.89
+R0541,Lineal Taberna 0541,Z15,Ciudad Lineal,spanish_tapas,2,17.8,2.7,small,false,none,low,0.95
+R0542,Lineal Mesón 0542,Z15,Ciudad Lineal,spanish_tapas,1,17.0,3.1,small,false,none,medium,0.97
+R0543,Aravaca Cookie 0543,Z09,Moncloa-Aravaca,dessert,3,8.9,2.1,large,false,random_flash,low,0.89
+R0544,Monte Bodega 0544,Z08,Fuencarral-El Pardo,spanish_tapas,1,20.1,2.4,medium,false,none,medium,0.73
+R0545,Bernabeu Corner 0545,Z05,Chamartín,fast_food,3,10.5,1.9,small,false,random_flash,medium,1.2
+R0546,Chamberi Patty 0546,Z07,Chamberí,burger,3,13.5,2.2,large,true,weekend_discount,high,1.24
+R0547,Cara Corner 0547,Z11,Carabanchel,fast_food,2,11.4,1.7,medium,false,none,low,0.98
+R0548,Usera Daily 0548,Z12,Usera,grocery_convenience,1,6.4,1.5,small,false,random_flash,low,0.99
+R0549,Aravaca Casa 0549,Z09,Moncloa-Aravaca,spanish_tapas,2,17.7,3.1,small,true,healthy_lunch,low,1.41
+R0550,Norte Taquería 0550,Z06,Tetuán,mexican,1,12.9,3.1,medium,true,taco_tuesday_2x1,medium,0.78
+R0551,Monte Doner 0551,Z08,Fuencarral-El Pardo,kebab,2,8.9,1.5,medium,false,none,medium,0.7
+R0552,Central Pizza 0552,Z01,Centro,pizza,2,15.0,3.1,medium,false,none,low,1.08
+R0553,Bernabeu Bites 0553,Z05,Chamartín,fast_food,3,10.9,1.6,medium,true,weekend_discount,high,0.87
+R0554,Aero LaPlaza 0554,Z21,Barajas,spanish_tapas,1,17.5,2.5,medium,false,random_flash,medium,1.01
+R0555,Bernabeu District 0555,Z05,Chamartín,burger,1,14.5,2.1,medium,false,none,high,1.31
+R0556,Usera Roll 0556,Z12,Usera,sushi,3,20.7,3.4,large,false,random_flash,low,1.06
+R0557,Aero Casa 0557,Z21,Barajas,spanish_tapas,2,17.9,3.1,medium,true,healthy_lunch,medium,0.89
+R0558,Lineal Corner 0558,Z15,Ciudad Lineal,fast_food,2,10.6,2.2,medium,true,lunch_combo,low,1.28
+R0559,Chamberi Corner 0559,Z07,Chamberí,fast_food,1,11.7,2.1,large,false,random_flash,high,1.01
+R0560,Villa Wrap 0560,Z18,Villa de Vallecas,kebab,2,8.7,1.6,medium,false,random_flash,low,0.88
+R0561,Chamberi Bowl 0561,Z07,Chamberí,healthy,4,11.6,2.0,medium,false,random_flash,medium,1.04
+R0562,Cara Tapas 0562,Z11,Carabanchel,spanish_tapas,2,16.5,2.8,medium,false,random_flash,high,0.96
+R0563,Latina Bites 0563,Z10,Latina,fast_food,2,11.8,2.1,medium,true,weekend_discount,low,0.7
+R0564,River Brothers 0564,Z02,Arganzuela,kebab,2,10.2,1.9,small,false,none,low,0.92
+R0565,Cara Mart 0565,Z11,Carabanchel,grocery_convenience,2,6.7,1.7,small,false,none,medium,0.75
+R0566,Central Pizza 0566,Z01,Centro,pizza,2,16.2,2.3,large,true,weekend_discount,medium,1.0
+R0567,Cara Bites 0567,Z11,Carabanchel,fast_food,2,11.2,2.3,medium,true,weekend_discount,medium,1.25
+R0568,Aravaca Patty 0568,Z09,Moncloa-Aravaca,burger,1,12.8,1.9,small,true,lunch_combo,medium,1.0
+R0569,Bernabeu Pizza 0569,Z05,Chamartín,pizza,2,17.0,2.7,medium,false,none,medium,1.02
+R0570,Monte Box 0570,Z08,Fuencarral-El Pardo,fast_food,2,10.1,2.3,small,false,random_flash,medium,1.03
+R0571,Latina Market 0571,Z10,Latina,grocery_convenience,1,7.3,1.7,medium,false,random_flash,medium,0.87
+R0572,Aravaca Now 0572,Z09,Moncloa-Aravaca,grocery_convenience,1,6.6,1.6,small,true,healthy_lunch,low,0.7
+R0573,Vallecas Express 0573,Z13,Puente de Vallecas,fast_food,1,11.5,1.9,medium,false,random_flash,low,1.0
+R0574,Metropolitano Tapas 0574,Z20,San Blas-Canillejas,spanish_tapas,1,19.7,2.5,small,false,none,medium,1.11
+R0575,Chamberi Fit 0575,Z07,Chamberí,healthy,2,10.6,1.7,small,false,none,medium,0.9
+R0576,Villa Box 0576,Z18,Villa de Vallecas,fast_food,2,11.9,2.3,medium,true,weekend_discount,low,1.02
+R0577,Horta Go 0577,Z16,Hortaleza,fast_food,1,10.2,1.7,small,true,lunch_combo,low,0.86
+R0578,Vallecas Pizza 0578,Z13,Puente de Vallecas,pizza,4,15.5,3.2,medium,false,none,low,0.96
+R0579,Bernabeu Express 0579,Z05,Chamartín,fast_food,3,11.3,1.7,small,false,random_flash,high,1.25
+R0580,Lineal Wrap 0580,Z15,Ciudad Lineal,kebab,2,9.7,1.4,small,true,healthy_lunch,medium,1.02
+R0581,Verde Roma 0581,Z17,Villaverde,pizza,2,16.4,2.8,small,false,none,low,1.25
+R0582,Central Patty 0582,Z01,Centro,burger,2,15.3,2.2,small,false,random_flash,medium,1.28
+R0583,Aero Daily 0583,Z21,Barajas,grocery_convenience,1,7.0,1.3,medium,false,none,medium,0.78
+R0584,Park Mesón 0584,Z03,Retiro,spanish_tapas,4,19.0,2.6,large,true,healthy_lunch,medium,0.89
+R0585,Golden Stack 0585,Z04,Salamanca,burger,3,14.0,2.6,large,true,weekend_discount,low,1.05
+R0586,Chamberi Express 0586,Z07,Chamberí,fast_food,3,10.5,1.8,medium,true,lunch_combo,low,1.01
+R0587,Bernabeu Box 0587,Z05,Chamartín,fast_food,2,11.4,1.7,medium,true,weekend_discount,high,1.46
+R0588,Golden Doner 0588,Z04,Salamanca,kebab,2,9.6,1.9,large,false,random_flash,high,1.32
+R0589,Usera Express 0589,Z12,Usera,fast_food,1,10.3,2.2,small,true,lunch_combo,medium,1.04
+R0590,Lineal Express 0590,Z15,Ciudad Lineal,grocery_convenience,2,6.7,1.4,medium,false,none,medium,0.96
+R0591,Chamberi Sushi 0591,Z07,Chamberí,sushi,4,20.9,3.7,medium,false,none,medium,0.97
+R0592,Park Taco 0592,Z03,Retiro,mexican,2,15.7,3.0,medium,true,taco_tuesday_2x1,medium,1.15
+R0593,Lineal Green 0593,Z15,Ciudad Lineal,healthy,2,12.1,1.7,medium,false,none,high,1.23
+R0594,Bernabeu Kebab 0594,Z05,Chamartín,kebab,1,8.8,1.8,medium,false,none,low,1.01
+R0595,Chamberi Box 0595,Z07,Chamberí,fast_food,2,11.2,2.0,medium,false,none,high,0.93
+R0596,Verde Pizza 0596,Z17,Villaverde,pizza,1,16.0,2.9,medium,true,weekend_discount,low,0.72
+R0597,Latina Pizza 0597,Z10,Latina,pizza,2,16.7,2.3,small,true,lunch_combo,high,0.91
+R0598,Norte Brothers 0598,Z06,Tetuán,kebab,1,8.9,2.1,small,true,healthy_lunch,medium,0.88
+R0599,Vical Taquería 0599,Z19,Vicálvaro,mexican,1,13.0,2.5,small,false,random_flash,medium,0.87
+R0600,Central Roma 0600,Z01,Centro,pizza,2,16.5,2.8,medium,false,none,low,0.92
+R0601,Norte Roots 0601,Z06,Tetuán,healthy,2,12.2,2.4,medium,true,healthy_lunch,low,0.98
+R0602,Bernabeu Market 0602,Z05,Chamartín,grocery_convenience,1,7.2,1.3,small,false,none,high,1.17
+R0603,Norte Bowl 0603,Z06,Tetuán,healthy,2,11.0,1.7,small,true,healthy_lunch,low,1.14
+R0604,Horta Loco 0604,Z16,Hortaleza,mexican,2,12.3,2.5,medium,false,random_flash,low,1.22
+R0605,Chamberi Slice 0605,Z07,Chamberí,pizza,3,15.4,2.5,small,true,lunch_combo,low,1.4
+R0606,Park Grill 0606,Z03,Retiro,burger,2,14.5,2.1,small,false,none,low,1.19
+R0607,Lineal Burger 0607,Z15,Ciudad Lineal,burger,1,13.8,2.2,small,false,random_flash,high,1.09
+R0608,Bernabeu Oven 0608,Z05,Chamartín,pizza,2,17.1,2.4,small,false,none,medium,1.07
+R0609,Metropolitano Express 0609,Z20,San Blas-Canillejas,grocery_convenience,1,6.9,1.4,medium,false,none,high,0.7
+R0610,Vical Daily 0610,Z19,Vicálvaro,grocery_convenience,2,7.2,1.8,small,true,healthy_lunch,medium,0.72
+R0611,Central Green 0611,Z01,Centro,healthy,3,10.9,2.1,small,true,healthy_lunch,low,1.3
+R0612,Aravaca Smash 0612,Z09,Moncloa-Aravaca,burger,1,15.3,2.6,large,false,none,medium,1.18
+R0613,Chamberi Grill 0613,Z07,Chamberí,kebab,4,9.5,1.5,large,false,none,medium,1.01
+R0614,Bernabeu Roma 0614,Z05,Chamartín,pizza,3,17.3,2.7,large,false,none,high,1.25
+R0615,Lineal Go 0615,Z15,Ciudad Lineal,grocery_convenience,2,6.2,1.6,small,false,none,low,1.18
+R0616,Monte Napoli 0616,Z08,Fuencarral-El Pardo,pizza,2,16.8,3.3,small,false,random_flash,low,1.1
+R0617,Vallecas Express 0617,Z13,Puente de Vallecas,fast_food,3,10.8,2.3,small,false,random_flash,low,1.2
+R0618,Vallecas Burger 0618,Z13,Puente de Vallecas,burger,1,13.6,2.5,small,false,random_flash,medium,1.24
+R0619,Park Dessert 0619,Z03,Retiro,dessert,2,8.4,2.2,small,false,none,low,1.1
+R0620,Aravaca Dessert 0620,Z09,Moncloa-Aravaca,dessert,2,9.1,1.7,medium,true,weekend_discount,medium,0.95
+R0621,Aravaca Corner 0621,Z09,Moncloa-Aravaca,fast_food,3,11.3,1.8,small,false,none,medium,1.08
+R0622,Bernabeu Taco 0622,Z05,Chamartín,mexican,2,13.1,2.3,medium,true,weekend_discount,low,0.99
+R0623,Lineal Fresh 0623,Z15,Ciudad Lineal,healthy,1,11.8,2.1,small,true,healthy_lunch,high,0.84
+R0624,Bernabeu Taberna 0624,Z05,Chamartín,spanish_tapas,3,18.4,2.6,small,false,random_flash,low,1.06
+R0625,Latina LaPlaza 0625,Z10,Latina,spanish_tapas,3,17.6,3.4,small,false,none,medium,0.73
+R0626,River Hub 0626,Z02,Arganzuela,fast_food,1,10.2,2.3,medium,false,none,medium,1.25
+R0627,Usera Go 0627,Z12,Usera,fast_food,1,11.2,1.8,small,true,weekend_discount,medium,0.92
+R0628,Usera Tapas 0628,Z12,Usera,spanish_tapas,1,16.9,2.6,small,false,none,low,1.02
+R0629,Chamberi Sweet 0629,Z07,Chamberí,dessert,1,7.5,2.0,large,true,weekend_discount,low,0.84
+R0630,Park Pizza 0630,Z03,Retiro,pizza,1,16.0,2.9,small,false,none,low,0.85
+R0631,Latina Taco 0631,Z10,Latina,mexican,1,12.9,2.4,small,true,taco_tuesday_2x1,low,0.99
+R0632,Monte Market 0632,Z08,Fuencarral-El Pardo,grocery_convenience,3,7.9,1.5,medium,false,random_flash,low,0.83
+R0633,River Taberna 0633,Z02,Arganzuela,spanish_tapas,2,17.0,3.3,small,false,none,low,0.98
+R0634,Chamberi Oven 0634,Z07,Chamberí,pizza,2,16.8,2.4,small,false,random_flash,medium,1.14
+R0635,Metropolitano Roll 0635,Z20,San Blas-Canillejas,sushi,2,22.4,4.6,large,false,none,low,0.98
+R0636,Norte Box 0636,Z06,Tetuán,fast_food,2,11.6,2.1,small,true,weekend_discount,medium,1.12
+R0637,Aravaca Express 0637,Z09,Moncloa-Aravaca,fast_food,1,11.6,2.1,large,true,weekend_discount,low,0.97
+R0638,Vallecas District 0638,Z13,Puente de Vallecas,burger,2,12.9,2.7,large,true,lunch_combo,low,0.83
+R0639,Metropolitano Daily 0639,Z20,San Blas-Canillejas,grocery_convenience,1,7.0,1.4,medium,false,none,high,0.91
+R0640,River Go 0640,Z02,Arganzuela,fast_food,2,11.4,2.1,small,true,lunch_combo,low,1.02
+R0641,Morata Grill 0641,Z14,Moratalaz,kebab,2,9.1,1.9,medium,false,random_flash,medium,0.88
+R0642,Horta Taco 0642,Z16,Hortaleza,mexican,4,13.3,2.6,large,true,taco_tuesday_2x1,high,0.94
+R0643,Park Shawarma 0643,Z03,Retiro,kebab,3,9.3,1.7,small,false,none,low,1.16
+R0644,Chamberi Azteca 0644,Z07,Chamberí,mexican,2,11.3,2.7,small,true,weekend_discount,low,1.15
+R0645,Latina Oven 0645,Z10,Latina,pizza,2,16.3,3.2,small,false,none,high,1.01
+R0646,Verde Pizza 0646,Z17,Villaverde,pizza,2,17.0,2.3,small,true,weekend_discount,medium,0.99
+R0647,River Fresh 0647,Z02,Arganzuela,healthy,1,12.4,1.7,medium,false,none,low,1.2
+R0648,Norte Corner 0648,Z06,Tetuán,fast_food,2,11.6,1.9,medium,false,none,high,0.98
+R0649,Cara Napoli 0649,Z11,Carabanchel,pizza,2,15.7,2.6,large,true,weekend_discount,low,0.91
+R0650,Metropolitano Bites 0650,Z20,San Blas-Canillejas,fast_food,1,10.9,2.1,medium,false,random_flash,low,1.15
+R0651,Vallecas Azteca 0651,Z13,Puente de Vallecas,mexican,2,14.5,2.7,small,false,random_flash,low,1.13
+R0652,Bernabeu Taberna 0652,Z05,Chamartín,spanish_tapas,3,17.6,2.7,medium,false,none,medium,1.27
+R0653,Verde Grill 0653,Z17,Villaverde,kebab,3,8.6,2.1,medium,false,none,low,0.94
+R0654,Monte Wrap 0654,Z08,Fuencarral-El Pardo,kebab,3,9.0,1.6,medium,false,random_flash,low,0.94
+R0655,Morata Taberna 0655,Z14,Moratalaz,spanish_tapas,1,18.2,2.6,small,false,none,low,0.94
+R0656,Golden Wrap 0656,Z04,Salamanca,kebab,2,9.1,2.0,small,false,none,low,1.13
+R0657,Norte Churro 0657,Z06,Tetuán,dessert,1,8.3,2.0,medium,true,weekend_discount,low,1.11
+R0658,Metropolitano Sushi 0658,Z20,San Blas-Canillejas,sushi,1,21.9,3.7,small,false,none,low,0.91
+R0659,Cara Gelato 0659,Z11,Carabanchel,dessert,3,7.9,1.5,medium,false,none,low,0.9
+R0660,Lineal Daily 0660,Z15,Ciudad Lineal,grocery_convenience,1,7.3,1.3,medium,false,none,medium,0.91
+R0661,Norte Casa 0661,Z06,Tetuán,spanish_tapas,3,18.1,2.7,small,false,none,low,1.08
+R0662,Central Taquería 0662,Z01,Centro,mexican,4,12.6,2.9,large,false,none,low,1.27
+R0663,Norte Fresh 0663,Z06,Tetuán,healthy,1,12.9,2.4,medium,false,none,medium,0.95
+R0664,Lineal Stack 0664,Z15,Ciudad Lineal,burger,2,13.2,2.8,medium,false,random_flash,medium,0.79
+R0665,Chamberi Corner 0665,Z07,Chamberí,fast_food,3,11.5,2.3,medium,true,lunch_combo,low,1.02
+R0666,Park Tokyo 0666,Z03,Retiro,sushi,4,21.1,3.3,large,false,none,low,0.82
+R0667,Chamberi Oven 0667,Z07,Chamberí,pizza,3,17.2,3.2,medium,false,random_flash,medium,0.87
+R0668,Latina Mesón 0668,Z10,Latina,spanish_tapas,2,17.4,3.2,small,false,none,low,0.71
+R0669,Central Smash 0669,Z01,Centro,burger,2,14.4,2.4,large,false,none,low,1.15
+R0670,Horta Fresh 0670,Z16,Hortaleza,healthy,2,12.3,1.8,medium,false,none,medium,0.93
+R0671,River Roma 0671,Z02,Arganzuela,pizza,3,17.8,2.5,large,false,none,low,0.87
+R0672,Latina Gelato 0672,Z10,Latina,dessert,1,7.9,1.7,medium,true,lunch_combo,medium,0.9
+R0673,Norte Market 0673,Z06,Tetuán,grocery_convenience,1,6.1,1.8,medium,false,none,medium,0.95
+R0674,Golden Mart 0674,Z04,Salamanca,grocery_convenience,1,6.7,1.7,medium,false,none,medium,1.1
+R0675,Cara Roma 0675,Z11,Carabanchel,pizza,2,18.5,2.5,medium,true,weekend_discount,low,1.09
+R0676,Cara Corner 0676,Z11,Carabanchel,fast_food,1,10.5,2.1,medium,false,none,low,1.25
+R0677,Golden Go 0677,Z04,Salamanca,fast_food,1,11.7,1.9,medium,false,random_flash,low,1.01
+R0678,Usera Tapas 0678,Z12,Usera,spanish_tapas,1,17.4,2.9,small,false,none,low,0.9
+R0679,Aravaca Stack 0679,Z09,Moncloa-Aravaca,burger,2,13.5,2.0,medium,true,lunch_combo,medium,1.17
+R0680,Bernabeu Go 0680,Z05,Chamartín,grocery_convenience,2,7.4,1.8,small,false,none,medium,0.84
+R0681,Morata Smash 0681,Z14,Moratalaz,burger,2,14.7,2.4,large,false,random_flash,low,1.25
+R0682,Latina Zen 0682,Z10,Latina,sushi,1,21.0,3.6,medium,false,none,low,1.05
+R0683,Vical Hub 0683,Z19,Vicálvaro,fast_food,4,10.3,1.7,medium,true,weekend_discount,medium,0.93
+R0684,Golden Grill 0684,Z04,Salamanca,burger,3,14.5,2.6,small,false,none,high,0.89
+R0685,Morata Burger 0685,Z14,Moratalaz,burger,1,13.6,2.2,small,false,none,medium,1.0
+R0686,Norte Market 0686,Z06,Tetuán,grocery_convenience,2,7.1,1.7,medium,false,none,low,1.06
+R0687,Latina Go 0687,Z10,Latina,fast_food,2,11.6,2.2,medium,false,none,low,0.95
+R0688,Golden Box 0688,Z04,Salamanca,fast_food,2,11.3,2.0,medium,true,weekend_discount,medium,0.82
+R0689,Golden Taberna 0689,Z04,Salamanca,spanish_tapas,2,18.4,3.3,small,false,none,medium,1.01
+R0690,River Wasabi 0690,Z02,Arganzuela,sushi,2,23.5,4.2,small,true,healthy_lunch,medium,0.82
+R0691,Golden Wasabi 0691,Z04,Salamanca,sushi,3,19.7,4.4,medium,false,none,medium,1.03
+R0692,Norte Hub 0692,Z06,Tetuán,fast_food,4,10.6,2.2,large,false,random_flash,medium,0.77
+R0693,River Sushi 0693,Z02,Arganzuela,sushi,3,20.3,3.4,large,false,none,low,1.01
+R0694,Bernabeu Go 0694,Z05,Chamartín,fast_food,3,10.2,1.9,medium,false,none,medium,1.08
+R0695,Norte Azteca 0695,Z06,Tetuán,mexican,1,12.9,3.0,medium,true,taco_tuesday_2x1,medium,0.8
+R0696,Usera Pizzeria 0696,Z12,Usera,pizza,2,15.4,2.5,large,false,none,medium,0.78
+R0697,Park LaPlaza 0697,Z03,Retiro,spanish_tapas,3,17.5,2.4,small,true,healthy_lunch,low,0.83
+R0698,Chamberi Pizzeria 0698,Z07,Chamberí,pizza,4,15.1,2.9,large,true,lunch_combo,medium,0.98
+R0699,Usera Oven 0699,Z12,Usera,pizza,1,16.4,3.2,medium,true,weekend_discount,high,1.09
+R0700,Chamberi Express 0700,Z07,Chamberí,fast_food,2,10.2,1.8,small,true,lunch_combo,medium,0.87
+R0701,Central Grill 0701,Z01,Centro,burger,3,13.1,1.9,medium,true,weekend_discount,medium,1.17
+R0702,Lineal Oven 0702,Z15,Ciudad Lineal,pizza,1,15.0,3.3,medium,false,none,medium,0.79
+R0703,Aravaca Roma 0703,Z09,Moncloa-Aravaca,pizza,2,14.5,3.3,large,false,none,medium,0.98
+R0704,Central Bites 0704,Z01,Centro,fast_food,2,12.3,1.9,medium,true,lunch_combo,low,1.25
+R0705,Bernabeu Green 0705,Z05,Chamartín,healthy,3,11.9,2.0,medium,false,none,medium,0.9
+R0706,Villa Dessert 0706,Z18,Villa de Vallecas,dessert,2,8.3,2.0,large,false,none,low,1.11
+R0707,Vallecas Casa 0707,Z13,Puente de Vallecas,spanish_tapas,2,17.7,3.2,small,false,random_flash,low,1.29
+R0708,River Roma 0708,Z02,Arganzuela,pizza,1,16.1,2.3,large,true,lunch_combo,medium,1.05
+R0709,Lineal Sweet 0709,Z15,Ciudad Lineal,dessert,2,7.8,1.6,medium,true,lunch_combo,low,1.08
+R0710,Morata LaPlaza 0710,Z14,Moratalaz,spanish_tapas,1,18.9,3.0,medium,false,none,low,1.22
+R0711,Chamberi Sushi 0711,Z07,Chamberí,sushi,4,21.4,4.6,small,false,none,medium,0.86
+R0712,Park Express 0712,Z03,Retiro,fast_food,3,11.3,2.0,medium,false,none,medium,1.12
+R0713,Cara Slice 0713,Z11,Carabanchel,pizza,1,16.7,3.1,small,false,none,low,1.45
+R0714,Bernabeu Smash 0714,Z05,Chamartín,burger,2,14.0,2.6,small,false,none,high,0.93
+R0715,Golden Taberna 0715,Z04,Salamanca,spanish_tapas,4,20.0,3.0,medium,false,none,medium,0.84
+R0716,Morata Fit 0716,Z14,Moratalaz,healthy,3,12.5,2.5,small,true,healthy_lunch,low,1.08
+R0717,Cara Grill 0717,Z11,Carabanchel,kebab,1,8.4,1.9,medium,false,random_flash,medium,0.79
+R0718,Usera Loco 0718,Z12,Usera,mexican,2,12.7,3.1,large,false,random_flash,medium,1.15
+R0719,Norte Grill 0719,Z06,Tetuán,kebab,2,8.5,1.7,medium,false,none,low,0.87
+R0720,Verde Bites 0720,Z17,Villaverde,fast_food,2,10.8,1.7,large,true,lunch_combo,medium,0.71
+R0721,Aravaca Taquería 0721,Z09,Moncloa-Aravaca,mexican,1,14.6,2.8,small,false,random_flash,low,1.06
+R0722,Aero Go 0722,Z21,Barajas,fast_food,3,11.0,1.7,medium,false,none,medium,1.21
+R0723,Aravaca Hub 0723,Z09,Moncloa-Aravaca,fast_food,4,11.7,2.1,large,false,random_flash,low,0.7
+R0724,Latina Oven 0724,Z10,Latina,pizza,2,16.5,2.4,small,false,none,medium,0.78
+R0725,Monte Smash 0725,Z08,Fuencarral-El Pardo,burger,2,14.5,2.3,small,true,lunch_combo,medium,1.15
+R0726,Golden Box 0726,Z04,Salamanca,fast_food,2,10.3,1.9,small,true,lunch_combo,medium,0.99
+R0727,Chamberi Go 0727,Z07,Chamberí,grocery_convenience,2,6.7,1.5,medium,false,none,low,1.15
+R0728,Monte Taquería 0728,Z08,Fuencarral-El Pardo,mexican,1,11.5,3.2,small,false,none,low,1.05
+R0729,Norte Bites 0729,Z06,Tetuán,fast_food,1,10.7,1.8,small,true,lunch_combo,high,0.99
+R0730,Park Taberna 0730,Z03,Retiro,spanish_tapas,2,19.7,2.7,medium,false,none,medium,0.77
+R0731,Bernabeu Gelato 0731,Z05,Chamartín,dessert,2,7.8,1.7,small,false,none,medium,1.28
+R0732,River Box 0732,Z02,Arganzuela,fast_food,2,10.3,2.3,small,false,none,low,1.06
+R0733,Norte Patty 0733,Z06,Tetuán,burger,2,15.1,2.3,small,true,weekend_discount,medium,1.08
+R0734,Central Brothers 0734,Z01,Centro,kebab,2,8.5,1.5,large,false,none,low,0.9
+R0735,Metropolitano Burrito 0735,Z20,San Blas-Canillejas,mexican,2,14.3,2.7,large,true,taco_tuesday_2x1,high,1.03
+R0736,Lineal LaPlaza 0736,Z15,Ciudad Lineal,spanish_tapas,2,18.5,2.9,small,false,none,high,0.77
+R0737,Chamberi Napoli 0737,Z07,Chamberí,pizza,2,16.0,2.4,small,true,weekend_discount,medium,1.19
+R0738,River Roma 0738,Z02,Arganzuela,pizza,2,18.2,2.4,medium,true,lunch_combo,medium,1.17
+R0739,Park Cookie 0739,Z03,Retiro,dessert,2,8.1,1.6,medium,false,random_flash,low,0.92
+R0740,Vallecas Pizza 0740,Z13,Puente de Vallecas,pizza,1,15.5,2.3,small,false,random_flash,low,1.21
+R0741,Central Azteca 0741,Z01,Centro,mexican,2,13.0,3.0,small,true,taco_tuesday_2x1,medium,1.33
+R0742,Latina Grill 0742,Z10,Latina,burger,2,15.4,2.4,medium,false,none,low,0.97
+R0743,Central Roll 0743,Z01,Centro,sushi,3,21.0,4.7,medium,false,none,low,1.1
+R0744,Norte Pizzeria 0744,Z06,Tetuán,pizza,1,16.4,2.4,medium,true,weekend_discount,high,0.88
+R0745,Usera Mesón 0745,Z12,Usera,spanish_tapas,2,17.8,3.1,large,false,none,low,1.19
+R0746,Bernabeu District 0746,Z05,Chamartín,burger,2,14.1,2.2,medium,false,random_flash,high,1.61
+R0747,Usera Kebab 0747,Z12,Usera,kebab,2,9.1,1.6,medium,false,none,low,1.0
+R0748,Norte Box 0748,Z06,Tetuán,fast_food,2,9.6,2.3,medium,true,weekend_discount,low,0.91
+R0749,Norte Wrap 0749,Z06,Tetuán,kebab,1,9.1,1.4,medium,false,none,medium,0.72
+R0750,Golden Hub 0750,Z04,Salamanca,fast_food,2,10.9,2.3,medium,false,none,medium,0.99
+R0751,Metropolitano Market 0751,Z20,San Blas-Canillejas,grocery_convenience,1,7.6,1.3,small,false,none,high,0.84
+R0752,Horta Burrito 0752,Z16,Hortaleza,mexican,1,13.5,2.9,medium,true,taco_tuesday_2x1,low,1.28
+R0753,Vallecas Bites 0753,Z13,Puente de Vallecas,fast_food,3,11.8,1.8,medium,true,weekend_discount,low,0.8
+R0754,Cara Brothers 0754,Z11,Carabanchel,kebab,2,7.6,1.9,large,true,healthy_lunch,low,1.12
+R0755,Chamberi Mart 0755,Z07,Chamberí,grocery_convenience,1,6.4,1.5,small,false,none,high,1.08
+R0756,Villa Loco 0756,Z18,Villa de Vallecas,mexican,1,13.1,2.8,small,false,random_flash,low,1.07
+R0757,Norte Express 0757,Z06,Tetuán,fast_food,1,10.9,2.1,small,true,lunch_combo,high,1.06
+R0758,Lineal Mart 0758,Z15,Ciudad Lineal,grocery_convenience,1,5.8,1.7,medium,false,none,medium,1.08
+R0759,Central Wrap 0759,Z01,Centro,kebab,3,8.4,1.5,small,true,healthy_lunch,medium,0.93
+R0760,Horta Express 0760,Z16,Hortaleza,fast_food,1,11.1,2.1,medium,true,weekend_discount,high,0.94
+R0761,Central Taberna 0761,Z01,Centro,spanish_tapas,2,18.0,3.1,medium,true,healthy_lunch,medium,0.97
+R0762,Lineal Cream 0762,Z15,Ciudad Lineal,dessert,1,7.5,1.5,medium,false,random_flash,high,0.78
+R0763,Central Fit 0763,Z01,Centro,healthy,4,12.3,2.2,small,false,none,low,1.32
+R0764,Chamberi Burger 0764,Z07,Chamberí,burger,1,13.7,2.8,medium,true,lunch_combo,low,1.28
+R0765,Morata Hub 0765,Z14,Moratalaz,fast_food,2,10.5,2.0,medium,true,weekend_discount,medium,1.46
+R0766,Lineal Taco 0766,Z15,Ciudad Lineal,mexican,2,13.2,3.1,medium,true,taco_tuesday_2x1,medium,1.11
+R0767,Usera Daily 0767,Z12,Usera,grocery_convenience,2,7.4,1.4,small,false,none,medium,0.81
+R0768,Horta Gelato 0768,Z16,Hortaleza,dessert,1,8.4,1.6,medium,true,weekend_discount,low,1.0
+R0769,Metropolitano Pizzeria 0769,Z20,San Blas-Canillejas,pizza,2,14.6,2.2,small,true,lunch_combo,medium,1.2
+R0770,Park Sakura 0770,Z03,Retiro,sushi,3,21.0,3.2,small,false,random_flash,low,0.95
+R0771,Vallecas Napoli 0771,Z13,Puente de Vallecas,pizza,1,16.2,2.5,small,false,none,medium,1.11
+R0772,Cara Cookie 0772,Z11,Carabanchel,dessert,3,7.8,2.0,medium,false,none,low,1.13
+R0773,Aero Dessert 0773,Z21,Barajas,dessert,1,8.8,2.0,small,true,lunch_combo,medium,1.32
+R0774,Latina Express 0774,Z10,Latina,grocery_convenience,3,7.1,1.7,small,true,healthy_lunch,medium,0.76
+R0775,Latina Grill 0775,Z10,Latina,burger,3,15.6,2.1,small,true,lunch_combo,low,0.93
+R0776,Central Taquería 0776,Z01,Centro,mexican,3,12.2,2.4,medium,true,weekend_discount,low,1.25
+R0777,Metropolitano Roll 0777,Z20,San Blas-Canillejas,sushi,2,22.6,3.3,small,false,random_flash,low,0.89
+R0778,Norte Roma 0778,Z06,Tetuán,pizza,2,16.8,2.9,small,true,weekend_discount,medium,0.93
+R0779,Bernabeu Burrito 0779,Z05,Chamartín,mexican,2,12.5,2.6,small,true,weekend_discount,high,1.27
+R0780,Central Tokyo 0780,Z01,Centro,sushi,3,20.6,4.5,medium,false,none,low,1.16
+R0781,Vical Go 0781,Z19,Vicálvaro,fast_food,2,10.4,2.1,small,false,none,low,0.95
+R0782,Horta Stack 0782,Z16,Hortaleza,burger,4,15.3,2.6,large,true,weekend_discount,medium,1.0
+R0783,Lineal Taberna 0783,Z15,Ciudad Lineal,spanish_tapas,3,18.7,2.4,medium,false,none,low,0.73
+R0784,Horta District 0784,Z16,Hortaleza,burger,2,13.0,2.7,medium,false,none,low,1.03
+R0785,Lineal Slice 0785,Z15,Ciudad Lineal,pizza,2,16.9,2.7,large,true,weekend_discount,high,0.93
+R0786,Horta Pizzeria 0786,Z16,Hortaleza,pizza,1,16.7,2.6,small,false,random_flash,medium,0.7
+R0787,Morata Loco 0787,Z14,Moratalaz,mexican,2,12.8,2.3,large,false,none,low,0.98
+R0788,Lineal Cream 0788,Z15,Ciudad Lineal,dessert,3,8.4,1.7,medium,true,weekend_discount,high,0.98
+R0789,Aravaca Tokyo 0789,Z09,Moncloa-Aravaca,sushi,1,22.3,3.3,medium,false,none,medium,1.14
+R0790,Central Mart 0790,Z01,Centro,grocery_convenience,1,6.8,1.5,small,true,healthy_lunch,medium,1.31
+R0791,Villa Pizza 0791,Z18,Villa de Vallecas,pizza,1,14.7,2.7,large,true,weekend_discount,low,1.15
+R0792,Bernabeu Mesón 0792,Z05,Chamartín,spanish_tapas,3,16.1,3.1,medium,false,none,high,0.84
+R0793,Central Go 0793,Z01,Centro,fast_food,3,10.6,1.9,medium,true,lunch_combo,low,1.02
+R0794,Central Box 0794,Z01,Centro,fast_food,3,10.0,2.2,small,false,random_flash,low,1.18
+R0795,Park Stack 0795,Z03,Retiro,burger,3,12.3,2.1,medium,true,lunch_combo,low,1.1
+R0796,Golden Cookie 0796,Z04,Salamanca,dessert,3,7.1,1.5,medium,false,none,low,1.04
+R0797,Norte Tapas 0797,Z06,Tetuán,spanish_tapas,4,18.4,3.3,small,false,none,medium,1.04
+R0798,Chamberi Sushi 0798,Z07,Chamberí,sushi,3,20.3,3.7,small,false,random_flash,high,0.92
+R0799,Golden Bowl 0799,Z04,Salamanca,healthy,3,12.0,1.7,medium,false,random_flash,low,0.89
+R0800,Park Casa 0800,Z03,Retiro,spanish_tapas,3,18.5,2.8,medium,false,none,medium,1.01
+R0801,Morata Bowl 0801,Z14,Moratalaz,healthy,2,12.5,2.4,medium,false,none,high,1.26
+R0802,Latina Taquería 0802,Z10,Latina,mexican,2,13.7,2.5,small,true,taco_tuesday_2x1,low,0.89
+R0803,Morata Mart 0803,Z14,Moratalaz,grocery_convenience,3,7.0,1.2,small,false,none,low,1.03
+R0804,Central Market 0804,Z01,Centro,grocery_convenience,2,7.1,1.3,small,true,healthy_lunch,medium,1.0
+R0805,Aravaca Grill 0805,Z09,Moncloa-Aravaca,burger,3,13.3,2.1,small,true,lunch_combo,high,1.12
+R0806,Cara Express 0806,Z11,Carabanchel,fast_food,2,12.1,2.1,small,true,weekend_discount,medium,1.13
+R0807,Bernabeu Kebab 0807,Z05,Chamartín,kebab,3,9.3,1.8,small,true,healthy_lunch,high,0.71
+R0808,Latina Pizzeria 0808,Z10,Latina,pizza,1,16.7,3.0,large,false,random_flash,high,1.27
+R0809,Central Gelato 0809,Z01,Centro,dessert,2,7.7,1.9,large,true,weekend_discount,low,1.0
+R0810,Verde Pizzeria 0810,Z17,Villaverde,pizza,2,16.0,2.4,medium,true,weekend_discount,medium,1.07
+R0811,Cara District 0811,Z11,Carabanchel,burger,2,15.2,2.2,small,false,random_flash,low,0.9
+R0812,Monte Now 0812,Z08,Fuencarral-El Pardo,grocery_convenience,2,7.0,1.6,small,false,random_flash,high,0.87
+R0813,Villa Now 0813,Z18,Villa de Vallecas,grocery_convenience,2,7.2,1.5,small,false,none,high,1.36
+R0814,Chamberi Market 0814,Z07,Chamberí,grocery_convenience,2,7.2,1.3,medium,false,none,low,1.19
+R0815,Golden Box 0815,Z04,Salamanca,fast_food,2,11.2,1.9,medium,true,lunch_combo,medium,1.2
+R0816,Metropolitano Patty 0816,Z20,San Blas-Canillejas,burger,1,14.8,2.1,medium,false,random_flash,medium,0.97
+R0817,Morata Taberna 0817,Z14,Moratalaz,spanish_tapas,1,16.6,3.3,large,false,none,medium,1.24
+R0818,Vallecas Patty 0818,Z13,Puente de Vallecas,burger,1,13.8,2.4,small,false,none,medium,1.23
+R0819,Villa Bites 0819,Z18,Villa de Vallecas,fast_food,2,10.5,1.9,small,false,none,medium,1.13
+R0820,Bernabeu Market 0820,Z05,Chamartín,grocery_convenience,1,8.1,1.4,medium,false,random_flash,high,1.2
+R0821,Golden Dessert 0821,Z04,Salamanca,dessert,2,7.8,1.7,small,true,lunch_combo,medium,0.85
+R0822,Golden Tokyo 0822,Z04,Salamanca,sushi,3,20.1,4.2,small,false,none,medium,0.85
+R0823,Golden Brothers 0823,Z04,Salamanca,kebab,3,10.0,1.9,large,false,none,medium,1.12
+R0824,Verde Cantina 0824,Z17,Villaverde,mexican,3,13.5,2.9,medium,true,weekend_discount,low,1.16
+R0825,Aravaca Roots 0825,Z09,Moncloa-Aravaca,healthy,3,12.7,2.3,medium,false,random_flash,medium,1.15
+R0826,Vallecas Green 0826,Z13,Puente de Vallecas,healthy,4,12.0,1.7,medium,false,none,low,0.99
+R0827,Vallecas Smash 0827,Z13,Puente de Vallecas,burger,1,14.6,2.4,small,false,random_flash,medium,1.16
+R0828,Golden Casa 0828,Z04,Salamanca,spanish_tapas,3,18.8,3.2,medium,false,none,medium,0.99
+R0829,Bernabeu Oven 0829,Z05,Chamartín,pizza,1,16.7,2.8,medium,true,weekend_discount,high,1.12
+R0830,Metropolitano Kebab 0830,Z20,San Blas-Canillejas,kebab,1,8.9,1.9,large,false,none,low,1.0
+R0831,Chamberi Roma 0831,Z07,Chamberí,pizza,2,15.6,2.6,small,true,lunch_combo,medium,0.95
+R0832,Latina Mart 0832,Z10,Latina,grocery_convenience,2,8.0,1.4,medium,false,none,high,1.01
+R0833,River Taquería 0833,Z02,Arganzuela,mexican,2,13.0,2.9,large,true,weekend_discount,low,1.2
+R0834,Central Shawarma 0834,Z01,Centro,kebab,1,8.9,2.0,small,false,none,low,1.14
+R0835,Norte Kebab 0835,Z06,Tetuán,kebab,2,10.3,1.8,medium,false,none,high,0.84
+R0836,Norte Brothers 0836,Z06,Tetuán,kebab,1,8.2,2.1,medium,true,healthy_lunch,low,0.97
+R0837,Bernabeu Fit 0837,Z05,Chamartín,healthy,4,10.5,2.5,medium,false,none,high,1.18
+R0838,Park Now 0838,Z03,Retiro,grocery_convenience,1,6.3,1.3,large,false,none,low,1.11
+R0839,Golden Patty 0839,Z04,Salamanca,burger,4,13.4,2.8,medium,true,lunch_combo,low,0.87
+R0840,Bernabeu Stack 0840,Z05,Chamartín,burger,3,13.1,2.3,medium,false,none,high,0.95
+R0841,Cara Burrito 0841,Z11,Carabanchel,mexican,2,13.1,2.3,small,false,random_flash,low,1.09
+R0842,Vallecas Hub 0842,Z13,Puente de Vallecas,fast_food,1,10.7,2.2,small,false,random_flash,medium,1.16
+R0843,Norte Tokyo 0843,Z06,Tetuán,sushi,2,21.6,4.3,medium,true,healthy_lunch,high,0.96
+R0844,Horta Oven 0844,Z16,Hortaleza,pizza,3,15.0,2.9,small,false,random_flash,low,1.0
+R0845,Usera Shawarma 0845,Z12,Usera,kebab,2,8.8,2.1,medium,false,none,medium,0.87
+R0846,Bernabeu Market 0846,Z05,Chamartín,grocery_convenience,3,6.5,1.3,medium,false,none,medium,1.39
+R0847,Central Churro 0847,Z01,Centro,dessert,3,7.9,2.0,large,true,weekend_discount,high,0.95
+R0848,Norte Wasabi 0848,Z06,Tetuán,sushi,4,21.1,4.0,small,false,none,medium,0.82
+R0849,Horta Slice 0849,Z16,Hortaleza,pizza,2,16.5,2.3,large,true,lunch_combo,low,0.7
+R0850,Aravaca Wasabi 0850,Z09,Moncloa-Aravaca,sushi,1,21.6,4.4,medium,true,healthy_lunch,low,1.1
+R0851,Aravaca Bowl 0851,Z09,Moncloa-Aravaca,healthy,2,13.0,1.8,small,false,none,low,0.97
+R0852,Vical Bites 0852,Z19,Vicálvaro,fast_food,2,9.5,2.1,small,true,weekend_discount,medium,0.74
+R0853,Chamberi Bowl 0853,Z07,Chamberí,healthy,3,11.2,2.3,medium,false,none,low,1.29
+R0854,Cara District 0854,Z11,Carabanchel,burger,2,14.4,2.0,medium,false,none,medium,1.01
+R0855,Aravaca Go 0855,Z09,Moncloa-Aravaca,grocery_convenience,1,7.0,1.3,medium,false,none,low,0.7
+R0856,Aravaca Go 0856,Z09,Moncloa-Aravaca,fast_food,2,11.5,1.9,medium,true,lunch_combo,low,0.83
+R0857,Morata Taco 0857,Z14,Moratalaz,mexican,2,11.8,3.0,small,false,random_flash,low,0.86
+R0858,Verde Stack 0858,Z17,Villaverde,burger,2,14.9,2.2,small,false,random_flash,low,1.01
+R0859,River Burger 0859,Z02,Arganzuela,burger,1,14.5,2.8,small,false,none,low,1.11
+R0860,Golden Bites 0860,Z04,Salamanca,fast_food,3,10.8,1.7,medium,true,lunch_combo,low,1.31
+R0861,Aero Grill 0861,Z21,Barajas,kebab,1,9.9,1.6,small,false,random_flash,low,1.19
+R0862,Metropolitano Doner 0862,Z20,San Blas-Canillejas,kebab,2,8.8,1.7,medium,false,random_flash,medium,1.29
+R0863,Park Tokyo 0863,Z03,Retiro,sushi,3,21.7,3.5,medium,false,random_flash,low,0.96
+R0864,Cara Fit 0864,Z11,Carabanchel,healthy,2,12.4,2.0,small,false,none,low,0.78
+R0865,Central Kebab 0865,Z01,Centro,kebab,2,8.1,1.7,small,true,healthy_lunch,low,1.05
+R0866,Morata Express 0866,Z14,Moratalaz,fast_food,1,12.5,1.8,large,false,none,medium,1.29
+R0867,Monte Cream 0867,Z08,Fuencarral-El Pardo,dessert,3,7.3,1.9,large,false,random_flash,low,1.01
+R0868,Verde Patty 0868,Z17,Villaverde,burger,1,14.4,2.7,medium,false,none,medium,0.75
+R0869,Aravaca District 0869,Z09,Moncloa-Aravaca,burger,2,14.2,2.3,medium,true,weekend_discount,low,1.08
+R0870,Metropolitano Bowl 0870,Z20,San Blas-Canillejas,healthy,2,11.3,2.0,small,false,none,high,1.1
+R0871,Metropolitano Taquería 0871,Z20,San Blas-Canillejas,mexican,3,13.3,3.1,large,true,taco_tuesday_2x1,high,0.86
+R0872,River Box 0872,Z02,Arganzuela,fast_food,1,11.7,1.7,small,false,none,low,1.13
+R0873,Central Now 0873,Z01,Centro,grocery_convenience,2,6.9,1.5,large,false,none,low,0.9
+R0874,Norte Brothers 0874,Z06,Tetuán,kebab,1,8.3,1.7,large,false,none,low,1.1
+R0875,Aero Now 0875,Z21,Barajas,grocery_convenience,2,6.0,1.6,large,false,none,medium,0.71
+R0876,Central LaPlaza 0876,Z01,Centro,spanish_tapas,3,19.1,2.6,large,false,none,low,1.17
+R0877,Lineal Sweet 0877,Z15,Ciudad Lineal,dessert,1,7.5,1.4,medium,true,lunch_combo,low,1.01
+R0878,Vical Daily 0878,Z19,Vicálvaro,grocery_convenience,2,7.5,1.6,medium,false,none,medium,1.04
+R0879,Bernabeu Pizza 0879,Z05,Chamartín,pizza,2,15.8,2.2,medium,true,weekend_discount,medium,0.92
+R0880,Verde Roma 0880,Z17,Villaverde,pizza,1,16.1,2.8,small,true,lunch_combo,low,0.86
+R0881,Monte Patty 0881,Z08,Fuencarral-El Pardo,burger,2,13.6,2.6,small,false,none,low,1.04
+R0882,River Grill 0882,Z02,Arganzuela,burger,2,13.9,2.1,small,true,lunch_combo,low,0.7
+R0883,Golden Roll 0883,Z04,Salamanca,sushi,3,20.7,4.4,medium,false,none,low,1.01
+R0884,Vallecas Casa 0884,Z13,Puente de Vallecas,spanish_tapas,1,18.2,2.6,medium,false,none,medium,1.02
+R0885,Cara Napoli 0885,Z11,Carabanchel,pizza,2,15.3,2.8,medium,true,weekend_discount,medium,1.06
+R0886,Monte Burger 0886,Z08,Fuencarral-El Pardo,burger,3,14.6,2.7,small,false,none,low,1.0
+R0887,Usera Cantina 0887,Z12,Usera,mexican,1,13.8,2.3,small,true,taco_tuesday_2x1,medium,0.8
+R0888,Park Go 0888,Z03,Retiro,fast_food,2,11.2,1.9,small,false,random_flash,medium,1.03
+R0889,Bernabeu Roll 0889,Z05,Chamartín,sushi,3,21.6,3.8,large,false,none,high,1.13
+R0890,Verde Burger 0890,Z17,Villaverde,burger,1,14.0,2.4,large,true,weekend_discount,medium,0.88
+R0891,Metropolitano Oven 0891,Z20,San Blas-Canillejas,pizza,1,15.3,3.1,small,true,lunch_combo,low,0.76
+R0892,Vallecas Azteca 0892,Z13,Puente de Vallecas,mexican,2,12.6,2.6,large,true,taco_tuesday_2x1,low,0.9
+R0893,River Taquería 0893,Z02,Arganzuela,mexican,2,13.3,2.3,large,false,random_flash,medium,1.18
+R0894,Chamberi LaPlaza 0894,Z07,Chamberí,spanish_tapas,4,18.6,3.1,small,false,none,low,1.13
+R0895,Villa Mart 0895,Z18,Villa de Vallecas,grocery_convenience,1,6.8,1.2,small,false,none,low,0.7
+R0896,Central Brothers 0896,Z01,Centro,kebab,4,8.6,1.5,large,false,random_flash,low,1.54
+R0897,Chamberi Azteca 0897,Z07,Chamberí,mexican,4,13.8,2.6,medium,true,taco_tuesday_2x1,medium,1.36
+R0898,Park Grill 0898,Z03,Retiro,burger,2,15.8,2.4,medium,false,none,medium,1.02
+R0899,Horta Oven 0899,Z16,Hortaleza,pizza,2,16.1,2.5,small,true,weekend_discount,low,1.05
+R0900,Vical Burger 0900,Z19,Vicálvaro,burger,2,14.0,2.4,small,true,lunch_combo,medium,1.34
+R0901,Norte Box 0901,Z06,Tetuán,fast_food,3,11.0,2.3,small,false,none,medium,1.1
+R0902,Central Pizzeria 0902,Z01,Centro,pizza,4,17.1,2.8,large,false,none,low,1.53
+R0903,River Taberna 0903,Z02,Arganzuela,spanish_tapas,3,17.9,3.1,small,false,none,medium,1.25
+R0904,Golden Wrap 0904,Z04,Salamanca,kebab,1,9.1,1.7,large,true,healthy_lunch,medium,1.39
+R0905,Park Churro 0905,Z03,Retiro,dessert,2,8.4,1.6,small,false,none,low,0.96
+R0906,Usera Grill 0906,Z12,Usera,burger,1,14.1,2.9,small,false,random_flash,low,1.39
+R0907,Lineal Wrap 0907,Z15,Ciudad Lineal,kebab,2,9.1,2.0,large,true,healthy_lunch,low,1.02
+R0908,Golden Daily 0908,Z04,Salamanca,grocery_convenience,1,8.2,1.3,medium,false,none,low,1.01
+R0909,Golden Roll 0909,Z04,Salamanca,sushi,4,21.5,4.0,small,false,none,medium,0.96
+R0910,Monte Go 0910,Z08,Fuencarral-El Pardo,fast_food,1,10.8,2.3,small,false,none,high,1.21
+R0911,Chamberi Box 0911,Z07,Chamberí,fast_food,2,11.9,2.1,medium,false,none,medium,0.97
+R0912,Aero Smash 0912,Z21,Barajas,burger,2,13.7,2.8,large,false,none,medium,0.94
+R0913,Park Azteca 0913,Z03,Retiro,mexican,2,11.3,2.9,medium,true,taco_tuesday_2x1,low,1.17
+R0914,Golden Tokyo 0914,Z04,Salamanca,sushi,4,21.8,3.3,small,false,none,high,0.84
+R0915,Cara Roma 0915,Z11,Carabanchel,pizza,2,16.7,3.2,small,true,lunch_combo,low,0.7
+R0916,Park Slice 0916,Z03,Retiro,pizza,2,15.4,2.7,medium,true,lunch_combo,low,1.1
+R0917,Bernabeu Mesón 0917,Z05,Chamartín,spanish_tapas,4,17.1,3.0,medium,false,none,high,1.25
+R0918,River Fit 0918,Z02,Arganzuela,healthy,2,11.6,2.3,small,true,healthy_lunch,low,0.72
+R0919,Central Cantina 0919,Z01,Centro,mexican,3,13.8,3.1,large,false,none,medium,1.16
+R0920,Park Gelato 0920,Z03,Retiro,dessert,2,8.1,1.5,large,false,none,medium,0.95
+R0921,Central Mart 0921,Z01,Centro,grocery_convenience,1,7.5,1.5,medium,false,random_flash,medium,1.25
+R0922,Park Burger 0922,Z03,Retiro,burger,2,14.2,2.1,medium,false,none,low,0.91
+R0923,Bernabeu Oven 0923,Z05,Chamartín,pizza,2,15.9,2.4,small,false,random_flash,medium,1.08
+R0924,Park Patty 0924,Z03,Retiro,burger,3,13.3,2.5,medium,false,none,low,0.7
+R0925,Usera Zen 0925,Z12,Usera,sushi,1,22.1,4.7,medium,false,none,high,1.1
+R0926,Norte LaPlaza 0926,Z06,Tetuán,spanish_tapas,2,19.4,3.0,medium,false,none,medium,1.13
+R0927,Central Roma 0927,Z01,Centro,pizza,2,16.3,2.9,medium,true,weekend_discount,medium,1.15
+R0928,Monte Bites 0928,Z08,Fuencarral-El Pardo,fast_food,1,11.4,1.8,large,true,weekend_discount,medium,0.94
+R0929,Aravaca Corner 0929,Z09,Moncloa-Aravaca,fast_food,1,10.4,1.6,small,true,lunch_combo,medium,1.4
+R0930,Park Mesón 0930,Z03,Retiro,spanish_tapas,3,19.0,2.8,large,false,none,low,1.2
+R0931,Morata Corner 0931,Z14,Moratalaz,fast_food,2,11.1,1.7,medium,true,weekend_discount,low,0.96
+R0932,Metropolitano Grill 0932,Z20,San Blas-Canillejas,burger,2,13.2,2.1,large,false,random_flash,medium,0.75
+R0933,Cara Mart 0933,Z11,Carabanchel,grocery_convenience,1,7.3,1.6,large,true,healthy_lunch,low,1.11
+R0934,Usera Stack 0934,Z12,Usera,burger,2,15.0,2.9,small,true,weekend_discount,low,0.94
+R0935,Bernabeu Sweet 0935,Z05,Chamartín,dessert,2,7.6,1.7,small,false,random_flash,high,1.13
+R0936,Central Garden 0936,Z01,Centro,healthy,3,11.5,2.4,medium,true,healthy_lunch,medium,1.12
+R0937,Aravaca Hub 0937,Z09,Moncloa-Aravaca,fast_food,2,11.9,1.7,small,false,none,low,0.7
+R0938,Norte Fit 0938,Z06,Tetuán,healthy,2,13.5,1.7,large,true,healthy_lunch,low,0.7
+R0939,Usera Cantina 0939,Z12,Usera,mexican,3,12.9,2.6,small,true,taco_tuesday_2x1,low,1.1
+R0940,River Sakura 0940,Z02,Arganzuela,sushi,2,21.3,3.5,small,false,none,medium,0.92
+R0941,Chamberi Pizza 0941,Z07,Chamberí,pizza,2,17.1,3.0,medium,true,lunch_combo,high,1.1
+R0942,Park Sakura 0942,Z03,Retiro,sushi,3,17.4,4.4,small,false,none,low,0.78
+R0943,Metropolitano Grill 0943,Z20,San Blas-Canillejas,burger,3,15.2,2.2,medium,true,weekend_discount,high,0.92
+R0944,Norte Pizzeria 0944,Z06,Tetuán,pizza,2,15.4,3.2,small,true,weekend_discount,low,1.06
+R0945,Chamberi Mart 0945,Z07,Chamberí,grocery_convenience,1,6.7,1.5,medium,false,random_flash,medium,1.25
+R0946,Norte Garden 0946,Z06,Tetuán,healthy,3,10.6,1.8,medium,false,none,high,0.86
+R0947,Cara Mesón 0947,Z11,Carabanchel,spanish_tapas,2,17.9,2.6,medium,true,healthy_lunch,low,0.84
+R0948,River Go 0948,Z02,Arganzuela,grocery_convenience,1,6.7,1.8,large,false,none,low,0.7
+R0949,Aravaca Box 0949,Z09,Moncloa-Aravaca,fast_food,4,10.3,1.7,small,true,lunch_combo,low,1.11
+R0950,Metropolitano Taco 0950,Z20,San Blas-Canillejas,mexican,2,12.5,2.5,medium,true,taco_tuesday_2x1,medium,1.12
+R0951,Aero Oven 0951,Z21,Barajas,pizza,2,14.9,3.1,small,true,weekend_discount,medium,0.94
+R0952,Park Grill 0952,Z03,Retiro,kebab,2,8.8,1.9,medium,false,none,low,1.26
+R0953,Villa Go 0953,Z18,Villa de Vallecas,fast_food,2,11.8,2.1,small,true,lunch_combo,low,1.16
+R0954,Vical Corner 0954,Z19,Vicálvaro,fast_food,2,11.3,2.3,small,false,none,medium,0.75
+R0955,River Sweet 0955,Z02,Arganzuela,dessert,2,8.2,2.1,medium,false,none,medium,0.81
+R0956,Vical LaPlaza 0956,Z19,Vicálvaro,spanish_tapas,1,18.6,3.4,medium,false,none,medium,0.9
+R0957,Verde Pizza 0957,Z17,Villaverde,pizza,1,16.5,2.8,medium,true,lunch_combo,medium,0.7
+R0958,Aravaca Roll 0958,Z09,Moncloa-Aravaca,sushi,4,21.7,4.5,medium,false,none,medium,1.24
+R0959,Latina Express 0959,Z10,Latina,grocery_convenience,1,6.9,1.3,medium,true,healthy_lunch,medium,1.1
+R0960,Aravaca Pizzeria 0960,Z09,Moncloa-Aravaca,pizza,3,16.3,2.6,small,true,weekend_discount,high,0.91
+R0961,Morata Bites 0961,Z14,Moratalaz,fast_food,2,11.2,1.9,medium,true,weekend_discount,low,0.97
+R0962,Latina Slice 0962,Z10,Latina,pizza,2,16.1,3.2,medium,false,none,medium,1.12
+R0963,Golden Go 0963,Z04,Salamanca,fast_food,3,10.3,2.1,small,true,lunch_combo,medium,0.92
+R0964,River Grill 0964,Z02,Arganzuela,burger,1,13.2,2.7,small,true,lunch_combo,high,1.01
+R0965,Central Market 0965,Z01,Centro,grocery_convenience,1,6.1,1.6,medium,false,random_flash,medium,1.28
+R0966,Villa Brothers 0966,Z18,Villa de Vallecas,kebab,2,10.6,2.2,medium,false,none,low,1.1
+R0967,Park Tapas 0967,Z03,Retiro,spanish_tapas,3,18.2,3.0,small,false,none,medium,1.01
+R0968,Golden Slice 0968,Z04,Salamanca,pizza,1,15.8,2.5,small,true,weekend_discount,low,1.01
+R0969,Cara Wasabi 0969,Z11,Carabanchel,sushi,2,23.8,3.6,small,false,none,low,0.87
+R0970,Metropolitano Bites 0970,Z20,San Blas-Canillejas,fast_food,1,11.5,2.0,large,true,lunch_combo,medium,0.7
+R0971,Lineal Grill 0971,Z15,Ciudad Lineal,kebab,2,9.2,2.1,medium,false,none,low,1.16
+R0972,Metropolitano Patty 0972,Z20,San Blas-Canillejas,burger,1,14.5,2.8,small,true,weekend_discount,high,0.77
+R0973,Bernabeu Bodega 0973,Z05,Chamartín,spanish_tapas,3,18.2,2.6,small,true,healthy_lunch,medium,1.27
+R0974,Vallecas Stack 0974,Z13,Puente de Vallecas,burger,2,14.8,2.3,medium,false,random_flash,medium,0.86
+R0975,Bernabeu Brothers 0975,Z05,Chamartín,kebab,1,9.5,2.0,small,false,none,high,0.98
+R0976,Lineal Tokyo 0976,Z15,Ciudad Lineal,sushi,2,21.6,3.7,small,false,none,medium,1.08
+R0977,Cara Sweet 0977,Z11,Carabanchel,dessert,3,7.8,1.7,large,false,none,high,1.34
+R0978,Cara Go 0978,Z11,Carabanchel,fast_food,3,10.5,1.9,small,true,weekend_discount,low,1.08
+R0979,Chamberi Hub 0979,Z07,Chamberí,fast_food,2,9.8,2.4,small,true,lunch_combo,medium,1.2
+R0980,Central Go 0980,Z01,Centro,fast_food,1,12.3,2.2,small,true,weekend_discount,low,1.09
+R0981,Lineal LaPlaza 0981,Z15,Ciudad Lineal,spanish_tapas,4,19.8,2.7,medium,true,healthy_lunch,low,0.85
+R0982,Central Napoli 0982,Z01,Centro,pizza,3,14.9,3.3,medium,true,weekend_discount,medium,1.29
+R0983,Park Burrito 0983,Z03,Retiro,mexican,2,12.5,2.4,medium,true,weekend_discount,medium,0.81
+R0984,Morata Sushi 0984,Z14,Moratalaz,sushi,1,20.8,4.1,large,false,none,low,1.07
+R0985,Golden Corner 0985,Z04,Salamanca,fast_food,1,11.5,2.3,small,true,weekend_discount,medium,1.11
+R0986,Aravaca Loco 0986,Z09,Moncloa-Aravaca,mexican,2,12.6,2.3,medium,false,none,medium,1.18
+R0987,Norte Daily 0987,Z06,Tetuán,grocery_convenience,2,7.1,1.4,small,false,none,low,0.89
+R0988,Cara Go 0988,Z11,Carabanchel,fast_food,2,11.1,1.7,small,false,random_flash,low,1.38
+R0989,Golden Market 0989,Z04,Salamanca,grocery_convenience,1,7.1,1.5,small,false,none,medium,1.28
+R0990,Central Roma 0990,Z01,Centro,pizza,2,16.2,2.5,medium,false,random_flash,medium,1.2
+R0991,Central Burger 0991,Z01,Centro,burger,2,14.2,2.2,small,true,weekend_discount,medium,1.12
+R0992,Latina Garden 0992,Z10,Latina,healthy,2,12.2,2.3,medium,false,random_flash,medium,1.33
+R0993,Latina Fresh 0993,Z10,Latina,healthy,2,12.7,2.3,medium,false,none,low,1.12
+R0994,Golden Pizza 0994,Z04,Salamanca,pizza,1,15.5,3.3,medium,true,lunch_combo,high,1.27
+R0995,Metropolitano Churro 0995,Z20,San Blas-Canillejas,dessert,2,8.5,2.1,medium,true,lunch_combo,high,0.81
+R0996,River LaPlaza 0996,Z02,Arganzuela,spanish_tapas,2,17.8,3.0,medium,false,none,medium,1.13
+R0997,Lineal Roma 0997,Z15,Ciudad Lineal,pizza,2,16.7,2.8,small,true,weekend_discount,medium,0.99
+R0998,Usera Dessert 0998,Z12,Usera,dessert,3,8.7,1.5,medium,false,none,high,0.86
+R0999,Metropolitano Dessert 0999,Z20,San Blas-Canillejas,dessert,4,7.9,1.9,medium,true,lunch_combo,high,1.04
+R1000,River Go 1000,Z02,Arganzuela,grocery_convenience,2,8.0,1.6,large,false,none,low,0.92
+R1001,Monte District 1001,Z08,Fuencarral-El Pardo,burger,2,13.5,2.8,small,true,weekend_discount,low,1.21
+R1002,Usera Tapas 1002,Z12,Usera,spanish_tapas,2,15.5,3.4,small,false,none,low,1.13
+R1003,Usera Zen 1003,Z12,Usera,sushi,2,20.6,3.5,medium,true,healthy_lunch,medium,1.22
+R1004,Chamberi Stack 1004,Z07,Chamberí,burger,1,13.9,2.3,medium,true,weekend_discount,high,1.1
+R1005,Verde LaPlaza 1005,Z17,Villaverde,spanish_tapas,2,18.1,2.5,small,false,none,medium,0.9
+R1006,Aravaca Express 1006,Z09,Moncloa-Aravaca,fast_food,1,11.5,2.1,small,true,lunch_combo,low,0.94
+R1007,Verde Daily 1007,Z17,Villaverde,grocery_convenience,1,6.3,1.4,medium,false,none,medium,0.89
+R1008,River Loco 1008,Z02,Arganzuela,mexican,1,12.4,2.7,small,false,random_flash,low,1.39
+R1009,River Taquería 1009,Z02,Arganzuela,mexican,1,14.3,2.7,medium,true,taco_tuesday_2x1,medium,0.89
+R1010,Central Burrito 1010,Z01,Centro,mexican,1,14.2,3.0,medium,true,taco_tuesday_2x1,low,1.4
+R1011,Verde Sweet 1011,Z17,Villaverde,dessert,2,7.5,1.4,medium,false,none,low,1.11
+R1012,Central Box 1012,Z01,Centro,fast_food,1,10.0,2.1,medium,false,none,medium,0.91
+R1013,Aravaca Taquería 1013,Z09,Moncloa-Aravaca,mexican,1,13.1,3.0,medium,true,taco_tuesday_2x1,low,1.1
+R1014,Horta Oven 1014,Z16,Hortaleza,pizza,2,17.6,2.9,small,true,weekend_discount,medium,0.87
+R1015,Verde Cantina 1015,Z17,Villaverde,mexican,1,11.3,2.6,small,true,taco_tuesday_2x1,medium,1.06
+R1016,Metropolitano LaPlaza 1016,Z20,San Blas-Canillejas,spanish_tapas,1,17.2,3.2,small,true,healthy_lunch,high,0.87
+R1017,Park Casa 1017,Z03,Retiro,spanish_tapas,3,17.9,3.0,small,false,none,low,0.77
+R1018,Chamberi Wrap 1018,Z07,Chamberí,kebab,2,9.2,2.0,small,false,random_flash,high,0.91
+R1019,Norte Taco 1019,Z06,Tetuán,mexican,2,14.0,2.2,large,false,none,medium,0.84
+R1020,Vallecas Grill 1020,Z13,Puente de Vallecas,burger,2,14.6,2.3,medium,true,lunch_combo,high,0.83
+R1021,Cara Pizzeria 1021,Z11,Carabanchel,pizza,2,14.2,2.4,medium,false,random_flash,low,1.09
+R1022,Central Taberna 1022,Z01,Centro,spanish_tapas,3,16.6,3.1,large,false,none,low,1.15
+R1023,River Napoli 1023,Z02,Arganzuela,pizza,2,15.3,2.3,large,true,weekend_discount,medium,0.88
+R1024,River Go 1024,Z02,Arganzuela,grocery_convenience,1,7.1,1.8,medium,true,healthy_lunch,low,1.31
+R1025,Vallecas Roma 1025,Z13,Puente de Vallecas,pizza,3,16.7,2.3,medium,true,lunch_combo,medium,1.05
+R1026,Latina Express 1026,Z10,Latina,fast_food,2,10.8,2.4,medium,true,weekend_discount,medium,0.83
+R1027,Chamberi Grill 1027,Z07,Chamberí,burger,3,13.1,2.7,small,true,weekend_discount,low,1.19
+R1028,River Express 1028,Z02,Arganzuela,fast_food,3,10.6,2.0,small,true,weekend_discount,low,1.14
+R1029,Villa Wrap 1029,Z18,Villa de Vallecas,kebab,1,9.3,1.8,small,false,none,low,1.33
+R1030,Lineal Sakura 1030,Z15,Ciudad Lineal,sushi,2,21.5,4.5,small,true,healthy_lunch,medium,1.03
+R1031,Latina Slice 1031,Z10,Latina,pizza,3,15.6,2.7,small,false,none,medium,1.33
+R1032,Bernabeu Cantina 1032,Z05,Chamartín,mexican,3,14.0,2.6,small,false,random_flash,high,1.01
+R1033,Chamberi Cookie 1033,Z07,Chamberí,dessert,2,8.6,1.6,large,true,weekend_discount,medium,1.14
+R1034,Lineal Pizzeria 1034,Z15,Ciudad Lineal,pizza,3,17.0,3.1,medium,false,random_flash,low,1.08
+R1035,Lineal Pizza 1035,Z15,Ciudad Lineal,pizza,3,15.0,2.3,medium,false,none,medium,0.86
+R1036,Central Bites 1036,Z01,Centro,fast_food,2,10.6,2.2,large,true,weekend_discount,low,1.27
+R1037,Central Casa 1037,Z01,Centro,spanish_tapas,3,19.0,3.3,medium,true,healthy_lunch,low,0.89
+R1038,Usera Wasabi 1038,Z12,Usera,sushi,2,21.5,4.2,large,false,none,medium,1.06
+R1039,Villa Burger 1039,Z18,Villa de Vallecas,burger,2,14.2,2.8,medium,false,random_flash,low,1.3
+R1040,Central Green 1040,Z01,Centro,healthy,2,12.3,1.7,small,false,none,medium,1.18
+R1041,Bernabeu Wrap 1041,Z05,Chamartín,kebab,2,8.9,2.1,small,false,none,medium,1.04
+R1042,Verde Gelato 1042,Z17,Villaverde,dessert,2,9.0,1.7,medium,false,random_flash,medium,0.89
+R1043,Usera Taco 1043,Z12,Usera,mexican,2,11.1,2.7,small,false,none,low,1.23
+R1044,Monte Napoli 1044,Z08,Fuencarral-El Pardo,pizza,1,14.8,2.4,large,false,random_flash,low,1.24
+R1045,Chamberi Corner 1045,Z07,Chamberí,fast_food,3,10.9,1.8,large,true,weekend_discount,low,1.34
+R1046,Norte Corner 1046,Z06,Tetuán,fast_food,2,11.4,1.7,medium,true,weekend_discount,medium,1.03
+R1047,Monte Pizza 1047,Z08,Fuencarral-El Pardo,pizza,3,16.0,3.2,small,false,none,medium,0.84
+R1048,Central Fit 1048,Z01,Centro,healthy,3,11.0,2.3,small,true,healthy_lunch,medium,1.23
+R1049,Vallecas Fit 1049,Z13,Puente de Vallecas,healthy,2,11.2,2.1,small,false,none,low,0.9
+R1050,Vical Go 1050,Z19,Vicálvaro,fast_food,1,10.8,2.4,medium,true,lunch_combo,medium,0.87
+R1051,Central Smash 1051,Z01,Centro,burger,2,14.3,2.5,small,false,random_flash,medium,0.78
+R1052,Golden Patty 1052,Z04,Salamanca,burger,1,14.2,2.3,medium,false,random_flash,medium,1.1
+R1053,Aravaca Bites 1053,Z09,Moncloa-Aravaca,fast_food,2,11.7,1.8,medium,true,lunch_combo,low,0.94
+R1054,Golden Stack 1054,Z04,Salamanca,burger,2,14.1,2.1,medium,true,lunch_combo,medium,1.36
+R1055,Aravaca District 1055,Z09,Moncloa-Aravaca,burger,4,14.1,2.7,medium,false,random_flash,high,0.99
+R1056,Golden Bites 1056,Z04,Salamanca,fast_food,2,10.5,1.9,small,false,none,medium,1.09
+R1057,Cara Churro 1057,Z11,Carabanchel,dessert,1,7.6,2.1,large,true,lunch_combo,low,0.89
+R1058,Bernabeu Hub 1058,Z05,Chamartín,fast_food,1,12.3,1.6,medium,false,none,medium,0.93
+R1059,Morata Azteca 1059,Z14,Moratalaz,mexican,2,13.8,2.8,medium,true,taco_tuesday_2x1,low,0.94
+R1060,Cara Express 1060,Z11,Carabanchel,grocery_convenience,2,7.7,1.6,medium,true,healthy_lunch,low,1.0
+R1061,Lineal Brothers 1061,Z15,Ciudad Lineal,kebab,2,8.6,2.0,small,false,random_flash,medium,1.05
+R1062,Morata Roma 1062,Z14,Moratalaz,pizza,1,17.4,2.7,large,true,lunch_combo,medium,0.95
+R1063,Aravaca Hub 1063,Z09,Moncloa-Aravaca,fast_food,2,10.4,1.9,medium,false,none,medium,0.88
+R1064,Monte Taberna 1064,Z08,Fuencarral-El Pardo,spanish_tapas,2,17.3,3.4,small,true,healthy_lunch,medium,0.79
+R1065,Chamberi Corner 1065,Z07,Chamberí,fast_food,2,11.2,2.3,small,true,weekend_discount,medium,0.72
+R1066,Aravaca Now 1066,Z09,Moncloa-Aravaca,grocery_convenience,1,7.6,1.2,small,true,healthy_lunch,low,0.75
+R1067,Monte Roma 1067,Z08,Fuencarral-El Pardo,pizza,2,15.0,3.0,small,false,none,low,1.13
+R1068,Aravaca Brothers 1068,Z09,Moncloa-Aravaca,kebab,1,9.0,1.8,small,false,none,low,0.83
+R1069,Bernabeu Zen 1069,Z05,Chamartín,sushi,4,20.7,4.5,medium,false,random_flash,high,0.86
+R1070,Aravaca Garden 1070,Z09,Moncloa-Aravaca,healthy,2,11.2,2.2,large,true,healthy_lunch,medium,1.08
+R1071,Bernabeu Azteca 1071,Z05,Chamartín,mexican,2,13.5,2.5,small,true,taco_tuesday_2x1,high,0.94
+R1072,Lineal Roots 1072,Z15,Ciudad Lineal,healthy,1,11.1,2.2,small,false,random_flash,high,0.97
+R1073,Golden Zen 1073,Z04,Salamanca,sushi,3,24.5,4.4,large,false,none,high,0.83
+R1074,Golden Casa 1074,Z04,Salamanca,spanish_tapas,2,20.1,3.0,medium,true,healthy_lunch,low,0.84
+R1075,Central Stack 1075,Z01,Centro,burger,2,13.6,2.4,large,false,none,low,1.13
+R1076,River Gelato 1076,Z02,Arganzuela,dessert,1,9.2,2.0,small,true,lunch_combo,medium,0.7
+R1077,Lineal Fresh 1077,Z15,Ciudad Lineal,healthy,1,11.6,2.3,medium,true,healthy_lunch,medium,1.17
+R1078,Verde Go 1078,Z17,Villaverde,fast_food,3,11.2,2.3,medium,false,none,high,0.85
+R1079,Latina Express 1079,Z10,Latina,fast_food,2,11.3,1.8,medium,true,lunch_combo,medium,0.91
+R1080,Chamberi Box 1080,Z07,Chamberí,fast_food,3,12.3,2.2,small,true,weekend_discount,medium,0.99
+R1081,Golden Patty 1081,Z04,Salamanca,burger,2,13.1,2.1,small,false,random_flash,low,0.93
+R1082,Verde Bodega 1082,Z17,Villaverde,spanish_tapas,2,16.6,3.1,medium,false,random_flash,medium,1.02
+R1083,Metropolitano Cookie 1083,Z20,San Blas-Canillejas,dessert,2,7.6,1.7,small,false,none,medium,1.04
+R1084,Bernabeu Slice 1084,Z05,Chamartín,pizza,3,14.3,2.8,small,true,weekend_discount,high,1.13
+R1085,Monte Gelato 1085,Z08,Fuencarral-El Pardo,dessert,1,8.1,1.7,small,true,lunch_combo,medium,0.86
+R1086,Villa District 1086,Z18,Villa de Vallecas,burger,1,13.8,2.3,small,false,none,low,0.96
+R1087,Morata Bites 1087,Z14,Moratalaz,fast_food,2,11.6,2.4,small,true,lunch_combo,low,1.16
+R1088,Bernabeu Napoli 1088,Z05,Chamartín,pizza,1,16.6,2.8,large,false,none,high,1.14
+R1089,Vallecas Slice 1089,Z13,Puente de Vallecas,pizza,3,15.7,3.1,large,true,weekend_discount,high,1.11
+R1090,Vical Corner 1090,Z19,Vicálvaro,fast_food,2,11.5,1.6,medium,false,random_flash,high,1.04
+R1091,Vallecas Taberna 1091,Z13,Puente de Vallecas,spanish_tapas,2,19.1,2.7,small,true,healthy_lunch,low,1.22
+R1092,Morata Pizza 1092,Z14,Moratalaz,pizza,2,14.0,2.3,medium,true,lunch_combo,low,0.9
+R1093,Horta Taberna 1093,Z16,Hortaleza,spanish_tapas,2,18.8,2.6,small,false,none,low,1.02
+R1094,Bernabeu Corner 1094,Z05,Chamartín,fast_food,2,9.6,2.0,small,true,weekend_discount,medium,1.14
+R1095,Norte Napoli 1095,Z06,Tetuán,pizza,2,14.8,2.3,medium,true,lunch_combo,medium,1.07
+R1096,River Slice 1096,Z02,Arganzuela,pizza,2,16.4,2.4,large,true,lunch_combo,medium,0.99
+R1097,Park Wrap 1097,Z03,Retiro,kebab,2,9.5,1.5,medium,false,none,low,0.74
+R1098,Lineal Box 1098,Z15,Ciudad Lineal,fast_food,2,10.9,2.2,medium,false,none,medium,1.01
+R1099,Bernabeu Shawarma 1099,Z05,Chamartín,kebab,2,8.2,2.0,medium,false,none,high,1.12
+R1100,Central Go 1100,Z01,Centro,fast_food,1,11.0,2.0,large,true,weekend_discount,low,0.99
+R1101,Park Taberna 1101,Z03,Retiro,spanish_tapas,2,18.7,2.4,small,false,none,low,0.87
+R1102,Verde Smash 1102,Z17,Villaverde,burger,2,13.2,2.1,medium,true,weekend_discount,low,1.19
+R1103,Usera Loco 1103,Z12,Usera,mexican,2,13.2,3.0,large,false,none,medium,1.16
+R1104,Vallecas Tokyo 1104,Z13,Puente de Vallecas,sushi,2,21.3,4.8,small,false,random_flash,low,1.05
+R1105,Monte Pizza 1105,Z08,Fuencarral-El Pardo,pizza,2,15.7,3.0,large,true,lunch_combo,high,0.96
+R1106,Park Patty 1106,Z03,Retiro,burger,2,13.6,2.3,small,false,random_flash,low,1.24
+R1107,Central Box 1107,Z01,Centro,fast_food,2,11.4,1.7,medium,false,random_flash,medium,1.31
+R1108,Aravaca Cream 1108,Z09,Moncloa-Aravaca,dessert,1,8.4,1.9,medium,true,weekend_discount,low,0.7
+R1109,Aero Bites 1109,Z21,Barajas,fast_food,1,11.7,1.9,large,true,weekend_discount,medium,1.32
+R1110,Chamberi Shawarma 1110,Z07,Chamberí,kebab,2,9.0,1.7,medium,false,none,medium,0.97
+R1111,Horta Pizza 1111,Z16,Hortaleza,pizza,3,17.3,3.3,medium,false,none,low,0.7
+R1112,Aravaca Tokyo 1112,Z09,Moncloa-Aravaca,sushi,2,19.7,3.8,small,false,none,low,0.93
+R1113,Cara Bowl 1113,Z11,Carabanchel,healthy,2,13.1,1.8,small,false,none,low,0.72
+R1114,Golden Slice 1114,Z04,Salamanca,pizza,1,15.8,2.7,small,false,none,medium,1.17
+R1115,Central Patty 1115,Z01,Centro,burger,2,15.2,2.2,small,false,random_flash,high,1.09
+R1116,Vallecas Roll 1116,Z13,Puente de Vallecas,sushi,2,19.5,4.6,medium,false,none,high,1.01
+R1117,Central Churro 1117,Z01,Centro,dessert,3,8.5,1.5,medium,true,weekend_discount,low,1.41
+R1118,Usera Napoli 1118,Z12,Usera,pizza,1,16.8,3.1,small,false,random_flash,low,0.79
+R1119,Verde Stack 1119,Z17,Villaverde,burger,2,13.9,2.6,small,false,random_flash,high,1.02
+R1120,Park Casa 1120,Z03,Retiro,spanish_tapas,4,18.9,2.7,small,false,none,medium,1.1
+R1121,Vallecas Tapas 1121,Z13,Puente de Vallecas,spanish_tapas,1,17.5,3.0,medium,true,healthy_lunch,low,0.97
+R1122,River Churro 1122,Z02,Arganzuela,dessert,2,8.3,2.1,medium,false,none,medium,1.22
+R1123,Norte Box 1123,Z06,Tetuán,fast_food,3,10.6,2.4,large,false,none,low,1.25
+R1124,Bernabeu Oven 1124,Z05,Chamartín,pizza,1,16.5,2.5,small,false,none,high,1.22
+R1125,Bernabeu Fresh 1125,Z05,Chamartín,healthy,2,11.6,2.3,medium,false,none,medium,1.24
+R1126,Park Daily 1126,Z03,Retiro,grocery_convenience,1,6.7,1.6,small,false,none,low,0.97
+R1127,Golden Fit 1127,Z04,Salamanca,healthy,3,12.0,2.1,small,false,random_flash,medium,0.96
+R1128,Villa Taquería 1128,Z18,Villa de Vallecas,mexican,1,13.8,2.6,small,true,weekend_discount,high,1.18
+R1129,Usera Kebab 1129,Z12,Usera,kebab,1,8.5,2.1,small,false,none,medium,1.03
+R1130,Monte Taberna 1130,Z08,Fuencarral-El Pardo,spanish_tapas,2,16.7,2.9,small,false,none,medium,1.06
+R1131,Norte Pizzeria 1131,Z06,Tetuán,pizza,2,18.1,2.5,large,false,none,high,1.1
+R1132,Norte Stack 1132,Z06,Tetuán,burger,2,14.9,2.8,large,false,none,low,1.04
+R1133,Golden Express 1133,Z04,Salamanca,grocery_convenience,1,6.4,1.8,small,false,none,low,1.5
+R1134,Chamberi Burger 1134,Z07,Chamberí,burger,2,14.2,2.2,small,false,none,medium,1.21
+R1135,Vallecas Bites 1135,Z13,Puente de Vallecas,fast_food,3,10.5,1.9,medium,false,random_flash,low,1.15
+R1136,Villa Wrap 1136,Z18,Villa de Vallecas,kebab,2,9.0,1.5,medium,true,healthy_lunch,low,0.92
+R1137,Verde Mesón 1137,Z17,Villaverde,spanish_tapas,3,17.0,2.8,medium,false,none,high,0.87
+R1138,Verde Grill 1138,Z17,Villaverde,burger,2,13.2,2.5,medium,false,none,low,1.28
+R1139,Park Grill 1139,Z03,Retiro,burger,2,14.7,2.1,small,true,lunch_combo,low,1.1
+R1140,Chamberi Patty 1140,Z07,Chamberí,burger,1,13.2,2.0,medium,true,lunch_combo,low,1.23
+R1141,Cara Pizza 1141,Z11,Carabanchel,pizza,1,16.8,3.0,small,false,random_flash,low,1.15
+R1142,Norte Corner 1142,Z06,Tetuán,fast_food,1,10.4,2.2,medium,true,lunch_combo,medium,0.82
+R1143,Bernabeu Loco 1143,Z05,Chamartín,mexican,1,13.4,3.0,large,true,taco_tuesday_2x1,high,1.27
+R1144,Metropolitano Fresh 1144,Z20,San Blas-Canillejas,healthy,1,12.4,2.1,small,false,random_flash,high,0.73
+R1145,Chamberi Napoli 1145,Z07,Chamberí,pizza,2,16.0,2.6,medium,false,random_flash,medium,1.26
+R1146,Norte Hub 1146,Z06,Tetuán,fast_food,1,11.3,2.2,medium,true,lunch_combo,medium,1.02
+R1147,Monte Express 1147,Z08,Fuencarral-El Pardo,fast_food,2,10.5,2.4,medium,true,weekend_discount,low,1.06
+R1148,Horta Fit 1148,Z16,Hortaleza,healthy,2,12.6,1.7,medium,false,none,low,1.04
+R1149,River Taquería 1149,Z02,Arganzuela,mexican,1,14.3,2.6,small,false,none,medium,0.87
+R1150,Cara Gelato 1150,Z11,Carabanchel,dessert,3,8.2,2.2,medium,false,random_flash,low,0.77
+R1151,Usera Bites 1151,Z12,Usera,fast_food,2,11.0,2.2,medium,true,lunch_combo,low,0.81
+R1152,Latina Dessert 1152,Z10,Latina,dessert,1,8.4,2.0,medium,true,lunch_combo,low,1.0
+R1153,Lineal Kebab 1153,Z15,Ciudad Lineal,kebab,1,9.5,1.5,small,false,none,low,1.02
+R1154,Aravaca Shawarma 1154,Z09,Moncloa-Aravaca,kebab,2,8.2,1.7,small,false,none,medium,1.04
+R1155,Horta Roll 1155,Z16,Hortaleza,sushi,2,20.5,3.3,large,false,none,low,0.88
+R1156,Aravaca Slice 1156,Z09,Moncloa-Aravaca,pizza,2,15.2,3.1,medium,true,lunch_combo,medium,0.97
+R1157,Aravaca Grill 1157,Z09,Moncloa-Aravaca,kebab,2,9.1,2.1,medium,false,none,medium,1.0
+R1158,Villa Bites 1158,Z18,Villa de Vallecas,fast_food,3,11.5,1.8,small,true,lunch_combo,low,1.13
+R1159,Morata Go 1159,Z14,Moratalaz,grocery_convenience,2,6.8,1.7,small,false,none,low,1.1
+R1160,Cara Roots 1160,Z11,Carabanchel,healthy,2,11.6,2.0,large,false,none,low,1.2
+R1161,Lineal Zen 1161,Z15,Ciudad Lineal,sushi,2,23.5,4.4,medium,false,none,high,1.01
+R1162,Aravaca Roma 1162,Z09,Moncloa-Aravaca,pizza,2,15.2,2.4,medium,false,none,low,0.81
+R1163,Vallecas Mart 1163,Z13,Puente de Vallecas,grocery_convenience,2,7.4,1.6,large,true,healthy_lunch,low,1.22
+R1164,Lineal Napoli 1164,Z15,Ciudad Lineal,pizza,3,16.3,2.7,large,true,weekend_discount,low,0.91
+R1165,Villa Oven 1165,Z18,Villa de Vallecas,pizza,1,17.2,2.8,medium,true,lunch_combo,medium,1.05
+R1166,Park Sakura 1166,Z03,Retiro,sushi,2,20.1,4.7,small,false,none,low,0.9
+R1167,Central Box 1167,Z01,Centro,fast_food,2,10.3,1.9,medium,false,none,low,1.07
+R1168,Monte Fit 1168,Z08,Fuencarral-El Pardo,healthy,2,11.9,2.1,medium,false,random_flash,medium,0.99
+R1169,Lineal Bodega 1169,Z15,Ciudad Lineal,spanish_tapas,2,19.3,2.9,medium,true,healthy_lunch,low,0.89
+R1170,Morata Taco 1170,Z14,Moratalaz,mexican,2,12.1,2.3,small,true,weekend_discount,medium,1.2
+R1171,Bernabeu Garden 1171,Z05,Chamartín,healthy,4,11.5,1.9,small,false,none,medium,1.11
+R1172,Usera Azteca 1172,Z12,Usera,mexican,1,13.7,2.2,large,true,weekend_discount,low,1.17
+R1173,Bernabeu Fit 1173,Z05,Chamartín,healthy,3,11.3,1.9,medium,false,none,high,1.13
+R1174,Bernabeu Pizzeria 1174,Z05,Chamartín,pizza,2,16.7,2.4,small,true,lunch_combo,medium,0.91
+R1175,Horta Burrito 1175,Z16,Hortaleza,mexican,2,13.4,2.3,large,true,taco_tuesday_2x1,medium,1.15
+R1176,Horta Zen 1176,Z16,Hortaleza,sushi,3,19.5,3.8,medium,true,healthy_lunch,medium,1.02
+R1177,Golden Bites 1177,Z04,Salamanca,fast_food,3,11.2,1.9,medium,false,none,low,0.85
+R1178,Horta LaPlaza 1178,Z16,Hortaleza,spanish_tapas,3,17.9,2.4,medium,false,none,low,0.83
+R1179,Golden Now 1179,Z04,Salamanca,grocery_convenience,2,7.8,1.5,medium,false,random_flash,low,1.25
+R1180,Park Express 1180,Z03,Retiro,grocery_convenience,1,6.9,1.8,small,false,random_flash,low,0.89
+R1181,Vallecas Churro 1181,Z13,Puente de Vallecas,dessert,2,8.4,1.9,medium,true,lunch_combo,low,1.05
+R1182,Morata Pizzeria 1182,Z14,Moratalaz,pizza,1,15.0,2.8,small,false,random_flash,low,1.03
+R1183,Bernabeu Corner 1183,Z05,Chamartín,fast_food,3,12.1,2.2,small,false,none,medium,1.34
+R1184,Chamberi Corner 1184,Z07,Chamberí,fast_food,2,10.6,2.0,medium,false,none,medium,1.11
+R1185,Horta Smash 1185,Z16,Hortaleza,burger,2,12.9,2.0,medium,true,weekend_discount,high,1.0
+R1186,Verde Burrito 1186,Z17,Villaverde,mexican,1,13.9,2.5,large,true,taco_tuesday_2x1,low,1.08
+R1187,Monte Burger 1187,Z08,Fuencarral-El Pardo,burger,2,14.2,2.2,medium,true,weekend_discount,medium,1.21
+R1188,Latina Cantina 1188,Z10,Latina,mexican,2,13.3,2.3,small,false,random_flash,medium,1.17
+R1189,Monte Roll 1189,Z08,Fuencarral-El Pardo,sushi,2,21.2,4.7,medium,false,none,medium,0.86
+R1190,Park Oven 1190,Z03,Retiro,pizza,3,15.7,2.9,medium,true,weekend_discount,low,1.14
+R1191,Central Pizzeria 1191,Z01,Centro,pizza,3,17.6,2.3,medium,true,weekend_discount,low,1.05
+R1192,Bernabeu Oven 1192,Z05,Chamartín,pizza,2,15.1,3.1,medium,false,random_flash,high,1.25
+R1193,Golden Express 1193,Z04,Salamanca,fast_food,2,9.9,2.0,large,true,weekend_discount,medium,1.14
+R1194,Usera Gelato 1194,Z12,Usera,dessert,1,8.8,1.5,small,true,lunch_combo,low,0.98
+R1195,Chamberi Patty 1195,Z07,Chamberí,burger,1,14.0,2.7,small,true,weekend_discount,medium,0.94
+R1196,Bernabeu Burger 1196,Z05,Chamartín,burger,2,13.5,2.6,medium,false,none,medium,1.3
+R1197,Park Mesón 1197,Z03,Retiro,spanish_tapas,4,17.2,3.5,medium,false,none,medium,1.32
+R1198,Chamberi Tokyo 1198,Z07,Chamberí,sushi,3,22.0,4.2,large,true,healthy_lunch,medium,1.08
+R1199,Chamberi Tapas 1199,Z07,Chamberí,spanish_tapas,4,20.8,2.8,medium,false,none,low,1.3
+R1200,Horta Napoli 1200,Z16,Hortaleza,pizza,2,14.8,3.1,medium,false,none,low,0.88
+R1201,Monte Tapas 1201,Z08,Fuencarral-El Pardo,spanish_tapas,2,16.6,2.6,small,false,none,low,1.05
+R1202,Chamberi Dessert 1202,Z07,Chamberí,dessert,1,7.8,1.9,medium,false,none,low,1.2
+R1203,Metropolitano Gelato 1203,Z20,San Blas-Canillejas,dessert,2,9.1,1.5,small,true,lunch_combo,high,1.01
+R1204,Golden Fresh 1204,Z04,Salamanca,healthy,3,11.7,2.4,large,false,none,low,1.0
+R1205,Aravaca Grill 1205,Z09,Moncloa-Aravaca,burger,1,14.1,2.5,medium,false,none,low,1.04
+R1206,Metropolitano Oven 1206,Z20,San Blas-Canillejas,pizza,3,15.7,2.4,large,true,weekend_discount,low,0.9
+R1207,Morata Corner 1207,Z14,Moratalaz,fast_food,1,11.1,2.3,large,true,weekend_discount,high,0.99
+R1208,Chamberi Patty 1208,Z07,Chamberí,burger,2,15.5,2.4,medium,false,random_flash,medium,1.44
+R1209,Golden Now 1209,Z04,Salamanca,grocery_convenience,2,7.0,1.3,large,false,none,medium,0.94
+R1210,Golden Corner 1210,Z04,Salamanca,fast_food,1,10.5,2.4,small,true,lunch_combo,medium,1.23
+R1211,Central Now 1211,Z01,Centro,grocery_convenience,1,7.2,1.6,small,false,none,low,1.1
+R1212,Bernabeu Shawarma 1212,Z05,Chamartín,kebab,1,9.2,1.4,medium,true,healthy_lunch,medium,1.01
+R1213,Central Doner 1213,Z01,Centro,kebab,3,8.7,1.7,small,false,random_flash,low,0.95
+R1214,Metropolitano Mesón 1214,Z20,San Blas-Canillejas,spanish_tapas,1,18.3,2.6,medium,false,none,medium,0.94
+R1215,Villa Smash 1215,Z18,Villa de Vallecas,burger,1,14.2,2.4,medium,true,weekend_discount,medium,1.01
+R1216,Monte Mesón 1216,Z08,Fuencarral-El Pardo,spanish_tapas,2,18.1,3.5,small,false,none,medium,1.03
+R1217,Chamberi Daily 1217,Z07,Chamberí,grocery_convenience,1,7.6,1.2,medium,false,none,medium,0.84
+R1218,Bernabeu Azteca 1218,Z05,Chamartín,mexican,2,13.9,3.1,medium,true,taco_tuesday_2x1,medium,1.22
+R1219,Lineal Box 1219,Z15,Ciudad Lineal,fast_food,1,11.6,2.3,small,true,weekend_discount,medium,1.1
+R1220,Cara Roma 1220,Z11,Carabanchel,pizza,2,14.8,3.2,medium,true,weekend_discount,low,0.97
+R1221,Cara Taco 1221,Z11,Carabanchel,mexican,2,13.4,3.0,large,true,taco_tuesday_2x1,low,0.76
+R1222,Horta Patty 1222,Z16,Hortaleza,burger,2,13.2,2.3,medium,false,none,low,0.91
+R1223,Chamberi Stack 1223,Z07,Chamberí,burger,2,12.8,2.5,medium,true,lunch_combo,low,1.21
+R1224,Park Roma 1224,Z03,Retiro,pizza,3,15.6,3.2,medium,true,lunch_combo,low,1.02
+R1225,Norte Bites 1225,Z06,Tetuán,fast_food,1,11.1,1.7,medium,true,lunch_combo,low,1.2
+R1226,Bernabeu Sushi 1226,Z05,Chamartín,sushi,4,21.8,4.5,large,false,none,high,1.08
+R1227,Usera Casa 1227,Z12,Usera,spanish_tapas,2,17.2,2.6,large,false,none,low,1.19
+R1228,Norte Stack 1228,Z06,Tetuán,burger,1,14.7,2.5,large,true,weekend_discount,low,1.23
+R1229,Vallecas Azteca 1229,Z13,Puente de Vallecas,mexican,2,13.1,3.2,small,true,taco_tuesday_2x1,low,1.05
+R1230,Norte Tokyo 1230,Z06,Tetuán,sushi,1,21.0,3.6,medium,false,none,low,1.0
+R1231,Latina Market 1231,Z10,Latina,grocery_convenience,2,7.4,1.3,large,false,none,low,1.16
+R1232,Norte Corner 1232,Z06,Tetuán,fast_food,2,11.4,1.7,large,true,lunch_combo,low,1.32
+R1233,River Roots 1233,Z02,Arganzuela,healthy,1,11.0,2.3,small,true,healthy_lunch,medium,1.09
+R1234,River Wrap 1234,Z02,Arganzuela,kebab,1,8.0,1.8,medium,false,random_flash,low,1.13
+R1235,Vallecas Fresh 1235,Z13,Puente de Vallecas,healthy,3,13.3,1.9,medium,false,none,medium,1.09
+R1236,Usera Gelato 1236,Z12,Usera,dessert,2,8.0,2.2,medium,false,random_flash,medium,1.08
+R1237,Horta Brothers 1237,Z16,Hortaleza,kebab,3,8.2,2.1,small,false,none,medium,1.12
+R1238,Golden Burrito 1238,Z04,Salamanca,mexican,2,13.0,2.2,medium,true,weekend_discount,medium,1.27
+R1239,Golden Tokyo 1239,Z04,Salamanca,sushi,2,21.4,4.1,medium,false,none,medium,0.82
+R1240,Vical Napoli 1240,Z19,Vicálvaro,pizza,1,16.7,2.4,small,false,none,medium,0.78
+R1241,Aravaca Fit 1241,Z09,Moncloa-Aravaca,healthy,2,11.1,2.0,medium,false,none,low,1.18
+R1242,Monte Now 1242,Z08,Fuencarral-El Pardo,grocery_convenience,2,6.0,1.3,small,false,none,medium,1.16
+R1243,Bernabeu Pizza 1243,Z05,Chamartín,pizza,3,16.4,3.2,small,false,none,high,0.99
+R1244,Chamberi Corner 1244,Z07,Chamberí,fast_food,2,10.2,1.7,medium,false,none,medium,0.87
+R1245,Vallecas Casa 1245,Z13,Puente de Vallecas,spanish_tapas,3,18.6,3.1,medium,false,none,medium,0.87
+R1246,Lineal Box 1246,Z15,Ciudad Lineal,fast_food,1,10.2,2.1,medium,true,weekend_discount,low,1.14
+R1247,Chamberi Roma 1247,Z07,Chamberí,pizza,3,16.1,2.6,small,false,random_flash,low,0.7
+R1248,Usera Azteca 1248,Z12,Usera,mexican,2,11.9,2.4,small,true,weekend_discount,low,1.17
+R1249,Norte District 1249,Z06,Tetuán,burger,2,13.7,2.3,medium,false,none,low,1.08
+R1250,Lineal Kebab 1250,Z15,Ciudad Lineal,kebab,2,9.2,1.6,small,false,none,high,1.33
+R1251,Golden Bowl 1251,Z04,Salamanca,healthy,3,12.2,1.9,small,false,random_flash,high,1.36
+R1252,Latina Taberna 1252,Z10,Latina,spanish_tapas,2,18.7,2.6,medium,false,none,low,1.0
+R1253,Verde Oven 1253,Z17,Villaverde,pizza,2,17.7,2.5,small,false,none,low,0.96
+R1254,Bernabeu Pizzeria 1254,Z05,Chamartín,pizza,1,17.7,2.5,medium,true,weekend_discount,low,0.7
+R1255,Morata Burrito 1255,Z14,Moratalaz,mexican,2,14.3,2.4,small,false,random_flash,low,1.21
+R1256,Lineal Smash 1256,Z15,Ciudad Lineal,burger,2,15.0,2.4,medium,false,none,medium,1.08
+R1257,Aravaca Taco 1257,Z09,Moncloa-Aravaca,mexican,3,11.6,2.2,small,false,none,medium,1.04
+R1258,Golden Sweet 1258,Z04,Salamanca,dessert,3,7.1,2.1,large,true,weekend_discount,medium,1.12
+R1259,Monte Fresh 1259,Z08,Fuencarral-El Pardo,healthy,1,12.2,2.0,medium,false,none,low,0.8
+R1260,Horta Market 1260,Z16,Hortaleza,grocery_convenience,2,6.8,1.8,medium,false,none,low,1.07
+R1261,Vallecas Stack 1261,Z13,Puente de Vallecas,burger,2,15.5,1.9,large,false,none,medium,0.98
+R1262,River Pizzeria 1262,Z02,Arganzuela,pizza,3,15.3,3.0,small,true,lunch_combo,medium,1.12
+R1263,Norte Fresh 1263,Z06,Tetuán,healthy,2,12.3,1.9,large,false,none,medium,1.17
+R1264,Vallecas Taco 1264,Z13,Puente de Vallecas,mexican,3,14.1,2.9,small,true,taco_tuesday_2x1,low,1.09
+R1265,Central Oven 1265,Z01,Centro,pizza,1,17.0,3.2,large,true,weekend_discount,low,0.97
+R1266,Park Smash 1266,Z03,Retiro,burger,1,13.8,2.3,small,true,lunch_combo,low,0.9
+R1267,Morata Burrito 1267,Z14,Moratalaz,mexican,1,14.1,3.2,large,false,none,medium,1.05
+R1268,Bernabeu Slice 1268,Z05,Chamartín,pizza,2,16.2,2.5,small,false,random_flash,high,1.17
+R1269,Chamberi Wrap 1269,Z07,Chamberí,kebab,3,9.8,1.5,small,true,healthy_lunch,low,1.01
+R1270,Chamberi Tapas 1270,Z07,Chamberí,spanish_tapas,3,20.0,3.4,large,false,none,low,0.9
+R1271,River Taquería 1271,Z02,Arganzuela,mexican,2,14.0,2.9,medium,false,random_flash,low,0.88
+R1272,Bernabeu Express 1272,Z05,Chamartín,fast_food,2,10.5,1.9,medium,true,lunch_combo,high,0.97
+R1273,Chamberi Roma 1273,Z07,Chamberí,pizza,4,16.2,3.0,medium,true,weekend_discount,low,0.79
+R1274,Bernabeu Azteca 1274,Z05,Chamartín,mexican,2,12.1,2.7,small,true,taco_tuesday_2x1,high,0.87
+R1275,Metropolitano Box 1275,Z20,San Blas-Canillejas,fast_food,3,10.9,1.7,small,false,random_flash,low,0.78
+R1276,River Express 1276,Z02,Arganzuela,grocery_convenience,2,7.3,1.3,medium,true,healthy_lunch,low,1.05
+R1277,Golden Fresh 1277,Z04,Salamanca,healthy,2,12.1,2.4,large,false,none,low,1.43
+R1278,Norte Tapas 1278,Z06,Tetuán,spanish_tapas,1,16.9,2.7,large,false,none,low,0.85
+R1279,Verde Pizzeria 1279,Z17,Villaverde,pizza,2,15.8,2.7,small,true,lunch_combo,low,1.27
+R1280,Lineal Roll 1280,Z15,Ciudad Lineal,sushi,1,20.9,4.4,small,false,none,high,0.95
+R1281,River Corner 1281,Z02,Arganzuela,fast_food,1,10.6,2.2,large,false,none,low,0.97
+R1282,Bernabeu Stack 1282,Z05,Chamartín,burger,2,14.1,2.8,small,true,weekend_discount,medium,0.92
+R1283,Golden Taco 1283,Z04,Salamanca,mexican,2,13.5,3.1,small,false,random_flash,low,1.18
+R1284,Golden Wrap 1284,Z04,Salamanca,kebab,3,8.0,1.9,medium,false,none,low,1.21
+R1285,Vallecas Go 1285,Z13,Puente de Vallecas,fast_food,3,10.1,2.3,small,true,weekend_discount,low,1.37
+R1286,Norte Hub 1286,Z06,Tetuán,fast_food,2,11.1,1.9,medium,true,weekend_discount,medium,1.25
+R1287,Horta Shawarma 1287,Z16,Hortaleza,kebab,2,10.0,1.5,medium,false,none,low,1.36
+R1288,Latina Smash 1288,Z10,Latina,burger,2,14.2,2.1,small,false,random_flash,low,1.07
+R1289,Morata Express 1289,Z14,Moratalaz,fast_food,2,11.8,1.6,medium,true,lunch_combo,low,1.05
+R1290,Norte Garden 1290,Z06,Tetuán,healthy,2,12.0,2.2,small,false,none,medium,0.73
+R1291,Villa Bites 1291,Z18,Villa de Vallecas,fast_food,3,11.1,2.2,large,true,lunch_combo,medium,1.15
+R1292,Park Taberna 1292,Z03,Retiro,spanish_tapas,4,18.7,3.3,medium,false,random_flash,medium,1.16
+R1293,Horta Roma 1293,Z16,Hortaleza,pizza,2,14.7,2.7,small,true,lunch_combo,medium,1.14
+R1294,Norte Bowl 1294,Z06,Tetuán,healthy,1,11.8,2.5,medium,false,none,medium,0.77
+R1295,Chamberi Gelato 1295,Z07,Chamberí,dessert,2,7.8,1.8,medium,true,lunch_combo,low,1.27
+R1296,Metropolitano Gelato 1296,Z20,San Blas-Canillejas,dessert,1,8.2,1.6,small,false,random_flash,high,1.22
+R1297,Chamberi Garden 1297,Z07,Chamberí,healthy,3,12.9,2.3,medium,false,none,medium,1.56
+R1298,Lineal Hub 1298,Z15,Ciudad Lineal,fast_food,2,11.2,2.3,small,false,none,medium,0.93
+R1299,Vallecas Dessert 1299,Z13,Puente de Vallecas,dessert,1,8.1,2.1,large,true,lunch_combo,medium,1.01
+R1300,Vical Pizzeria 1300,Z19,Vicálvaro,pizza,1,16.4,2.6,large,false,random_flash,low,1.34
+R1301,Chamberi Fresh 1301,Z07,Chamberí,healthy,3,12.1,2.4,small,true,healthy_lunch,low,1.0
+R1302,Norte Taquería 1302,Z06,Tetuán,mexican,2,14.4,3.1,large,false,random_flash,high,0.97
+R1303,Chamberi Casa 1303,Z07,Chamberí,spanish_tapas,4,16.9,3.3,medium,false,none,medium,1.13
+R1304,Chamberi Burrito 1304,Z07,Chamberí,mexican,3,15.1,2.8,large,false,none,low,1.02
+R1305,Central Hub 1305,Z01,Centro,fast_food,2,11.3,2.3,large,true,weekend_discount,low,1.06
+R1306,Bernabeu Tapas 1306,Z05,Chamartín,spanish_tapas,3,19.2,3.1,medium,false,none,high,1.08
+R1307,Golden Azteca 1307,Z04,Salamanca,mexican,3,13.8,2.3,medium,false,random_flash,medium,1.12
+R1308,Aero Oven 1308,Z21,Barajas,pizza,2,16.1,2.3,medium,true,weekend_discount,low,0.8
+R1309,Latina Green 1309,Z10,Latina,healthy,1,12.2,2.0,medium,false,random_flash,medium,1.19
+R1310,Norte Burrito 1310,Z06,Tetuán,mexican,2,11.8,2.9,medium,true,weekend_discount,medium,1.36
+R1311,Villa Sweet 1311,Z18,Villa de Vallecas,dessert,2,9.0,2.1,small,true,weekend_discount,low,0.81
+R1312,Golden Burger 1312,Z04,Salamanca,burger,1,14.4,2.7,small,true,weekend_discount,low,0.8
+R1313,Horta Doner 1313,Z16,Hortaleza,kebab,2,10.5,1.9,small,false,none,low,0.9
+R1314,Central Box 1314,Z01,Centro,fast_food,3,11.4,1.7,medium,false,random_flash,medium,1.36
+R1315,Vallecas Pizzeria 1315,Z13,Puente de Vallecas,pizza,2,15.4,3.3,medium,true,weekend_discount,medium,1.02
+R1316,Cara Sweet 1316,Z11,Carabanchel,dessert,2,7.8,2.1,small,false,none,low,1.0
+R1317,Park Go 1317,Z03,Retiro,fast_food,2,11.7,1.8,small,false,none,medium,0.75
+R1318,Norte Doner 1318,Z06,Tetuán,kebab,2,9.4,1.8,medium,false,none,medium,0.74
+R1319,Vallecas Go 1319,Z13,Puente de Vallecas,fast_food,2,11.2,2.2,medium,false,random_flash,low,0.96
+R1320,Chamberi Now 1320,Z07,Chamberí,grocery_convenience,1,6.1,1.4,medium,false,none,high,0.89
+R1321,Golden Taberna 1321,Z04,Salamanca,spanish_tapas,3,18.4,2.8,medium,false,none,low,0.94
+R1322,Golden District 1322,Z04,Salamanca,burger,2,13.1,2.8,medium,false,none,medium,1.14
+R1323,Verde Zen 1323,Z17,Villaverde,sushi,2,18.5,4.6,medium,false,none,low,1.29
+R1324,Park Roma 1324,Z03,Retiro,pizza,3,15.7,2.9,small,true,weekend_discount,medium,0.91
+R1325,Park Pizza 1325,Z03,Retiro,pizza,2,17.0,3.2,small,true,weekend_discount,low,1.28
+R1326,Chamberi Zen 1326,Z07,Chamberí,sushi,3,20.4,3.4,large,false,none,medium,0.95
+R1327,Park Burrito 1327,Z03,Retiro,mexican,3,12.9,2.5,small,false,random_flash,low,1.01
+R1328,Chamberi Express 1328,Z07,Chamberí,fast_food,2,10.7,2.2,small,false,random_flash,medium,1.25
+R1329,Central Slice 1329,Z01,Centro,pizza,2,15.7,3.2,small,false,none,low,1.22
+R1330,Morata Azteca 1330,Z14,Moratalaz,mexican,2,12.4,3.2,medium,true,weekend_discount,low,0.7
+R1331,Usera Doner 1331,Z12,Usera,kebab,2,8.9,1.8,small,false,none,low,1.01
+R1332,Central Roll 1332,Z01,Centro,sushi,4,23.0,3.3,small,false,random_flash,low,1.01
+R1333,Usera Pizza 1333,Z12,Usera,pizza,2,16.0,2.6,medium,false,random_flash,low,1.01
+R1334,Metropolitano Tokyo 1334,Z20,San Blas-Canillejas,sushi,2,18.6,4.2,large,false,none,high,0.92
+R1335,Vallecas Bowl 1335,Z13,Puente de Vallecas,healthy,2,11.5,2.0,medium,false,none,medium,1.0
+R1336,Golden Pizza 1336,Z04,Salamanca,pizza,2,16.0,2.8,large,true,weekend_discount,medium,1.03
+R1337,Aravaca Shawarma 1337,Z09,Moncloa-Aravaca,kebab,1,8.9,1.9,medium,false,random_flash,medium,1.14
+R1338,Metropolitano Hub 1338,Z20,San Blas-Canillejas,fast_food,2,10.6,2.2,medium,false,random_flash,medium,1.11
+R1339,Norte Pizza 1339,Z06,Tetuán,pizza,2,15.3,2.3,medium,false,none,low,1.27
+R1340,Chamberi Express 1340,Z07,Chamberí,grocery_convenience,1,5.8,1.3,medium,false,none,medium,1.04
+R1341,Norte Taberna 1341,Z06,Tetuán,spanish_tapas,2,19.0,3.3,medium,false,none,high,1.07
+R1342,Golden Hub 1342,Z04,Salamanca,fast_food,2,11.9,1.6,medium,false,random_flash,medium,1.19
+R1343,Central Casa 1343,Z01,Centro,spanish_tapas,4,18.6,2.9,medium,false,none,low,1.22
+R1344,Bernabeu Box 1344,Z05,Chamartín,fast_food,2,10.8,2.1,small,false,random_flash,high,1.08
+R1345,Usera Loco 1345,Z12,Usera,mexican,2,13.4,2.3,small,false,random_flash,low,0.84
+R1346,Golden Roma 1346,Z04,Salamanca,pizza,1,16.4,2.6,small,true,lunch_combo,high,1.33
+R1347,Bernabeu Bites 1347,Z05,Chamartín,fast_food,4,10.5,1.8,small,true,lunch_combo,high,0.83
+R1348,Vical Stack 1348,Z19,Vicálvaro,burger,2,13.6,2.1,medium,true,lunch_combo,medium,1.26
+R1349,Cara Smash 1349,Z11,Carabanchel,burger,1,14.1,2.7,large,true,weekend_discount,low,1.0
+R1350,Norte Roma 1350,Z06,Tetuán,pizza,2,16.6,2.9,small,false,none,low,1.18
+R1351,Golden Kebab 1351,Z04,Salamanca,kebab,3,8.1,2.1,large,false,none,medium,0.86
+R1352,Aravaca Go 1352,Z09,Moncloa-Aravaca,fast_food,2,9.9,2.2,small,true,lunch_combo,low,0.7
+R1353,Bernabeu Go 1353,Z05,Chamartín,fast_food,2,10.9,2.3,medium,true,weekend_discount,low,1.51
+R1354,Vallecas Green 1354,Z13,Puente de Vallecas,healthy,3,12.4,1.8,medium,false,none,low,0.95
+R1355,Usera Burger 1355,Z12,Usera,burger,2,12.7,2.1,small,false,random_flash,high,1.04
+R1356,Chamberi Taberna 1356,Z07,Chamberí,spanish_tapas,3,20.1,3.2,large,false,none,low,1.13
+R1357,Vallecas Smash 1357,Z13,Puente de Vallecas,burger,1,13.8,2.1,medium,true,weekend_discount,low,1.36
+R1358,Horta Taberna 1358,Z16,Hortaleza,spanish_tapas,2,17.5,3.3,medium,false,random_flash,medium,0.7
+R1359,Norte LaPlaza 1359,Z06,Tetuán,spanish_tapas,1,17.5,3.1,small,false,none,medium,0.85
+R1360,Park Roma 1360,Z03,Retiro,pizza,4,16.1,3.0,large,false,random_flash,medium,0.9
+R1361,Metropolitano Hub 1361,Z20,San Blas-Canillejas,fast_food,3,10.7,2.0,medium,false,none,high,1.15
+R1362,Central Taquería 1362,Z01,Centro,mexican,1,12.3,3.0,large,true,weekend_discount,low,1.31
+R1363,Lineal Taberna 1363,Z15,Ciudad Lineal,spanish_tapas,1,17.6,3.0,small,true,healthy_lunch,high,1.04
+R1364,Vical Doner 1364,Z19,Vicálvaro,kebab,2,8.6,1.8,small,false,none,medium,0.71
+R1365,Vical Burrito 1365,Z19,Vicálvaro,mexican,1,12.5,3.0,small,false,random_flash,medium,1.15
+R1366,Lineal Churro 1366,Z15,Ciudad Lineal,dessert,2,9.2,2.0,medium,false,none,medium,0.7
+R1367,Bernabeu Bodega 1367,Z05,Chamartín,spanish_tapas,4,17.6,3.4,small,true,healthy_lunch,high,1.08
+R1368,Park Tapas 1368,Z03,Retiro,spanish_tapas,2,17.5,3.5,medium,true,healthy_lunch,low,1.03
+R1369,Bernabeu Oven 1369,Z05,Chamartín,pizza,2,15.1,2.9,small,true,lunch_combo,high,0.99
+R1370,Bernabeu Box 1370,Z05,Chamartín,fast_food,2,11.3,2.2,medium,false,random_flash,low,0.81
+R1371,Metropolitano Green 1371,Z20,San Blas-Canillejas,healthy,2,13.1,1.8,small,true,healthy_lunch,high,0.93
+R1372,Lineal Kebab 1372,Z15,Ciudad Lineal,kebab,2,9.0,2.1,small,false,none,low,0.87
+R1373,Horta Patty 1373,Z16,Hortaleza,burger,1,13.6,2.6,small,false,random_flash,high,0.78
+R1374,Park Stack 1374,Z03,Retiro,burger,2,15.0,2.0,medium,false,random_flash,low,0.88
+R1375,Verde Slice 1375,Z17,Villaverde,pizza,1,15.2,3.0,large,true,weekend_discount,low,0.89
+R1376,Golden Pizzeria 1376,Z04,Salamanca,pizza,3,17.3,2.3,small,true,lunch_combo,medium,0.93
+R1377,Horta Patty 1377,Z16,Hortaleza,burger,2,14.4,2.1,small,false,none,low,0.97
+R1378,Central Sakura 1378,Z01,Centro,sushi,3,20.3,3.8,medium,false,none,high,0.73
+R1379,Chamberi Green 1379,Z07,Chamberí,healthy,2,11.9,2.0,small,false,none,low,1.54
+R1380,Horta Express 1380,Z16,Hortaleza,fast_food,1,11.2,2.1,medium,false,random_flash,low,1.11
+R1381,Metropolitano Grill 1381,Z20,San Blas-Canillejas,kebab,2,8.6,1.5,small,false,none,high,0.95
+R1382,Central Tapas 1382,Z01,Centro,spanish_tapas,3,17.9,2.8,medium,false,none,medium,1.32
+R1383,Chamberi District 1383,Z07,Chamberí,burger,2,13.6,2.3,medium,false,random_flash,low,1.11
+R1384,Park Bites 1384,Z03,Retiro,fast_food,1,11.1,2.4,small,true,weekend_discount,low,0.8
+R1385,Norte Doner 1385,Z06,Tetuán,kebab,3,8.2,1.5,small,false,none,medium,1.17
+R1386,Vallecas Roma 1386,Z13,Puente de Vallecas,pizza,2,17.0,2.4,medium,false,none,low,0.78
+R1387,Cara Casa 1387,Z11,Carabanchel,spanish_tapas,1,16.8,2.5,medium,false,none,low,0.97
+R1388,Usera Mesón 1388,Z12,Usera,spanish_tapas,1,17.9,3.2,large,false,none,low,1.14
+R1389,Latina Gelato 1389,Z10,Latina,dessert,2,7.1,1.9,medium,false,none,low,1.24
+R1390,Cara Burrito 1390,Z11,Carabanchel,mexican,2,12.1,2.7,medium,true,taco_tuesday_2x1,low,0.7
+R1391,Vical Cream 1391,Z19,Vicálvaro,dessert,2,7.5,2.1,medium,true,lunch_combo,medium,1.36
+R1392,Lineal Burrito 1392,Z15,Ciudad Lineal,mexican,1,11.9,2.4,medium,false,random_flash,low,0.85
+R1393,Usera District 1393,Z12,Usera,burger,2,13.3,2.7,medium,true,weekend_discount,low,0.96
+R1394,Horta Doner 1394,Z16,Hortaleza,kebab,2,8.6,2.1,medium,false,none,medium,0.88
+R1395,Vallecas Go 1395,Z13,Puente de Vallecas,grocery_convenience,2,7.4,1.4,large,false,none,low,1.2
+R1396,Central Smash 1396,Z01,Centro,burger,3,11.6,2.5,small,false,random_flash,medium,1.25
+R1397,Central Wasabi 1397,Z01,Centro,sushi,3,19.7,3.4,small,false,none,low,1.13
+R1398,Central Bodega 1398,Z01,Centro,spanish_tapas,2,17.5,2.5,medium,false,none,high,1.08
+R1399,Cara Go 1399,Z11,Carabanchel,fast_food,2,10.6,1.9,small,false,random_flash,low,0.9
+R1400,Golden Cantina 1400,Z04,Salamanca,mexican,1,12.3,2.4,medium,false,none,medium,1.05
+R1401,Latina Market 1401,Z10,Latina,grocery_convenience,2,6.0,1.7,small,false,random_flash,medium,0.7
+R1402,Golden Doner 1402,Z04,Salamanca,kebab,3,9.0,1.9,medium,false,none,low,1.11
+R1403,Chamberi Burger 1403,Z07,Chamberí,burger,2,13.6,2.8,large,false,none,high,1.14
+R1404,Morata District 1404,Z14,Moratalaz,burger,2,14.2,2.2,medium,false,random_flash,low,0.79
+R1405,Latina Pizzeria 1405,Z10,Latina,pizza,1,16.7,2.4,small,true,weekend_discount,medium,0.77
+R1406,Golden Bowl 1406,Z04,Salamanca,healthy,3,13.3,2.3,medium,false,none,high,0.78
+R1407,Usera Bites 1407,Z12,Usera,fast_food,2,10.4,2.2,large,true,weekend_discount,medium,1.14
+R1408,Golden Oven 1408,Z04,Salamanca,pizza,2,16.9,3.0,medium,false,none,low,1.41
+R1409,Metropolitano Slice 1409,Z20,San Blas-Canillejas,pizza,1,16.4,3.0,small,true,weekend_discount,low,0.96
+R1410,Chamberi Roma 1410,Z07,Chamberí,pizza,2,16.6,2.6,medium,true,weekend_discount,high,1.03
+R1411,Central Brothers 1411,Z01,Centro,kebab,1,7.6,2.1,small,false,none,medium,0.97
+R1412,Usera Go 1412,Z12,Usera,fast_food,1,11.2,2.2,medium,true,lunch_combo,medium,0.78
+R1413,Monte Burger 1413,Z08,Fuencarral-El Pardo,burger,2,14.3,2.7,medium,false,none,medium,1.13
+R1414,Park Zen 1414,Z03,Retiro,sushi,3,20.0,4.5,medium,false,none,low,0.89
+R1415,Usera Stack 1415,Z12,Usera,burger,2,14.7,1.9,medium,false,none,low,1.07
+R1416,Norte Burrito 1416,Z06,Tetuán,mexican,3,11.7,2.7,medium,true,weekend_discount,low,1.05
+R1417,Norte Patty 1417,Z06,Tetuán,burger,1,14.3,2.0,small,false,none,low,0.93
+R1418,River Gelato 1418,Z02,Arganzuela,dessert,2,7.6,1.6,small,true,lunch_combo,low,1.11
+R1419,Park Dessert 1419,Z03,Retiro,dessert,1,8.2,1.5,large,false,none,medium,0.83
+R1420,Norte Fresh 1420,Z06,Tetuán,healthy,3,11.3,1.7,large,false,none,low,1.04
+R1421,Bernabeu Corner 1421,Z05,Chamartín,fast_food,3,12.0,1.7,small,false,none,medium,0.86
+R1422,Central Go 1422,Z01,Centro,grocery_convenience,1,6.8,1.5,small,true,healthy_lunch,low,1.24
+R1423,Aravaca Bites 1423,Z09,Moncloa-Aravaca,fast_food,1,10.9,1.9,medium,true,lunch_combo,low,0.99
+R1424,Bernabeu Bites 1424,Z05,Chamartín,fast_food,2,11.8,1.9,medium,false,random_flash,medium,0.9
+R1425,Vallecas Cantina 1425,Z13,Puente de Vallecas,mexican,3,12.0,2.6,medium,true,taco_tuesday_2x1,medium,1.18
+R1426,Villa Corner 1426,Z18,Villa de Vallecas,fast_food,1,11.0,1.6,small,true,lunch_combo,medium,1.05
+R1427,Lineal Gelato 1427,Z15,Ciudad Lineal,dessert,2,8.0,1.4,small,false,none,medium,1.4
+R1428,Chamberi Corner 1428,Z07,Chamberí,fast_food,3,11.5,1.7,medium,false,none,medium,1.33
+R1429,Vallecas Roma 1429,Z13,Puente de Vallecas,pizza,3,15.9,3.2,medium,true,lunch_combo,low,1.23
+R1430,Monte Brothers 1430,Z08,Fuencarral-El Pardo,kebab,2,8.6,2.0,small,false,none,low,0.7
+R1431,Golden Mart 1431,Z04,Salamanca,grocery_convenience,2,6.9,1.8,small,false,none,high,0.92
+R1432,Park Grill 1432,Z03,Retiro,burger,3,14.0,2.8,medium,false,random_flash,medium,1.39
+R1433,Norte Loco 1433,Z06,Tetuán,mexican,1,13.5,3.2,small,true,taco_tuesday_2x1,low,1.18
+R1434,Chamberi Casa 1434,Z07,Chamberí,spanish_tapas,3,18.9,2.8,small,false,none,low,1.08
+R1435,Vical Slice 1435,Z19,Vicálvaro,pizza,2,16.4,2.9,small,true,weekend_discount,medium,0.88
+R1436,Norte Go 1436,Z06,Tetuán,fast_food,1,11.0,1.9,large,false,none,low,0.9
+R1437,Usera Go 1437,Z12,Usera,fast_food,1,11.2,2.4,small,false,random_flash,low,1.09
+R1438,Norte Taco 1438,Z06,Tetuán,mexican,1,12.8,3.2,small,true,taco_tuesday_2x1,high,1.08
+R1439,Villa Taberna 1439,Z18,Villa de Vallecas,spanish_tapas,3,17.2,2.7,medium,true,healthy_lunch,low,1.01
+R1440,Park Tokyo 1440,Z03,Retiro,sushi,3,21.3,4.0,small,false,random_flash,medium,0.79
+R1441,Bernabeu Patty 1441,Z05,Chamartín,burger,3,13.4,2.2,medium,true,lunch_combo,medium,1.27
+R1442,Golden Mart 1442,Z04,Salamanca,grocery_convenience,2,7.1,1.6,small,true,healthy_lunch,low,1.29
+R1443,Park Express 1443,Z03,Retiro,grocery_convenience,1,7.8,1.6,medium,false,none,low,1.14
+R1444,River Brothers 1444,Z02,Arganzuela,kebab,2,7.8,1.6,medium,true,healthy_lunch,medium,0.78
+R1445,Park Go 1445,Z03,Retiro,fast_food,3,11.2,2.3,medium,false,none,low,0.83
+R1446,Horta Tokyo 1446,Z16,Hortaleza,sushi,2,20.5,4.7,medium,false,none,medium,0.75
+R1447,Horta Smash 1447,Z16,Hortaleza,burger,2,11.6,2.1,large,true,weekend_discount,low,1.04
+R1448,Metropolitano Dessert 1448,Z20,San Blas-Canillejas,dessert,1,8.1,1.7,small,false,random_flash,high,1.01
+R1449,River LaPlaza 1449,Z02,Arganzuela,spanish_tapas,1,18.9,3.4,medium,false,random_flash,medium,1.22
+R1450,Monte Grill 1450,Z08,Fuencarral-El Pardo,kebab,1,9.1,1.5,large,false,none,medium,0.71
+R1451,Aero Tokyo 1451,Z21,Barajas,sushi,2,19.4,4.5,medium,false,none,low,1.14
+R1452,Villa Doner 1452,Z18,Villa de Vallecas,kebab,3,9.2,1.6,large,false,none,low,0.89
+R1453,Cara Burrito 1453,Z11,Carabanchel,mexican,1,12.7,3.2,medium,true,taco_tuesday_2x1,low,0.99
+R1454,Metropolitano Bodega 1454,Z20,San Blas-Canillejas,spanish_tapas,2,19.9,2.4,large,false,none,medium,0.75
+R1455,Lineal Mesón 1455,Z15,Ciudad Lineal,spanish_tapas,1,18.7,3.2,small,true,healthy_lunch,medium,0.99
+R1456,Aero Loco 1456,Z21,Barajas,mexican,1,12.9,2.6,small,true,taco_tuesday_2x1,medium,0.97
+R1457,River Now 1457,Z02,Arganzuela,grocery_convenience,1,6.6,1.4,large,false,random_flash,medium,0.78
+R1458,River Mart 1458,Z02,Arganzuela,grocery_convenience,3,6.7,1.2,small,true,healthy_lunch,low,0.76
+R1459,Metropolitano Hub 1459,Z20,San Blas-Canillejas,fast_food,3,11.6,1.7,medium,false,none,medium,1.13
+R1460,River Shawarma 1460,Z02,Arganzuela,kebab,2,8.8,1.6,medium,false,none,medium,1.06
+R1461,Central Sweet 1461,Z01,Centro,dessert,4,8.3,1.8,medium,true,weekend_discount,low,1.24
+R1462,Morata Oven 1462,Z14,Moratalaz,pizza,3,16.3,3.1,medium,true,lunch_combo,medium,0.82
+R1463,Latina Roll 1463,Z10,Latina,sushi,2,24.8,3.6,medium,false,none,low,1.23
+R1464,Morata Pizzeria 1464,Z14,Moratalaz,pizza,2,16.2,2.5,medium,true,weekend_discount,low,0.97
+R1465,Norte Pizzeria 1465,Z06,Tetuán,pizza,3,17.8,2.3,medium,false,random_flash,medium,0.93
+R1466,River Corner 1466,Z02,Arganzuela,fast_food,2,9.9,1.7,medium,false,none,low,0.9
+R1467,Golden Burrito 1467,Z04,Salamanca,mexican,2,13.2,2.5,large,true,taco_tuesday_2x1,medium,1.05
+R1468,Norte Hub 1468,Z06,Tetuán,fast_food,3,12.8,1.9,medium,false,none,medium,0.94
+R1469,Central Grill 1469,Z01,Centro,burger,3,15.3,2.5,large,true,lunch_combo,medium,0.8
+R1470,Golden Pizza 1470,Z04,Salamanca,pizza,2,16.4,2.5,small,false,none,medium,1.41
+R1471,Monte Dessert 1471,Z08,Fuencarral-El Pardo,dessert,2,7.2,1.7,medium,true,lunch_combo,low,0.87
+R1472,Vallecas Corner 1472,Z13,Puente de Vallecas,fast_food,1,10.5,1.7,small,false,none,high,1.26
+R1473,Verde Hub 1473,Z17,Villaverde,fast_food,2,11.3,2.4,large,true,weekend_discount,medium,1.07
+R1474,Park Dessert 1474,Z03,Retiro,dessert,3,7.9,1.6,medium,true,weekend_discount,low,0.98
+R1475,Horta Burrito 1475,Z16,Hortaleza,mexican,1,12.3,3.0,medium,true,taco_tuesday_2x1,low,0.98
+R1476,Central District 1476,Z01,Centro,burger,2,14.3,2.1,large,true,lunch_combo,low,0.97
+R1477,Golden Kebab 1477,Z04,Salamanca,kebab,3,9.0,1.4,small,false,none,low,1.35
+R1478,Usera Taquería 1478,Z12,Usera,mexican,2,13.7,2.9,small,true,taco_tuesday_2x1,high,0.97
+R1479,Central Slice 1479,Z01,Centro,pizza,2,16.1,2.5,small,false,random_flash,medium,1.11
+R1480,Bernabeu Zen 1480,Z05,Chamartín,sushi,4,21.6,3.7,small,false,none,medium,0.75
+R1481,Chamberi District 1481,Z07,Chamberí,burger,1,13.6,2.6,large,true,weekend_discount,medium,1.17
+R1482,Golden Go 1482,Z04,Salamanca,fast_food,2,11.6,2.3,medium,false,random_flash,medium,1.36
+R1483,River Smash 1483,Z02,Arganzuela,burger,1,13.9,2.7,medium,false,random_flash,medium,1.01
+R1484,Cara Sakura 1484,Z11,Carabanchel,sushi,3,22.8,3.6,medium,false,none,medium,0.7
+R1485,Morata Wrap 1485,Z14,Moratalaz,kebab,1,9.7,2.1,small,false,none,low,0.93
+R1486,Usera District 1486,Z12,Usera,burger,2,13.7,2.0,large,true,weekend_discount,low,1.17
+R1487,Golden District 1487,Z04,Salamanca,burger,3,14.6,2.8,large,false,random_flash,low,0.91
+R1488,Central Mart 1488,Z01,Centro,grocery_convenience,2,7.1,1.4,medium,false,random_flash,low,0.91
+R1489,Vallecas Sakura 1489,Z13,Puente de Vallecas,sushi,2,19.4,4.3,large,false,none,medium,0.87
+R1490,Norte Doner 1490,Z06,Tetuán,kebab,2,9.4,2.0,medium,false,none,medium,0.87
+R1491,Aravaca Green 1491,Z09,Moncloa-Aravaca,healthy,2,12.5,1.7,medium,false,none,low,1.14
+R1492,River Daily 1492,Z02,Arganzuela,grocery_convenience,1,7.5,1.3,small,false,random_flash,low,1.22
+R1493,Norte Now 1493,Z06,Tetuán,grocery_convenience,2,6.7,1.4,small,true,healthy_lunch,low,1.04
+R1494,Lineal Taquería 1494,Z15,Ciudad Lineal,mexican,3,13.1,2.5,small,false,random_flash,low,1.2
+R1495,Vical Zen 1495,Z19,Vicálvaro,sushi,2,21.5,4.0,small,false,none,high,0.95
+R1496,Usera Go 1496,Z12,Usera,grocery_convenience,2,7.4,1.8,medium,false,none,medium,1.25
+R1497,Lineal Burger 1497,Z15,Ciudad Lineal,burger,2,14.2,2.0,medium,false,random_flash,medium,1.12
+R1498,River Box 1498,Z02,Arganzuela,fast_food,1,10.0,1.8,medium,true,weekend_discount,high,0.73
+R1499,Verde Sushi 1499,Z17,Villaverde,sushi,1,21.8,4.5,medium,true,healthy_lunch,medium,1.02
+R1500,Central Roma 1500,Z01,Centro,pizza,2,16.3,2.8,medium,false,random_flash,low,0.97
+R1501,Vical Cream 1501,Z19,Vicálvaro,dessert,4,8.3,2.2,medium,false,random_flash,low,0.93
+R1502,Norte Wrap 1502,Z06,Tetuán,kebab,1,9.0,2.0,medium,true,healthy_lunch,medium,1.12
+R1503,Norte Taco 1503,Z06,Tetuán,mexican,3,14.0,3.1,small,false,random_flash,low,1.18
+R1504,River Sakura 1504,Z02,Arganzuela,sushi,2,20.9,4.0,medium,false,random_flash,medium,0.9
+R1505,Villa Azteca 1505,Z18,Villa de Vallecas,mexican,2,14.0,2.3,medium,true,taco_tuesday_2x1,medium,1.1
+R1506,Monte Tapas 1506,Z08,Fuencarral-El Pardo,spanish_tapas,2,18.4,3.4,small,false,none,low,0.9
+R1507,Latina Box 1507,Z10,Latina,fast_food,2,12.0,2.0,medium,false,none,medium,1.15
+R1508,Central Go 1508,Z01,Centro,fast_food,3,10.5,2.2,small,true,weekend_discount,low,0.77
+R1509,Latina Box 1509,Z10,Latina,fast_food,1,11.3,2.2,medium,true,lunch_combo,low,0.98
+R1510,Vallecas Brothers 1510,Z13,Puente de Vallecas,kebab,1,8.6,1.5,large,false,none,low,1.14
+R1511,Golden Express 1511,Z04,Salamanca,fast_food,2,10.3,2.0,large,true,weekend_discount,medium,1.01
+R1512,Morata Taco 1512,Z14,Moratalaz,mexican,1,11.9,2.7,small,true,taco_tuesday_2x1,low,1.04
+R1513,Verde Pizzeria 1513,Z17,Villaverde,pizza,2,15.3,2.8,small,false,random_flash,medium,1.17
+R1514,Park Grill 1514,Z03,Retiro,burger,4,13.8,2.2,small,false,random_flash,low,1.04
+R1515,Aravaca Corner 1515,Z09,Moncloa-Aravaca,fast_food,1,11.2,2.3,medium,false,random_flash,low,1.18
+R1516,Central Brothers 1516,Z01,Centro,kebab,4,9.5,1.5,small,false,none,low,0.93
+R1517,Horta Stack 1517,Z16,Hortaleza,burger,1,13.1,1.9,medium,true,lunch_combo,low,0.92
+R1518,Park Go 1518,Z03,Retiro,grocery_convenience,2,7.0,1.6,small,false,none,medium,1.12
+R1519,Golden Bowl 1519,Z04,Salamanca,healthy,3,11.6,1.8,medium,false,none,low,1.0
+R1520,Norte Express 1520,Z06,Tetuán,fast_food,3,11.0,2.2,medium,true,lunch_combo,high,0.9
+R1521,Metropolitano Patty 1521,Z20,San Blas-Canillejas,burger,3,14.3,2.9,small,true,lunch_combo,medium,0.87
+R1522,Morata Sweet 1522,Z14,Moratalaz,dessert,1,8.2,1.7,medium,true,weekend_discount,medium,0.72
+R1523,Horta Roots 1523,Z16,Hortaleza,healthy,1,11.5,1.9,small,false,none,low,1.13
+R1524,Chamberi Churro 1524,Z07,Chamberí,dessert,3,7.5,1.8,small,false,none,medium,1.27
+R1525,Metropolitano Sakura 1525,Z20,San Blas-Canillejas,sushi,1,20.9,4.3,small,false,none,high,0.95
+R1526,Villa Smash 1526,Z18,Villa de Vallecas,burger,1,13.0,2.8,small,false,none,low,0.96
+R1527,Lineal Box 1527,Z15,Ciudad Lineal,fast_food,2,9.9,2.2,medium,false,random_flash,medium,0.95
+R1528,Aravaca Doner 1528,Z09,Moncloa-Aravaca,kebab,2,9.6,2.2,small,false,none,high,1.19
+R1529,Central Bites 1529,Z01,Centro,fast_food,3,9.3,2.4,small,false,none,low,1.11
+R1530,Morata Fit 1530,Z14,Moratalaz,healthy,3,12.4,2.4,large,true,healthy_lunch,medium,1.01
+R1531,Morata Express 1531,Z14,Moratalaz,fast_food,3,10.9,2.2,small,false,random_flash,low,1.0
+R1532,Vallecas LaPlaza 1532,Z13,Puente de Vallecas,spanish_tapas,1,17.8,2.4,medium,false,random_flash,medium,0.82
+R1533,Lineal Go 1533,Z15,Ciudad Lineal,fast_food,1,10.0,2.3,medium,false,random_flash,high,0.8
+R1534,Bernabeu Stack 1534,Z05,Chamartín,burger,2,14.6,2.6,small,true,weekend_discount,medium,0.9
+R1535,Vical Grill 1535,Z19,Vicálvaro,kebab,1,9.0,1.7,small,false,random_flash,high,1.14
+R1536,Vallecas Bowl 1536,Z13,Puente de Vallecas,healthy,2,11.0,2.4,medium,false,none,medium,1.16
+R1537,Chamberi Roma 1537,Z07,Chamberí,pizza,4,16.0,2.3,medium,true,lunch_combo,low,0.88
+R1538,Vical Market 1538,Z19,Vicálvaro,grocery_convenience,2,7.1,1.7,small,false,none,high,1.17
+R1539,Park Tokyo 1539,Z03,Retiro,sushi,4,21.8,4.4,small,false,none,high,1.43
+R1540,Chamberi Burrito 1540,Z07,Chamberí,mexican,2,11.3,2.6,medium,false,none,medium,1.13
+R1541,Metropolitano Bodega 1541,Z20,San Blas-Canillejas,spanish_tapas,2,18.7,3.5,small,false,none,medium,1.03
+R1542,Park Roma 1542,Z03,Retiro,pizza,3,17.3,2.8,small,true,weekend_discount,low,0.85
+R1543,Latina Go 1543,Z10,Latina,fast_food,2,10.0,2.1,small,true,lunch_combo,low,1.08
+R1544,Usera Bodega 1544,Z12,Usera,spanish_tapas,2,19.5,2.9,small,false,none,medium,0.89
+R1545,Latina Taquería 1545,Z10,Latina,mexican,2,11.8,3.1,medium,false,none,low,0.77
+R1546,Morata Mesón 1546,Z14,Moratalaz,spanish_tapas,2,19.1,3.5,small,false,none,medium,0.98
+R1547,Norte Express 1547,Z06,Tetuán,grocery_convenience,1,6.6,1.7,large,false,none,low,0.94
+R1548,Horta Express 1548,Z16,Hortaleza,grocery_convenience,1,7.5,1.3,medium,false,none,low,0.72
+R1549,Aravaca Market 1549,Z09,Moncloa-Aravaca,grocery_convenience,1,6.5,1.5,small,true,healthy_lunch,low,0.7
+R1550,Metropolitano Corner 1550,Z20,San Blas-Canillejas,fast_food,1,11.2,2.4,small,false,random_flash,high,1.23
+R1551,Cara Dessert 1551,Z11,Carabanchel,dessert,1,8.3,2.1,medium,false,none,low,0.97
+R1552,Lineal Gelato 1552,Z15,Ciudad Lineal,dessert,3,8.2,1.9,medium,true,lunch_combo,medium,1.07
+R1553,Horta Bites 1553,Z16,Hortaleza,fast_food,2,10.6,2.1,small,false,random_flash,low,0.97
+R1554,Bernabeu Doner 1554,Z05,Chamartín,kebab,1,8.4,1.9,medium,true,healthy_lunch,high,1.12
+R1555,Monte Taco 1555,Z08,Fuencarral-El Pardo,mexican,1,13.3,2.7,small,false,random_flash,medium,1.13
+R1556,Monte Kebab 1556,Z08,Fuencarral-El Pardo,kebab,3,9.2,2.0,small,false,none,low,0.91
+R1557,Latina Gelato 1557,Z10,Latina,dessert,1,9.1,2.0,medium,true,weekend_discount,low,1.12
+R1558,Lineal Pizza 1558,Z15,Ciudad Lineal,pizza,1,17.0,2.9,small,true,lunch_combo,medium,1.09
+R1559,Horta Roma 1559,Z16,Hortaleza,pizza,2,16.6,2.5,medium,true,lunch_combo,medium,1.23
+R1560,Park Bowl 1560,Z03,Retiro,healthy,3,11.8,2.1,medium,false,none,high,1.38
+R1561,Vical Dessert 1561,Z19,Vicálvaro,dessert,2,8.6,1.9,small,false,random_flash,high,0.8
+R1562,Horta Garden 1562,Z16,Hortaleza,healthy,3,13.8,2.2,large,true,healthy_lunch,low,0.76
+R1563,Central Now 1563,Z01,Centro,grocery_convenience,2,7.3,1.3,small,false,none,low,1.15
+R1564,Bernabeu Bowl 1564,Z05,Chamartín,healthy,3,12.6,2.1,large,false,none,high,1.01
+R1565,Aero Dessert 1565,Z21,Barajas,dessert,1,8.0,1.5,medium,true,weekend_discount,medium,1.0
+R1566,Cara Corner 1566,Z11,Carabanchel,fast_food,2,11.6,1.8,medium,false,none,low,0.97
+R1567,Bernabeu Brothers 1567,Z05,Chamartín,kebab,4,9.3,1.5,small,false,none,low,0.98
+R1568,River Burger 1568,Z02,Arganzuela,burger,1,14.2,2.0,medium,true,weekend_discount,medium,1.13
+R1569,Chamberi Mesón 1569,Z07,Chamberí,spanish_tapas,3,18.3,3.4,medium,false,none,low,1.06
+R1570,Aravaca Tapas 1570,Z09,Moncloa-Aravaca,spanish_tapas,2,17.8,2.9,medium,false,none,low,1.41
+R1571,Morata Garden 1571,Z14,Moratalaz,healthy,1,10.8,2.4,medium,false,none,low,1.15
+R1572,Park Fresh 1572,Z03,Retiro,healthy,3,11.5,2.1,medium,false,none,low,1.2
+R1573,Monte Wrap 1573,Z08,Fuencarral-El Pardo,kebab,2,9.7,1.9,small,false,none,medium,0.99
+R1574,Norte Casa 1574,Z06,Tetuán,spanish_tapas,3,19.7,2.9,small,false,none,medium,1.03
+R1575,Golden Pizzeria 1575,Z04,Salamanca,pizza,1,17.4,3.0,small,true,lunch_combo,low,1.09
+R1576,Vical Garden 1576,Z19,Vicálvaro,healthy,2,11.9,2.3,small,false,none,high,0.78
+R1577,Aravaca Daily 1577,Z09,Moncloa-Aravaca,grocery_convenience,3,6.4,1.6,small,false,none,low,0.92
+R1578,Morata Churro 1578,Z14,Moratalaz,dessert,1,9.0,2.0,large,false,random_flash,medium,0.83
+R1579,Horta Sakura 1579,Z16,Hortaleza,sushi,2,20.4,3.7,small,false,none,medium,0.8
+R1580,Vallecas Taquería 1580,Z13,Puente de Vallecas,mexican,1,13.7,2.8,medium,false,none,low,1.08
+R1581,Central Kebab 1581,Z01,Centro,kebab,2,9.5,1.7,small,false,random_flash,low,1.44
+R1582,Cara Bites 1582,Z11,Carabanchel,fast_food,2,10.8,2.1,medium,false,random_flash,low,1.05
+R1583,Latina Roll 1583,Z10,Latina,sushi,1,18.9,4.0,medium,false,random_flash,low,0.72
+R1584,Bernabeu Burrito 1584,Z05,Chamartín,mexican,4,14.3,2.5,medium,true,taco_tuesday_2x1,high,1.16
+R1585,Latina Burger 1585,Z10,Latina,burger,2,14.9,2.8,medium,true,lunch_combo,low,0.82
+R1586,Bernabeu Sushi 1586,Z05,Chamartín,sushi,2,21.8,4.1,medium,false,none,high,1.2
+R1587,Golden Go 1587,Z04,Salamanca,grocery_convenience,2,6.8,1.7,medium,false,random_flash,medium,1.16
+R1588,Metropolitano Roots 1588,Z20,San Blas-Canillejas,healthy,2,11.9,2.4,large,false,random_flash,low,1.18
+R1589,Villa Mart 1589,Z18,Villa de Vallecas,grocery_convenience,1,6.9,1.7,small,false,none,low,1.27
+R1590,Vical Smash 1590,Z19,Vicálvaro,burger,2,14.5,2.8,small,false,random_flash,medium,0.98
+R1591,Latina Green 1591,Z10,Latina,healthy,1,12.8,2.2,small,false,none,low,0.99
+R1592,Chamberi Patty 1592,Z07,Chamberí,burger,4,13.9,2.2,medium,false,random_flash,low,1.09
+R1593,Golden District 1593,Z04,Salamanca,burger,2,15.2,2.7,small,false,none,low,0.84
+R1594,Latina Grill 1594,Z10,Latina,burger,2,13.7,2.2,small,false,none,medium,0.77
+R1595,Bernabeu Roma 1595,Z05,Chamartín,pizza,1,16.3,2.5,small,false,random_flash,high,0.99
+R1596,Norte Fit 1596,Z06,Tetuán,healthy,1,12.2,1.9,small,false,none,low,0.81
+R1597,Park Sweet 1597,Z03,Retiro,dessert,2,8.0,2.0,small,true,lunch_combo,low,0.92
+R1598,Aero Fit 1598,Z21,Barajas,healthy,2,13.1,1.8,medium,false,random_flash,high,1.11
+R1599,Horta Loco 1599,Z16,Hortaleza,mexican,2,14.6,2.8,large,false,random_flash,medium,0.73
+R1600,Metropolitano Cream 1600,Z20,San Blas-Canillejas,dessert,2,8.2,1.8,small,true,weekend_discount,medium,0.81
+R1601,Bernabeu Pizzeria 1601,Z05,Chamartín,pizza,3,15.8,3.1,medium,true,lunch_combo,low,1.35
+R1602,Lineal Bodega 1602,Z15,Ciudad Lineal,spanish_tapas,1,19.7,3.5,large,false,none,medium,1.33
+R1603,Bernabeu Go 1603,Z05,Chamartín,fast_food,3,12.2,1.9,small,false,random_flash,high,1.19
+R1604,Metropolitano Go 1604,Z20,San Blas-Canillejas,fast_food,2,11.2,1.6,small,true,weekend_discount,high,0.95
+R1605,Latina Cantina 1605,Z10,Latina,mexican,2,12.8,2.7,medium,true,taco_tuesday_2x1,low,1.14
+R1606,Vallecas Box 1606,Z13,Puente de Vallecas,fast_food,4,11.1,2.1,medium,false,none,low,1.19
+R1607,Park Hub 1607,Z03,Retiro,fast_food,3,12.0,2.3,small,false,none,high,0.97
+R1608,Golden Mesón 1608,Z04,Salamanca,spanish_tapas,3,18.7,2.6,small,false,random_flash,high,0.83
+R1609,Horta Hub 1609,Z16,Hortaleza,fast_food,2,12.0,2.3,medium,true,lunch_combo,low,1.11
+R1610,Golden Loco 1610,Z04,Salamanca,mexican,1,13.5,2.7,small,true,weekend_discount,low,1.28
+R1611,Verde Tokyo 1611,Z17,Villaverde,sushi,1,22.7,3.6,small,false,random_flash,low,0.96
+R1612,Central Go 1612,Z01,Centro,fast_food,2,11.2,2.0,large,false,random_flash,low,0.84
+R1613,Norte Cantina 1613,Z06,Tetuán,mexican,2,14.3,2.3,medium,true,taco_tuesday_2x1,medium,0.94
+R1614,Vallecas Stack 1614,Z13,Puente de Vallecas,burger,2,16.0,2.8,small,true,weekend_discount,low,0.91
+R1615,Aravaca Brothers 1615,Z09,Moncloa-Aravaca,kebab,2,9.1,1.7,small,false,none,medium,1.07
+R1616,Bernabeu Cantina 1616,Z05,Chamartín,mexican,2,13.7,2.9,small,true,weekend_discount,low,1.33
+R1617,Golden Loco 1617,Z04,Salamanca,mexican,2,14.0,2.7,medium,true,weekend_discount,medium,1.3
+R1618,Norte Burger 1618,Z06,Tetuán,burger,2,14.0,2.7,medium,false,random_flash,low,1.14
+R1619,Park Roll 1619,Z03,Retiro,sushi,3,21.3,3.3,small,false,random_flash,low,1.1
+R1620,Chamberi Burrito 1620,Z07,Chamberí,mexican,3,13.3,3.0,small,false,none,low,1.38
+R1621,Monte Go 1621,Z08,Fuencarral-El Pardo,fast_food,2,11.0,2.2,small,false,none,low,0.92
+R1622,Monte Burger 1622,Z08,Fuencarral-El Pardo,burger,1,13.0,2.8,large,false,random_flash,low,0.92
+R1623,Aravaca Slice 1623,Z09,Moncloa-Aravaca,pizza,2,15.7,3.0,small,true,weekend_discount,low,0.7
+R1624,Villa Tapas 1624,Z18,Villa de Vallecas,spanish_tapas,1,17.9,3.5,medium,false,none,low,1.15
+R1625,Aravaca Go 1625,Z09,Moncloa-Aravaca,fast_food,2,12.1,2.3,medium,false,none,medium,0.7
+R1626,Morata Doner 1626,Z14,Moratalaz,kebab,2,8.9,1.7,small,false,none,low,0.76
+R1627,Cara Bowl 1627,Z11,Carabanchel,healthy,1,12.7,2.2,large,true,healthy_lunch,low,0.7
+R1628,Chamberi Kebab 1628,Z07,Chamberí,kebab,1,9.3,1.5,small,true,healthy_lunch,medium,1.13
+R1629,Usera Wasabi 1629,Z12,Usera,sushi,2,21.4,4.4,medium,true,healthy_lunch,medium,1.07
+R1630,River Sweet 1630,Z02,Arganzuela,dessert,1,7.9,2.0,medium,false,none,low,0.81
+R1631,Vical Stack 1631,Z19,Vicálvaro,burger,2,14.1,2.1,small,true,weekend_discount,high,1.15
+R1632,Park Brothers 1632,Z03,Retiro,kebab,3,9.0,2.0,small,true,healthy_lunch,medium,0.92
+R1633,Lineal Roots 1633,Z15,Ciudad Lineal,healthy,2,13.2,2.2,small,true,healthy_lunch,medium,0.83
+R1634,Norte Bites 1634,Z06,Tetuán,fast_food,1,12.2,1.9,small,false,none,low,0.7
+R1635,Vallecas Express 1635,Z13,Puente de Vallecas,fast_food,2,10.4,2.2,medium,false,none,low,0.93
+R1636,Golden Zen 1636,Z04,Salamanca,sushi,3,19.9,3.7,small,false,none,low,1.18
+R1637,Golden Go 1637,Z04,Salamanca,fast_food,3,11.0,2.4,large,true,lunch_combo,medium,1.06
+R1638,Park Patty 1638,Z03,Retiro,burger,2,14.6,2.3,medium,true,weekend_discount,low,1.22
+R1639,Aravaca Slice 1639,Z09,Moncloa-Aravaca,pizza,1,15.7,3.2,small,true,lunch_combo,low,1.26
+R1640,Lineal Roots 1640,Z15,Ciudad Lineal,healthy,1,11.6,1.7,small,true,healthy_lunch,medium,0.7
+R1641,Villa Daily 1641,Z18,Villa de Vallecas,grocery_convenience,3,6.7,1.7,small,true,healthy_lunch,low,0.87
+R1642,Cara Mart 1642,Z11,Carabanchel,grocery_convenience,1,7.7,1.4,medium,true,healthy_lunch,low,0.7
+R1643,Chamberi Go 1643,Z07,Chamberí,fast_food,2,11.1,2.0,small,true,weekend_discount,low,0.78
+R1644,Lineal Taco 1644,Z15,Ciudad Lineal,mexican,2,12.6,2.7,medium,true,taco_tuesday_2x1,high,1.43
+R1645,River Fresh 1645,Z02,Arganzuela,healthy,2,12.1,2.3,large,false,none,low,1.04
+R1646,Park Corner 1646,Z03,Retiro,fast_food,1,12.0,1.9,large,false,none,medium,1.09
+R1647,Metropolitano Go 1647,Z20,San Blas-Canillejas,grocery_convenience,1,7.1,1.6,small,false,none,high,0.89
+R1648,Monte Loco 1648,Z08,Fuencarral-El Pardo,mexican,2,12.7,2.7,small,true,weekend_discount,medium,0.77
+R1649,Aero Casa 1649,Z21,Barajas,spanish_tapas,2,19.0,3.5,large,false,none,low,1.27
+R1650,Chamberi Hub 1650,Z07,Chamberí,fast_food,2,9.8,2.2,medium,true,weekend_discount,low,1.05
+R1651,Norte Tokyo 1651,Z06,Tetuán,sushi,3,20.8,3.3,small,false,none,medium,0.97
+R1652,Chamberi Sweet 1652,Z07,Chamberí,dessert,1,7.6,1.8,large,true,weekend_discount,low,0.9
+R1653,Morata Dessert 1653,Z14,Moratalaz,dessert,2,7.5,1.9,medium,true,lunch_combo,medium,0.93
+R1654,Golden Kebab 1654,Z04,Salamanca,kebab,3,8.7,2.0,large,false,none,medium,1.42
+R1655,Aero Brothers 1655,Z21,Barajas,kebab,1,8.4,1.5,small,false,none,low,1.04
+R1656,River Sweet 1656,Z02,Arganzuela,dessert,1,6.5,1.8,medium,true,weekend_discount,low,1.04
+R1657,Morata Zen 1657,Z14,Moratalaz,sushi,2,22.9,4.2,medium,false,none,low,0.94
+R1658,Chamberi Box 1658,Z07,Chamberí,fast_food,3,10.9,2.3,large,true,weekend_discount,medium,1.47
+R1659,Central Roll 1659,Z01,Centro,sushi,4,22.1,4.5,medium,false,none,low,1.21
+R1660,Cara Stack 1660,Z11,Carabanchel,burger,3,14.2,2.6,medium,false,random_flash,low,0.87
+R1661,Verde Taberna 1661,Z17,Villaverde,spanish_tapas,3,18.3,2.9,small,false,none,low,0.95
+R1662,Aravaca District 1662,Z09,Moncloa-Aravaca,burger,2,14.6,2.9,large,false,none,medium,0.7
+R1663,Park Taberna 1663,Z03,Retiro,spanish_tapas,4,18.9,3.3,small,false,none,low,0.85
+R1664,Norte Daily 1664,Z06,Tetuán,grocery_convenience,1,7.1,1.2,medium,false,none,high,0.87
+R1665,Horta Taberna 1665,Z16,Hortaleza,spanish_tapas,2,17.7,3.3,medium,false,none,low,1.17
+R1666,Chamberi Bodega 1666,Z07,Chamberí,spanish_tapas,4,17.2,3.5,small,false,none,medium,0.99
+R1667,Vical Garden 1667,Z19,Vicálvaro,healthy,2,12.2,2.0,medium,false,random_flash,low,1.02
+R1668,Lineal Tokyo 1668,Z15,Ciudad Lineal,sushi,2,19.3,3.6,medium,false,none,low,1.01
+R1669,Aravaca District 1669,Z09,Moncloa-Aravaca,burger,2,15.4,2.5,large,false,random_flash,low,1.26
+R1670,Park Grill 1670,Z03,Retiro,kebab,3,8.9,1.9,small,false,random_flash,medium,0.86
+R1671,Latina Corner 1671,Z10,Latina,fast_food,2,11.4,1.7,small,true,lunch_combo,medium,1.16
+R1672,Vical Cantina 1672,Z19,Vicálvaro,mexican,3,12.1,2.3,medium,true,weekend_discount,low,1.12
+R1673,Golden Azteca 1673,Z04,Salamanca,mexican,2,13.0,2.6,large,true,taco_tuesday_2x1,medium,1.15
+R1674,Aero Azteca 1674,Z21,Barajas,mexican,2,11.9,2.2,small,true,taco_tuesday_2x1,low,1.11
+R1675,Aravaca Mesón 1675,Z09,Moncloa-Aravaca,spanish_tapas,1,16.4,3.2,small,false,none,medium,0.7
+R1676,Norte Patty 1676,Z06,Tetuán,burger,2,14.6,2.9,small,true,lunch_combo,medium,0.9
+R1677,River Pizzeria 1677,Z02,Arganzuela,pizza,1,17.0,2.6,small,true,weekend_discount,medium,1.34
+R1678,River Pizza 1678,Z02,Arganzuela,pizza,3,15.8,3.1,small,false,none,low,0.86
+R1679,Vallecas Dessert 1679,Z13,Puente de Vallecas,dessert,1,7.1,1.9,medium,false,random_flash,high,0.97
+R1680,Monte Sweet 1680,Z08,Fuencarral-El Pardo,dessert,3,7.3,1.5,small,true,lunch_combo,low,1.05
+R1681,Aero Bodega 1681,Z21,Barajas,spanish_tapas,2,19.2,3.5,medium,false,none,medium,0.88
+R1682,Lineal Stack 1682,Z15,Ciudad Lineal,burger,2,13.4,2.8,small,true,lunch_combo,low,0.87
+R1683,River Oven 1683,Z02,Arganzuela,pizza,4,16.1,2.4,small,false,random_flash,medium,0.95
+R1684,Horta Bodega 1684,Z16,Hortaleza,spanish_tapas,1,19.9,2.5,small,false,none,low,0.84
+R1685,Vallecas Stack 1685,Z13,Puente de Vallecas,burger,2,14.2,2.1,small,true,lunch_combo,low,0.7
+R1686,River Loco 1686,Z02,Arganzuela,mexican,2,12.3,2.2,small,false,random_flash,low,0.9
+R1687,Lineal Napoli 1687,Z15,Ciudad Lineal,pizza,1,18.0,3.4,medium,true,lunch_combo,low,1.12
+R1688,Horta Wrap 1688,Z16,Hortaleza,kebab,2,10.0,1.6,small,false,none,medium,1.1
+R1689,Norte Roma 1689,Z06,Tetuán,pizza,2,16.9,3.1,small,true,lunch_combo,medium,0.85
+R1690,Morata Tapas 1690,Z14,Moratalaz,spanish_tapas,2,18.1,2.7,small,false,none,medium,1.31
+R1691,Latina Bodega 1691,Z10,Latina,spanish_tapas,2,18.9,2.8,medium,false,random_flash,high,1.06
+R1692,Usera Bowl 1692,Z12,Usera,healthy,3,12.3,1.8,medium,false,none,low,1.07
+R1693,Chamberi Shawarma 1693,Z07,Chamberí,kebab,2,9.1,1.7,small,false,random_flash,low,0.85
+R1694,River Napoli 1694,Z02,Arganzuela,pizza,2,16.0,3.0,large,true,weekend_discount,low,1.32
+R1695,Monte Bites 1695,Z08,Fuencarral-El Pardo,fast_food,2,10.2,2.4,small,false,none,medium,1.17
+R1696,Latina Go 1696,Z10,Latina,grocery_convenience,3,7.9,1.4,small,false,none,low,0.75
+R1697,Horta Wrap 1697,Z16,Hortaleza,kebab,1,8.8,1.5,medium,false,random_flash,low,0.7
+R1698,Chamberi Smash 1698,Z07,Chamberí,burger,2,13.8,2.4,medium,true,lunch_combo,low,0.74
+R1699,Park Daily 1699,Z03,Retiro,grocery_convenience,1,7.5,1.6,small,false,none,medium,1.19
+R1700,Lineal Mart 1700,Z15,Ciudad Lineal,grocery_convenience,1,6.8,1.4,small,false,none,medium,0.83
+R1701,Park Burger 1701,Z03,Retiro,burger,1,14.4,2.6,medium,false,none,low,0.96
+R1702,Vallecas Now 1702,Z13,Puente de Vallecas,grocery_convenience,3,6.9,1.5,large,false,none,medium,0.7
+R1703,Cara Brothers 1703,Z11,Carabanchel,kebab,2,8.9,2.1,medium,false,none,medium,1.0
+R1704,Central Sakura 1704,Z01,Centro,sushi,2,18.7,3.3,medium,false,none,low,1.01
+R1705,Golden Bowl 1705,Z04,Salamanca,healthy,2,11.0,1.9,medium,false,none,high,0.9
+R1706,Latina Grill 1706,Z10,Latina,burger,3,15.6,2.7,medium,false,none,low,1.03
+R1707,Vallecas Roma 1707,Z13,Puente de Vallecas,pizza,2,15.7,2.7,large,true,lunch_combo,medium,0.99
+R1708,Cara Oven 1708,Z11,Carabanchel,pizza,2,16.3,2.8,small,true,weekend_discount,low,0.89
+R1709,Golden Fit 1709,Z04,Salamanca,healthy,2,11.4,2.4,medium,false,none,medium,0.9
+R1710,River Azteca 1710,Z02,Arganzuela,mexican,2,13.0,2.6,medium,true,weekend_discount,low,1.22
+R1711,Monte Mesón 1711,Z08,Fuencarral-El Pardo,spanish_tapas,2,17.0,3.0,medium,false,none,medium,1.49
+R1712,Horta Fresh 1712,Z16,Hortaleza,healthy,2,12.3,2.3,medium,false,none,medium,1.02
+R1713,Golden Grill 1713,Z04,Salamanca,burger,3,13.4,2.1,small,false,random_flash,high,0.91
+R1714,Metropolitano Now 1714,Z20,San Blas-Canillejas,grocery_convenience,2,8.1,1.3,large,false,random_flash,high,1.08
+R1715,Horta Now 1715,Z16,Hortaleza,grocery_convenience,2,7.3,1.3,medium,true,healthy_lunch,medium,0.95
+R1716,Verde Box 1716,Z17,Villaverde,fast_food,2,10.4,1.6,small,false,none,low,1.04
+R1717,Horta Dessert 1717,Z16,Hortaleza,dessert,2,7.9,1.5,small,true,lunch_combo,low,1.02
+R1718,Bernabeu Churro 1718,Z05,Chamartín,dessert,3,7.9,1.6,large,false,random_flash,medium,1.25
+R1719,Morata Stack 1719,Z14,Moratalaz,burger,2,14.2,2.8,medium,false,none,low,1.15
+R1720,Central Burger 1720,Z01,Centro,burger,2,14.0,1.9,medium,true,lunch_combo,medium,0.7
+R1721,Vallecas Pizza 1721,Z13,Puente de Vallecas,pizza,2,16.2,2.7,large,true,lunch_combo,medium,0.97
+R1722,Central Gelato 1722,Z01,Centro,dessert,3,7.9,1.5,medium,false,none,medium,1.17
+R1723,Bernabeu LaPlaza 1723,Z05,Chamartín,spanish_tapas,3,16.5,3.5,small,false,none,high,1.3
+R1724,Latina Napoli 1724,Z10,Latina,pizza,2,14.9,2.6,small,false,random_flash,low,1.1
+R1725,Latina Bites 1725,Z10,Latina,fast_food,2,11.5,1.9,medium,false,none,low,1.01
+R1726,Chamberi Now 1726,Z07,Chamberí,grocery_convenience,2,7.0,1.2,medium,false,none,medium,1.03
+R1727,Horta Burrito 1727,Z16,Hortaleza,mexican,1,12.6,3.2,small,false,none,low,0.95
+R1728,Norte Mesón 1728,Z06,Tetuán,spanish_tapas,2,16.1,2.9,small,true,healthy_lunch,low,0.87
+R1729,Morata Daily 1729,Z14,Moratalaz,grocery_convenience,1,7.1,1.5,small,false,none,low,1.05
+R1730,Chamberi Sakura 1730,Z07,Chamberí,sushi,2,21.0,3.8,small,true,healthy_lunch,medium,0.89
+R1731,Lineal Doner 1731,Z15,Ciudad Lineal,kebab,1,8.4,2.1,medium,false,random_flash,high,0.85
+R1732,Vical Napoli 1732,Z19,Vicálvaro,pizza,1,17.4,3.4,large,false,none,medium,1.09
+R1733,Villa Bites 1733,Z18,Villa de Vallecas,fast_food,2,10.8,2.3,small,false,none,medium,1.2
+R1734,Horta Hub 1734,Z16,Hortaleza,fast_food,2,11.9,2.4,small,false,random_flash,medium,1.0
+R1735,Usera Oven 1735,Z12,Usera,pizza,3,15.4,2.4,medium,true,lunch_combo,medium,1.03
+R1736,Park Loco 1736,Z03,Retiro,mexican,3,13.5,2.2,medium,false,random_flash,low,0.9
+R1737,Monte Smash 1737,Z08,Fuencarral-El Pardo,burger,2,14.0,2.3,small,false,none,low,1.1
+R1738,Lineal Roma 1738,Z15,Ciudad Lineal,pizza,1,16.5,3.0,medium,true,weekend_discount,high,0.7
+R1739,Norte Express 1739,Z06,Tetuán,fast_food,3,11.2,2.3,small,true,weekend_discount,high,0.94
+R1740,Verde Casa 1740,Z17,Villaverde,spanish_tapas,3,18.7,3.4,small,true,healthy_lunch,low,0.85
+R1741,Lineal Brothers 1741,Z15,Ciudad Lineal,kebab,1,9.4,1.9,large,true,healthy_lunch,medium,0.96
+R1742,Morata Loco 1742,Z14,Moratalaz,mexican,2,13.2,3.0,medium,true,taco_tuesday_2x1,low,1.26
+R1743,Golden Cookie 1743,Z04,Salamanca,dessert,1,7.9,2.0,small,false,none,low,1.55
+R1744,Lineal Cantina 1744,Z15,Ciudad Lineal,mexican,4,13.2,2.7,small,false,random_flash,low,1.15
+R1745,Central Slice 1745,Z01,Centro,pizza,2,14.8,2.5,small,true,lunch_combo,medium,1.01
+R1746,Metropolitano Mesón 1746,Z20,San Blas-Canillejas,spanish_tapas,2,17.9,3.4,small,false,none,medium,1.31
+R1747,Central Cream 1747,Z01,Centro,dessert,2,8.0,1.9,small,false,none,medium,0.9
+R1748,Bernabeu Cantina 1748,Z05,Chamartín,mexican,2,13.8,2.4,large,false,random_flash,medium,1.07
+R1749,Horta Slice 1749,Z16,Hortaleza,pizza,2,15.9,3.2,large,false,none,medium,1.05
+R1750,Chamberi Pizza 1750,Z07,Chamberí,pizza,2,15.5,2.4,medium,false,random_flash,medium,1.17
+R1751,Bernabeu Tapas 1751,Z05,Chamartín,spanish_tapas,2,17.4,2.4,large,true,healthy_lunch,high,0.99
+R1752,Metropolitano Go 1752,Z20,San Blas-Canillejas,grocery_convenience,2,7.2,1.8,small,false,none,high,0.97
+R1753,Vical Green 1753,Z19,Vicálvaro,healthy,2,12.4,2.0,medium,false,none,medium,1.23
+R1754,Villa Burger 1754,Z18,Villa de Vallecas,burger,2,15.7,2.6,small,false,none,low,1.0
+R1755,Verde Pizza 1755,Z17,Villaverde,pizza,1,17.0,3.0,small,true,lunch_combo,medium,0.77
+R1756,Horta Mart 1756,Z16,Hortaleza,grocery_convenience,3,6.6,1.4,medium,false,none,high,0.77
+R1757,Bernabeu Go 1757,Z05,Chamartín,grocery_convenience,1,6.7,1.3,medium,true,healthy_lunch,high,1.14
+R1758,Vallecas Roots 1758,Z13,Puente de Vallecas,healthy,1,12.1,1.7,small,false,none,low,1.3
+R1759,Latina Now 1759,Z10,Latina,grocery_convenience,1,6.8,1.2,small,false,none,low,0.78
+R1760,Chamberi Taquería 1760,Z07,Chamberí,mexican,4,12.9,2.5,medium,true,taco_tuesday_2x1,medium,1.17
+R1761,Cara Cream 1761,Z11,Carabanchel,dessert,3,8.5,2.0,small,true,lunch_combo,low,0.96
+R1762,Park Pizza 1762,Z03,Retiro,pizza,1,15.1,3.3,small,true,weekend_discount,low,1.11
+R1763,Vical Cream 1763,Z19,Vicálvaro,dessert,1,7.1,1.8,small,false,random_flash,medium,0.92
+R1764,Chamberi District 1764,Z07,Chamberí,burger,1,14.4,2.1,medium,true,lunch_combo,medium,1.02
+R1765,Aero Sweet 1765,Z21,Barajas,dessert,1,7.4,2.1,small,true,lunch_combo,medium,1.01
+R1766,Latina Tapas 1766,Z10,Latina,spanish_tapas,2,18.9,2.6,small,false,random_flash,low,0.99
+R1767,Golden Taquería 1767,Z04,Salamanca,mexican,2,14.3,2.3,medium,true,taco_tuesday_2x1,low,1.01
+R1768,Central Green 1768,Z01,Centro,healthy,3,11.1,2.4,small,false,random_flash,low,0.8
+R1769,Metropolitano Burrito 1769,Z20,San Blas-Canillejas,mexican,2,13.0,3.1,small,true,taco_tuesday_2x1,high,1.1
+R1770,River Mart 1770,Z02,Arganzuela,grocery_convenience,2,6.3,1.7,small,false,none,low,1.42
+R1771,Lineal Loco 1771,Z15,Ciudad Lineal,mexican,3,13.2,2.8,medium,true,taco_tuesday_2x1,medium,0.94
+R1772,Central Express 1772,Z01,Centro,grocery_convenience,1,7.1,1.2,medium,false,none,medium,0.99
+R1773,Park Patty 1773,Z03,Retiro,burger,3,13.9,2.8,small,false,none,low,0.91
+R1774,Golden Tapas 1774,Z04,Salamanca,spanish_tapas,3,15.7,2.5,medium,false,none,medium,1.29
+R1775,Norte Sweet 1775,Z06,Tetuán,dessert,2,8.8,1.9,medium,true,lunch_combo,low,0.85
+R1776,Chamberi Smash 1776,Z07,Chamberí,burger,2,12.8,2.8,medium,true,lunch_combo,low,1.01
+R1777,Park Garden 1777,Z03,Retiro,healthy,3,12.2,2.5,small,false,random_flash,low,1.02
+R1778,Lineal Doner 1778,Z15,Ciudad Lineal,kebab,1,9.8,1.6,large,false,none,medium,0.97
+R1779,Monte Oven 1779,Z08,Fuencarral-El Pardo,pizza,3,14.3,2.4,medium,true,lunch_combo,high,0.7
+R1780,Park Smash 1780,Z03,Retiro,burger,2,12.9,2.1,medium,true,weekend_discount,medium,0.76
+R1781,Bernabeu Tokyo 1781,Z05,Chamartín,sushi,3,20.6,4.6,medium,true,healthy_lunch,low,0.7
+R1782,Metropolitano Taquería 1782,Z20,San Blas-Canillejas,mexican,1,13.5,2.8,small,true,taco_tuesday_2x1,high,1.01
+R1783,Central Now 1783,Z01,Centro,grocery_convenience,1,7.2,1.5,small,false,none,low,1.02
+R1784,River Slice 1784,Z02,Arganzuela,pizza,1,16.1,2.3,small,true,weekend_discount,medium,0.91
+R1785,Golden Green 1785,Z04,Salamanca,healthy,3,12.1,2.4,medium,false,none,low,0.97
+R1786,River Cantina 1786,Z02,Arganzuela,mexican,2,12.5,3.2,small,false,random_flash,low,0.76
+R1787,Metropolitano Hub 1787,Z20,San Blas-Canillejas,fast_food,2,10.0,1.7,medium,false,random_flash,high,0.78
+R1788,Morata District 1788,Z14,Moratalaz,burger,2,13.8,2.3,small,true,weekend_discount,low,1.25
+R1789,Vical Pizza 1789,Z19,Vicálvaro,pizza,2,15.2,2.7,medium,false,none,low,1.17
+R1790,Chamberi Tapas 1790,Z07,Chamberí,spanish_tapas,3,17.3,2.5,medium,false,none,medium,0.71
+R1791,Bernabeu Smash 1791,Z05,Chamartín,burger,2,16.0,2.3,small,true,lunch_combo,medium,1.21
+R1792,Vallecas Loco 1792,Z13,Puente de Vallecas,mexican,1,12.5,2.6,small,true,taco_tuesday_2x1,medium,0.86
+R1793,Verde Hub 1793,Z17,Villaverde,fast_food,3,11.0,2.1,large,false,none,low,1.32
+R1794,Aravaca Pizzeria 1794,Z09,Moncloa-Aravaca,pizza,1,15.2,3.0,large,false,random_flash,low,0.7
+R1795,Aero Daily 1795,Z21,Barajas,grocery_convenience,1,6.6,1.6,medium,false,none,low,0.87
+R1796,Cara Burrito 1796,Z11,Carabanchel,mexican,1,13.2,2.4,small,false,none,low,1.16
+R1797,Metropolitano Express 1797,Z20,San Blas-Canillejas,grocery_convenience,2,6.8,1.3,small,false,none,low,0.85
+R1798,Central Green 1798,Z01,Centro,healthy,2,12.7,2.1,small,false,none,low,0.8
+R1799,Norte Sakura 1799,Z06,Tetuán,sushi,2,20.3,4.0,medium,false,none,low,0.75
+R1800,Vallecas Now 1800,Z13,Puente de Vallecas,grocery_convenience,2,7.6,1.8,small,false,random_flash,medium,0.85
+R1801,Chamberi Gelato 1801,Z07,Chamberí,dessert,2,7.9,1.7,medium,true,lunch_combo,low,0.79
+R1802,River Smash 1802,Z02,Arganzuela,burger,2,12.3,2.5,large,false,none,low,0.91
+R1803,Bernabeu Hub 1803,Z05,Chamartín,fast_food,2,10.7,2.2,small,true,lunch_combo,high,1.16
+R1804,Chamberi Express 1804,Z07,Chamberí,fast_food,1,11.4,1.8,medium,false,random_flash,high,0.99
+R1805,Park Hub 1805,Z03,Retiro,fast_food,1,10.7,2.0,small,false,none,medium,0.88
+R1806,Norte Hub 1806,Z06,Tetuán,fast_food,3,11.3,2.0,small,false,random_flash,medium,1.32
+R1807,River Sweet 1807,Z02,Arganzuela,dessert,1,7.4,1.8,medium,true,lunch_combo,medium,0.77
+R1808,Vical Box 1808,Z19,Vicálvaro,fast_food,2,12.3,1.8,small,true,lunch_combo,low,1.23
+R1809,Bernabeu Gelato 1809,Z05,Chamartín,dessert,3,7.3,1.6,medium,false,none,medium,1.09
+R1810,River Grill 1810,Z02,Arganzuela,burger,3,15.1,2.6,small,true,lunch_combo,low,0.89
+R1811,Park Gelato 1811,Z03,Retiro,dessert,2,7.5,1.7,small,true,lunch_combo,medium,0.92
+R1812,Villa Kebab 1812,Z18,Villa de Vallecas,kebab,3,8.6,1.5,medium,false,none,high,0.88
+R1813,Vical Napoli 1813,Z19,Vicálvaro,pizza,2,16.2,2.4,large,true,weekend_discount,high,1.01
+R1814,Bernabeu Pizzeria 1814,Z05,Chamartín,pizza,3,16.3,2.9,small,false,random_flash,medium,1.28
+R1815,Morata Patty 1815,Z14,Moratalaz,burger,2,13.8,2.9,large,true,weekend_discount,medium,0.94
+R1816,Latina Slice 1816,Z10,Latina,pizza,2,14.4,2.3,medium,false,random_flash,low,1.25
+R1817,Chamberi Grill 1817,Z07,Chamberí,burger,3,14.7,2.8,medium,true,weekend_discount,medium,1.06
+R1818,Park Wrap 1818,Z03,Retiro,kebab,2,8.1,1.9,small,false,random_flash,low,0.75
+R1819,Usera Casa 1819,Z12,Usera,spanish_tapas,2,18.1,2.9,medium,false,none,low,1.13
+R1820,River Corner 1820,Z02,Arganzuela,fast_food,1,11.3,2.2,small,false,random_flash,medium,1.23
+R1821,Horta Pizza 1821,Z16,Hortaleza,pizza,1,16.7,2.6,medium,false,none,low,1.13
+R1822,Verde Azteca 1822,Z17,Villaverde,mexican,2,13.2,3.1,medium,false,none,low,1.07
+R1823,Usera Smash 1823,Z12,Usera,burger,2,13.3,2.6,small,true,weekend_discount,low,1.02
+R1824,Golden Bowl 1824,Z04,Salamanca,healthy,2,12.6,1.7,small,false,none,medium,1.34
+R1825,Park Taquería 1825,Z03,Retiro,mexican,3,11.7,2.9,medium,false,none,medium,0.88
+R1826,Metropolitano Roma 1826,Z20,San Blas-Canillejas,pizza,1,18.2,2.6,small,true,weekend_discount,high,0.7
+R1827,Lineal Brothers 1827,Z15,Ciudad Lineal,kebab,2,9.1,1.9,medium,false,random_flash,medium,0.94
+R1828,Chamberi Express 1828,Z07,Chamberí,fast_food,1,10.8,2.0,small,true,weekend_discount,medium,0.99
+R1829,Park Sweet 1829,Z03,Retiro,dessert,2,7.5,1.5,medium,false,random_flash,medium,1.12
+R1830,Lineal Tokyo 1830,Z15,Ciudad Lineal,sushi,2,20.6,4.0,small,false,random_flash,high,1.13
+R1831,Park Kebab 1831,Z03,Retiro,kebab,2,8.1,1.5,medium,false,none,medium,1.13
+R1832,Chamberi Box 1832,Z07,Chamberí,fast_food,1,10.8,1.8,small,false,random_flash,medium,0.86
+R1833,Park Sushi 1833,Z03,Retiro,sushi,4,21.8,4.8,medium,true,healthy_lunch,low,1.01
+R1834,Chamberi Box 1834,Z07,Chamberí,fast_food,1,10.4,2.1,medium,true,lunch_combo,low,1.5
+R1835,Norte Taquería 1835,Z06,Tetuán,mexican,2,15.2,2.7,small,true,taco_tuesday_2x1,low,1.1
+R1836,Golden Casa 1836,Z04,Salamanca,spanish_tapas,2,17.1,2.4,large,false,none,low,0.88
+R1837,Monte Roll 1837,Z08,Fuencarral-El Pardo,sushi,2,21.2,3.5,medium,false,none,low,1.26
+R1838,Usera Stack 1838,Z12,Usera,burger,1,14.1,2.1,large,false,random_flash,low,0.84
+R1839,Latina Burger 1839,Z10,Latina,burger,1,14.6,2.3,small,true,lunch_combo,low,1.2
+R1840,Golden District 1840,Z04,Salamanca,burger,2,14.8,2.6,small,true,lunch_combo,medium,1.0
+R1841,Norte Pizzeria 1841,Z06,Tetuán,pizza,2,15.2,2.7,medium,true,lunch_combo,low,1.0
+R1842,Norte Smash 1842,Z06,Tetuán,burger,2,14.6,2.2,small,true,weekend_discount,medium,0.99
+R1843,Golden Stack 1843,Z04,Salamanca,burger,3,15.0,2.5,large,true,lunch_combo,high,1.06
+R1844,Latina Doner 1844,Z10,Latina,kebab,2,8.6,1.5,small,false,none,high,1.11
+R1845,Norte Bites 1845,Z06,Tetuán,fast_food,1,10.6,1.8,large,false,none,medium,1.06
+R1846,Villa Grill 1846,Z18,Villa de Vallecas,kebab,3,9.1,1.7,small,false,none,medium,0.75
+R1847,Metropolitano Bodega 1847,Z20,San Blas-Canillejas,spanish_tapas,2,17.7,2.5,large,false,none,high,1.13
+R1848,Vical Azteca 1848,Z19,Vicálvaro,mexican,1,12.5,2.5,medium,true,taco_tuesday_2x1,low,0.7
+R1849,Verde Stack 1849,Z17,Villaverde,burger,2,14.6,2.1,small,false,random_flash,low,0.76
+R1850,River Roots 1850,Z02,Arganzuela,healthy,3,13.0,2.1,medium,false,none,low,0.98
+R1851,Golden Burger 1851,Z04,Salamanca,burger,4,15.4,2.3,small,true,weekend_discount,low,1.1
+R1852,Morata Tokyo 1852,Z14,Moratalaz,sushi,3,20.1,4.2,medium,false,none,low,0.99
+R1853,Aravaca Churro 1853,Z09,Moncloa-Aravaca,dessert,1,8.5,1.8,medium,true,lunch_combo,high,1.01
+R1854,Vallecas Burger 1854,Z13,Puente de Vallecas,burger,3,14.8,2.3,small,true,weekend_discount,low,1.23
+R1855,Chamberi Cookie 1855,Z07,Chamberí,dessert,2,7.7,1.9,medium,false,none,low,1.03
+R1856,Aravaca Sushi 1856,Z09,Moncloa-Aravaca,sushi,3,18.5,3.6,small,false,random_flash,medium,0.73
+R1857,Bernabeu Pizza 1857,Z05,Chamartín,pizza,1,17.1,2.3,small,false,none,high,1.01
+R1858,Norte Now 1858,Z06,Tetuán,grocery_convenience,1,7.2,1.5,small,false,none,medium,0.91
+R1859,Central Patty 1859,Z01,Centro,burger,3,12.9,2.6,medium,false,none,low,1.25
+R1860,Central Taquería 1860,Z01,Centro,mexican,2,12.9,3.1,small,true,weekend_discount,high,1.0
+R1861,Verde Brothers 1861,Z17,Villaverde,kebab,2,7.7,1.5,small,false,none,medium,1.03
+R1862,Horta Express 1862,Z16,Hortaleza,fast_food,2,11.2,1.6,small,false,random_flash,low,0.83
+R1863,Norte Roma 1863,Z06,Tetuán,pizza,2,15.8,3.1,small,true,weekend_discount,low,0.7
+R1864,Latina Grill 1864,Z10,Latina,burger,1,13.5,2.0,small,true,weekend_discount,high,1.21
+R1865,Golden Roma 1865,Z04,Salamanca,pizza,1,15.5,2.7,medium,false,none,high,0.85
+R1866,Horta Corner 1866,Z16,Hortaleza,fast_food,2,10.3,1.8,medium,true,weekend_discount,low,1.27
+R1867,Golden Express 1867,Z04,Salamanca,fast_food,3,10.9,1.8,medium,true,weekend_discount,medium,0.87
+R1868,Vallecas Express 1868,Z13,Puente de Vallecas,grocery_convenience,1,6.5,1.8,medium,false,none,low,0.95
+R1869,Villa Corner 1869,Z18,Villa de Vallecas,fast_food,2,11.9,1.7,small,true,lunch_combo,low,0.93
+R1870,Verde Oven 1870,Z17,Villaverde,pizza,2,14.6,3.3,medium,true,lunch_combo,low,0.92
+R1871,Chamberi Taberna 1871,Z07,Chamberí,spanish_tapas,2,18.3,3.4,large,true,healthy_lunch,medium,0.86
+R1872,Monte Burrito 1872,Z08,Fuencarral-El Pardo,mexican,1,12.4,2.5,large,true,taco_tuesday_2x1,medium,0.77
+R1873,Latina LaPlaza 1873,Z10,Latina,spanish_tapas,2,17.4,3.0,medium,false,none,low,1.15
+R1874,Park Grill 1874,Z03,Retiro,burger,2,12.7,2.0,small,true,weekend_discount,medium,1.09
+R1875,Central Azteca 1875,Z01,Centro,mexican,1,12.2,2.8,medium,false,random_flash,high,0.7
+R1876,Villa Market 1876,Z18,Villa de Vallecas,grocery_convenience,2,7.9,1.4,small,false,none,medium,1.1
+R1877,Park Bites 1877,Z03,Retiro,fast_food,2,10.9,1.9,large,false,none,low,0.89
+R1878,Park Corner 1878,Z03,Retiro,fast_food,4,11.0,2.0,small,true,weekend_discount,low,0.86
+R1879,Park Express 1879,Z03,Retiro,fast_food,2,10.5,2.1,medium,false,none,medium,1.3
+R1880,Park Roots 1880,Z03,Retiro,healthy,3,12.6,1.9,medium,false,none,high,1.46
+R1881,Chamberi Azteca 1881,Z07,Chamberí,mexican,2,13.1,2.7,medium,true,taco_tuesday_2x1,medium,1.09
+R1882,Usera Mesón 1882,Z12,Usera,spanish_tapas,2,16.4,2.6,medium,false,none,low,0.76
+R1883,Villa Pizzeria 1883,Z18,Villa de Vallecas,pizza,2,17.0,3.1,small,true,lunch_combo,low,1.31
+R1884,Chamberi Slice 1884,Z07,Chamberí,pizza,1,15.7,2.7,large,true,lunch_combo,high,1.18
+R1885,Lineal Box 1885,Z15,Ciudad Lineal,fast_food,2,10.9,2.1,small,true,lunch_combo,low,0.9
+R1886,Vical Pizza 1886,Z19,Vicálvaro,pizza,1,15.4,3.0,small,true,lunch_combo,medium,1.28
+R1887,Vallecas Corner 1887,Z13,Puente de Vallecas,fast_food,1,10.6,2.2,small,true,lunch_combo,medium,0.89
+R1888,Cara Kebab 1888,Z11,Carabanchel,kebab,2,8.7,1.6,small,false,none,low,0.97
+R1889,Central Stack 1889,Z01,Centro,burger,3,14.3,2.0,medium,true,weekend_discount,medium,1.45
+R1890,Metropolitano Burger 1890,Z20,San Blas-Canillejas,burger,2,13.7,2.8,medium,false,random_flash,low,1.25
+R1891,Monte Burrito 1891,Z08,Fuencarral-El Pardo,mexican,1,14.5,2.3,small,true,weekend_discount,high,1.02
+R1892,Bernabeu Slice 1892,Z05,Chamartín,pizza,3,15.9,2.7,medium,false,random_flash,low,1.05
+R1893,Chamberi Cantina 1893,Z07,Chamberí,mexican,3,11.5,3.2,medium,true,taco_tuesday_2x1,low,1.06
+R1894,Vallecas Tapas 1894,Z13,Puente de Vallecas,spanish_tapas,2,17.9,3.2,small,true,healthy_lunch,low,0.88
+R1895,Lineal Grill 1895,Z15,Ciudad Lineal,burger,1,13.9,2.2,medium,false,random_flash,low,1.06
+R1896,River Fit 1896,Z02,Arganzuela,healthy,3,10.7,2.4,small,false,none,low,0.85
+R1897,Lineal Napoli 1897,Z15,Ciudad Lineal,pizza,2,15.1,2.8,medium,false,random_flash,medium,0.85
+R1898,Vallecas Express 1898,Z13,Puente de Vallecas,fast_food,3,10.9,2.2,small,true,weekend_discount,high,1.02
+R1899,Vical LaPlaza 1899,Z19,Vicálvaro,spanish_tapas,2,17.4,2.5,small,true,healthy_lunch,low,0.97
+R1900,Golden Churro 1900,Z04,Salamanca,dessert,2,8.6,1.9,large,false,none,medium,1.1
+R1901,Cara Azteca 1901,Z11,Carabanchel,mexican,1,11.9,2.6,medium,false,random_flash,low,1.07
+R1902,Horta Stack 1902,Z16,Hortaleza,burger,4,14.4,2.5,small,false,none,low,1.35
+R1903,Golden Sakura 1903,Z04,Salamanca,sushi,2,20.7,4.2,medium,false,none,low,1.18
+R1904,Norte Pizza 1904,Z06,Tetuán,pizza,1,13.7,2.4,large,true,weekend_discount,medium,0.85
+R1905,Lineal Grill 1905,Z15,Ciudad Lineal,burger,2,14.7,2.7,medium,true,weekend_discount,low,1.22
+R1906,Chamberi Kebab 1906,Z07,Chamberí,kebab,2,8.4,2.0,medium,false,none,low,1.48
+R1907,Chamberi Go 1907,Z07,Chamberí,fast_food,2,10.6,2.1,small,false,none,medium,0.97
+R1908,River Shawarma 1908,Z02,Arganzuela,kebab,1,9.3,1.9,large,true,healthy_lunch,low,1.04
+R1909,Usera Napoli 1909,Z12,Usera,pizza,2,16.8,2.8,small,false,random_flash,medium,0.79
+R1910,Cara Now 1910,Z11,Carabanchel,grocery_convenience,1,6.6,1.8,small,false,none,medium,1.11
+R1911,Horta Taco 1911,Z16,Hortaleza,mexican,1,12.3,2.7,medium,false,none,medium,1.05
+R1912,Golden Patty 1912,Z04,Salamanca,burger,2,14.9,2.2,small,false,none,high,1.11
+R1913,Golden Roll 1913,Z04,Salamanca,sushi,3,17.2,3.3,medium,false,none,medium,0.77
+R1914,Aravaca Azteca 1914,Z09,Moncloa-Aravaca,mexican,2,12.6,2.8,medium,false,none,medium,0.81
+R1915,Bernabeu Express 1915,Z05,Chamartín,grocery_convenience,2,7.3,1.3,medium,false,random_flash,medium,0.77
+R1916,Vical Roma 1916,Z19,Vicálvaro,pizza,2,14.9,3.4,small,false,random_flash,high,0.95
+R1917,Bernabeu Bites 1917,Z05,Chamartín,fast_food,1,10.2,2.3,small,true,weekend_discount,medium,0.85
+R1918,Aero Grill 1918,Z21,Barajas,burger,3,14.8,2.5,large,true,weekend_discount,medium,1.04
+R1919,Golden Bodega 1919,Z04,Salamanca,spanish_tapas,3,18.0,3.5,medium,false,random_flash,medium,1.09
+R1920,Central Sakura 1920,Z01,Centro,sushi,4,19.2,4.4,small,false,none,low,1.02
+R1921,Aravaca Slice 1921,Z09,Moncloa-Aravaca,pizza,1,16.9,2.7,small,true,weekend_discount,high,0.91
+R1922,Bernabeu Pizzeria 1922,Z05,Chamartín,pizza,2,14.4,2.9,medium,true,weekend_discount,low,0.9
+R1923,Norte Napoli 1923,Z06,Tetuán,pizza,1,14.4,3.3,medium,false,none,medium,0.87
+R1924,Chamberi Corner 1924,Z07,Chamberí,fast_food,3,11.8,2.0,small,false,none,low,0.96
+R1925,Central Doner 1925,Z01,Centro,kebab,2,9.2,1.6,large,false,none,low,1.04
+R1926,River Kebab 1926,Z02,Arganzuela,kebab,2,8.9,1.7,large,false,none,low,1.16
+R1927,Park Go 1927,Z03,Retiro,grocery_convenience,1,7.0,1.7,medium,false,none,low,0.91
+R1928,Bernabeu Zen 1928,Z05,Chamartín,sushi,3,21.4,3.2,small,false,none,medium,1.03
+R1929,Bernabeu Bodega 1929,Z05,Chamartín,spanish_tapas,3,17.0,3.0,medium,false,none,medium,1.12
+R1930,Latina Pizza 1930,Z10,Latina,pizza,3,16.5,2.6,medium,true,weekend_discount,medium,0.8
+R1931,Bernabeu Pizza 1931,Z05,Chamartín,pizza,1,17.0,2.3,medium,true,lunch_combo,medium,0.76
+R1932,Vical Market 1932,Z19,Vicálvaro,grocery_convenience,3,7.1,1.7,small,false,none,medium,0.87
+R1933,Norte District 1933,Z06,Tetuán,burger,2,14.0,2.2,medium,false,random_flash,medium,1.17
+R1934,Aravaca Pizzeria 1934,Z09,Moncloa-Aravaca,pizza,3,17.2,2.4,small,false,random_flash,low,1.27
+R1935,Latina Sushi 1935,Z10,Latina,sushi,2,23.5,3.3,small,true,healthy_lunch,low,1.11
+R1936,Bernabeu Tokyo 1936,Z05,Chamartín,sushi,3,20.5,3.9,medium,false,none,medium,1.18
+R1937,River Taberna 1937,Z02,Arganzuela,spanish_tapas,1,16.6,3.6,medium,false,random_flash,low,0.86
+R1938,Latina Express 1938,Z10,Latina,fast_food,2,10.5,1.7,small,true,weekend_discount,low,0.97
+R1939,Usera District 1939,Z12,Usera,burger,2,13.6,2.8,medium,false,random_flash,low,0.93
+R1940,Lineal Loco 1940,Z15,Ciudad Lineal,mexican,2,12.0,2.2,medium,true,taco_tuesday_2x1,medium,1.03
+R1941,Central Patty 1941,Z01,Centro,burger,2,12.7,2.1,small,true,weekend_discount,low,1.28
+R1942,Morata Bites 1942,Z14,Moratalaz,fast_food,2,11.5,2.0,small,false,none,low,1.12
+R1943,Vallecas Wasabi 1943,Z13,Puente de Vallecas,sushi,3,19.9,4.7,large,false,random_flash,low,0.9
+R1944,River Shawarma 1944,Z02,Arganzuela,kebab,3,8.6,2.1,small,false,none,low,0.86
+R1945,Lineal Green 1945,Z15,Ciudad Lineal,healthy,1,11.5,1.9,small,false,none,low,0.91
+R1946,Usera Pizza 1946,Z12,Usera,pizza,2,15.1,2.8,large,true,weekend_discount,medium,0.95
+R1947,Bernabeu Daily 1947,Z05,Chamartín,grocery_convenience,1,7.0,1.6,medium,false,none,high,0.71
+R1948,Aravaca Gelato 1948,Z09,Moncloa-Aravaca,dessert,2,7.9,1.8,large,false,none,low,0.84
+R1949,Central Corner 1949,Z01,Centro,fast_food,3,10.2,2.1,medium,false,random_flash,medium,1.15
+R1950,Park Cantina 1950,Z03,Retiro,mexican,2,13.8,2.2,small,true,taco_tuesday_2x1,low,0.89
+R1951,Bernabeu Mart 1951,Z05,Chamartín,grocery_convenience,2,7.2,1.3,medium,false,none,medium,0.79
+R1952,Norte Taco 1952,Z06,Tetuán,mexican,1,13.0,2.7,small,true,taco_tuesday_2x1,medium,1.04
+R1953,Morata Azteca 1953,Z14,Moratalaz,mexican,4,11.9,2.5,large,true,weekend_discount,low,1.01
+R1954,Central Mesón 1954,Z01,Centro,spanish_tapas,4,19.6,3.2,small,true,healthy_lunch,low,1.04
+R1955,Central Napoli 1955,Z01,Centro,pizza,3,17.1,2.5,medium,true,weekend_discount,low,0.99
+R1956,Bernabeu Taco 1956,Z05,Chamartín,mexican,3,11.5,3.0,medium,true,taco_tuesday_2x1,medium,1.17
+R1957,Central Tapas 1957,Z01,Centro,spanish_tapas,3,18.1,2.7,large,true,healthy_lunch,low,1.03
+R1958,Chamberi Hub 1958,Z07,Chamberí,fast_food,2,11.0,2.1,medium,true,lunch_combo,medium,1.29
+R1959,River Taco 1959,Z02,Arganzuela,mexican,1,12.1,2.5,medium,true,taco_tuesday_2x1,high,1.33
+R1960,Bernabeu Fit 1960,Z05,Chamartín,healthy,3,11.5,2.4,small,false,none,medium,1.23
+R1961,Latina Cantina 1961,Z10,Latina,mexican,2,13.1,2.2,small,true,taco_tuesday_2x1,low,0.94
+R1962,Vallecas Market 1962,Z13,Puente de Vallecas,grocery_convenience,1,7.5,1.3,medium,false,none,low,0.95
+R1963,Golden Zen 1963,Z04,Salamanca,sushi,3,21.2,3.8,small,false,none,medium,1.01
+R1964,Cara Casa 1964,Z11,Carabanchel,spanish_tapas,2,18.1,2.6,medium,false,none,low,1.04
+R1965,Norte Slice 1965,Z06,Tetuán,pizza,1,15.1,2.5,small,false,none,medium,0.98
+R1966,Central Box 1966,Z01,Centro,fast_food,2,11.9,1.8,medium,false,none,low,1.02
+R1967,Norte Smash 1967,Z06,Tetuán,burger,3,15.2,2.4,small,false,none,high,1.06
+R1968,Park Roma 1968,Z03,Retiro,pizza,1,17.2,2.5,small,true,lunch_combo,medium,0.71
+R1969,Vallecas Smash 1969,Z13,Puente de Vallecas,burger,2,14.9,2.5,small,true,lunch_combo,medium,0.9
+R1970,Vallecas Cream 1970,Z13,Puente de Vallecas,dessert,2,8.0,1.6,medium,false,none,medium,0.99
+R1971,Latina Tokyo 1971,Z10,Latina,sushi,3,21.0,4.6,small,false,none,medium,0.83
+R1972,Vallecas Wasabi 1972,Z13,Puente de Vallecas,sushi,1,20.9,4.2,medium,false,none,low,1.12
+R1973,River Corner 1973,Z02,Arganzuela,fast_food,3,11.5,2.2,small,true,lunch_combo,medium,0.72
+R1974,Chamberi Taco 1974,Z07,Chamberí,mexican,2,13.3,2.9,small,true,weekend_discount,low,1.29
+R1975,Golden Patty 1975,Z04,Salamanca,burger,2,14.2,2.6,medium,false,random_flash,high,1.03
+R1976,Metropolitano District 1976,Z20,San Blas-Canillejas,burger,3,14.5,2.0,small,true,lunch_combo,high,0.98
+R1977,Central District 1977,Z01,Centro,burger,3,14.4,2.0,small,false,random_flash,low,1.0
+R1978,River Smash 1978,Z02,Arganzuela,burger,1,15.1,2.6,medium,true,lunch_combo,low,1.1
+R1979,Park Slice 1979,Z03,Retiro,pizza,3,15.8,2.8,medium,true,weekend_discount,low,0.95
+R1980,Park LaPlaza 1980,Z03,Retiro,spanish_tapas,4,19.6,3.1,small,false,none,medium,1.05
+R1981,Vical Slice 1981,Z19,Vicálvaro,pizza,1,17.0,2.6,small,true,lunch_combo,medium,1.1
+R1982,Verde Doner 1982,Z17,Villaverde,kebab,1,9.6,1.9,small,false,none,low,1.13
+R1983,River Pizza 1983,Z02,Arganzuela,pizza,2,16.6,3.0,small,false,none,medium,1.15
+R1984,Central Doner 1984,Z01,Centro,kebab,2,9.3,1.5,small,false,none,low,0.83
+R1985,Central Roma 1985,Z01,Centro,pizza,2,16.4,2.5,small,false,none,low,1.12
+R1986,Central Roll 1986,Z01,Centro,sushi,3,21.9,4.2,small,true,healthy_lunch,medium,1.39
+R1987,Lineal Taquería 1987,Z15,Ciudad Lineal,mexican,2,14.0,2.7,small,true,taco_tuesday_2x1,low,0.83
+R1988,Bernabeu Mart 1988,Z05,Chamartín,grocery_convenience,2,7.5,1.3,small,false,none,low,0.7
+R1989,Chamberi Hub 1989,Z07,Chamberí,fast_food,2,9.4,1.7,small,true,lunch_combo,low,1.38
+R1990,Vical Hub 1990,Z19,Vicálvaro,fast_food,1,10.9,1.9,small,false,random_flash,low,0.97
+R1991,Park Roots 1991,Z03,Retiro,healthy,4,11.5,2.4,medium,false,none,medium,0.92
+R1992,Latina Grill 1992,Z10,Latina,burger,2,13.5,2.1,small,true,lunch_combo,low,0.89
+R1993,Latina Napoli 1993,Z10,Latina,pizza,1,16.5,3.3,medium,true,lunch_combo,low,0.98
+R1994,River Go 1994,Z02,Arganzuela,fast_food,1,10.7,2.3,medium,false,none,medium,0.86
+R1995,Chamberi Dessert 1995,Z07,Chamberí,dessert,2,7.4,1.7,medium,true,lunch_combo,low,0.96
+R1996,Metropolitano Bowl 1996,Z20,San Blas-Canillejas,healthy,1,11.8,1.7,medium,false,none,high,1.04
+R1997,Monte District 1997,Z08,Fuencarral-El Pardo,burger,2,14.9,2.5,medium,false,random_flash,low,1.12
+R1998,River Pizza 1998,Z02,Arganzuela,pizza,2,15.9,3.3,medium,false,none,medium,0.7
+R1999,Latina Bowl 1999,Z10,Latina,healthy,3,12.4,1.9,small,false,none,low,0.7
+R2000,Metropolitano Taco 2000,Z20,San Blas-Canillejas,mexican,1,13.9,2.5,small,false,random_flash,high,0.96

@@ -1,0 +1,8 @@
+event_type,home_team,primary_district,secondary_district,category,demand_multiplier
+match_day,Real Madrid,Chamartín,Tetuán,burger,2.6
+match_day,Real Madrid,Chamartín,Salamanca,pizza,2.2
+match_day,Real Madrid,Chamartín,Chamberí,fast_food,2.0
+match_day,Real Madrid,Chamartín,Centro,mexican,1.5
+match_day,Atlético Madrid,San Blas-Canillejas,Ciudad Lineal,burger,2.4
+match_day,Atlético Madrid,San Blas-Canillejas,Vicálvaro,pizza,2.1
+match_day,Atlético Madrid,San Blas-Canillejas,Barajas,fast_food,1.9

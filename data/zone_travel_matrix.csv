@@ -1,0 +1,442 @@
+zone_from,zone_to,district_from,district_to,hop_count,distance_index,mean_time_min,std_dev_min,base_delay_probability,pickup_cancel_factor,user_cancel_sensitivity,same_zone
+Z01,Z01,Centro,Centro,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z01,Z02,Centro,Arganzuela,1,1.2,14.9,2.7,0.158,1.236,1.074,false
+Z01,Z03,Centro,Retiro,1,1.118,14.7,2.6,0.157,1.234,1.072,false
+Z01,Z04,Centro,Salamanca,1,1.612,16.2,2.9,0.164,1.248,1.082,false
+Z01,Z05,Centro,Chamartín,2,2.195,21.2,3.8,0.213,1.466,1.244,false
+Z01,Z06,Centro,Tetuán,2,1.803,20.0,3.6,0.207,1.454,1.236,false
+Z01,Z07,Centro,Chamberí,1,0.922,14.1,2.5,0.154,1.228,1.068,false
+Z01,Z08,Centro,Fuencarral-El Pardo,2,3.6,25.6,4.6,0.234,1.508,1.272,false
+Z01,Z09,Centro,Moncloa-Aravaca,1,2.195,18.0,3.2,0.173,1.266,1.094,false
+Z01,Z10,Centro,Latina,1,2.247,18.2,3.3,0.174,1.267,1.095,false
+Z01,Z11,Centro,Carabanchel,1,2.5,18.9,3.4,0.178,1.275,1.1,false
+Z01,Z12,Centro,Usera,2,2.419,21.9,3.9,0.216,1.473,1.248,false
+Z01,Z13,Centro,Puente de Vallecas,1,2.441,18.8,3.4,0.177,1.273,1.099,false
+Z01,Z14,Centro,Moratalaz,2,2.786,23.0,4.1,0.222,1.484,1.256,false
+Z01,Z15,Centro,Ciudad Lineal,2,3.105,24.0,4.3,0.227,1.493,1.262,false
+Z01,Z16,Centro,Hortaleza,3,3.78,29.3,5.3,0.277,1.713,1.426,false
+Z01,Z17,Centro,Villaverde,2,3.864,26.4,4.8,0.238,1.516,1.277,false
+Z01,Z18,Centro,Villa de Vallecas,2,4.561,28.5,5.1,0.248,1.537,1.291,false
+Z01,Z19,Centro,Vicálvaro,2,4.614,28.7,5.2,0.249,1.538,1.292,false
+Z01,Z20,Centro,San Blas-Canillejas,3,4.105,30.3,5.5,0.282,1.723,1.432,false
+Z01,Z21,Centro,Barajas,3,5.608,36.5,6.6,0.334,1.768,1.462,false
+Z02,Z01,Arganzuela,Centro,1,1.2,14.9,2.7,0.158,1.236,1.074,false
+Z02,Z02,Arganzuela,Arganzuela,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z02,Z03,Arganzuela,Retiro,1,1.487,14.8,2.7,0.122,1.245,1.08,false
+Z02,Z04,Arganzuela,Salamanca,2,2.441,21.0,3.8,0.177,1.473,1.249,false
+Z02,Z05,Arganzuela,Chamartín,3,3.289,26.8,4.8,0.229,1.699,1.416,false
+Z02,Z06,Arganzuela,Tetuán,3,3.002,25.9,4.7,0.225,1.69,1.41,false
+Z02,Z07,Arganzuela,Chamberí,2,2.11,19.9,3.6,0.172,1.463,1.242,false
+Z02,Z08,Arganzuela,Fuencarral-El Pardo,3,4.8,31.5,5.7,0.252,1.744,1.446,false
+Z02,Z09,Arganzuela,Moncloa-Aravaca,2,2.983,22.6,4.1,0.185,1.489,1.26,false
+Z02,Z10,Arganzuela,Latina,1,2.138,16.8,3.0,0.132,1.264,1.093,false
+Z02,Z11,Arganzuela,Carabanchel,1,1.7,15.5,2.8,0.126,1.251,1.084,false
+Z02,Z12,Arganzuela,Usera,1,1.237,14.0,2.5,0.119,1.237,1.075,false
+Z02,Z13,Arganzuela,Puente de Vallecas,1,1.612,15.2,2.7,0.124,1.248,1.082,false
+Z02,Z14,Arganzuela,Moratalaz,2,2.608,21.5,3.9,0.179,1.478,1.252,false
+Z02,Z15,Arganzuela,Ciudad Lineal,2,3.606,24.6,4.4,0.194,1.508,1.272,false
+Z02,Z16,Arganzuela,Hortaleza,3,4.61,30.9,5.6,0.249,1.738,1.442,false
+Z02,Z17,Arganzuela,Villaverde,2,2.693,21.7,3.9,0.18,1.481,1.254,false
+Z02,Z18,Arganzuela,Villa de Vallecas,2,3.688,24.8,4.5,0.195,1.511,1.274,false
+Z02,Z19,Arganzuela,Vicálvaro,2,4.148,26.3,4.7,0.202,1.524,1.283,false
+Z02,Z20,Arganzuela,San Blas-Canillejas,3,4.332,30.0,5.4,0.245,1.73,1.437,false
+Z02,Z21,Arganzuela,Barajas,4,6.159,40.4,7.3,0.342,1.985,1.623,false
+Z03,Z01,Retiro,Centro,1,1.118,14.7,2.6,0.157,1.234,1.072,false
+Z03,Z02,Retiro,Arganzuela,1,1.487,14.8,2.7,0.122,1.245,1.08,false
+Z03,Z03,Retiro,Retiro,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z03,Z04,Retiro,Salamanca,1,1.044,13.4,2.4,0.116,1.231,1.071,false
+Z03,Z05,Retiro,Chamartín,2,2.1,19.9,3.6,0.172,1.463,1.242,false
+Z03,Z06,Retiro,Tetuán,3,2.236,23.5,4.2,0.214,1.667,1.395,false
+Z03,Z07,Retiro,Chamberí,2,1.421,17.8,3.2,0.161,1.443,1.228,false
+Z03,Z08,Retiro,Fuencarral-El Pardo,3,3.956,28.9,5.2,0.239,1.719,1.429,false
+Z03,Z09,Retiro,Moncloa-Aravaca,2,3.27,23.5,4.2,0.189,1.498,1.265,false
+Z03,Z10,Retiro,Latina,2,3.256,23.5,4.2,0.189,1.498,1.265,false
+Z03,Z11,Retiro,Carabanchel,2,3.162,23.2,4.2,0.187,1.495,1.263,false
+Z03,Z12,Retiro,Usera,2,2.608,21.5,3.9,0.179,1.478,1.252,false
+Z03,Z13,Retiro,Puente de Vallecas,1,1.825,15.9,2.9,0.127,1.255,1.086,false
+Z03,Z14,Retiro,Moratalaz,1,1.7,15.5,2.8,0.126,1.251,1.084,false
+Z03,Z15,Retiro,Ciudad Lineal,1,2.147,16.9,3.0,0.132,1.264,1.093,false
+Z03,Z16,Retiro,Hortaleza,2,3.14,23.1,4.2,0.187,1.494,1.263,false
+Z03,Z17,Retiro,Villaverde,3,4.025,29.1,5.2,0.24,1.721,1.43,false
+Z03,Z18,Retiro,Villa de Vallecas,2,3.801,25.2,4.5,0.197,1.514,1.276,false
+Z03,Z19,Retiro,Vicálvaro,2,3.581,24.5,4.4,0.194,1.507,1.272,false
+Z03,Z20,Retiro,San Blas-Canillejas,2,3.027,22.8,4.1,0.185,1.491,1.261,false
+Z03,Z21,Retiro,Barajas,3,4.701,32.7,5.9,0.281,1.741,1.444,false
+Z04,Z01,Salamanca,Centro,1,1.612,16.2,2.9,0.164,1.248,1.082,false
+Z04,Z02,Salamanca,Arganzuela,2,2.441,21.0,3.8,0.177,1.473,1.249,false
+Z04,Z03,Salamanca,Retiro,1,1.044,13.4,2.4,0.116,1.231,1.071,false
+Z04,Z04,Salamanca,Salamanca,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z04,Z05,Salamanca,Chamartín,1,1.14,13.7,2.5,0.117,1.234,1.073,false
+Z04,Z06,Salamanca,Tetuán,2,1.64,18.5,3.3,0.165,1.449,1.233,false
+Z04,Z07,Salamanca,Chamberí,1,1.204,13.9,2.5,0.118,1.236,1.074,false
+Z04,Z08,Salamanca,Fuencarral-El Pardo,2,3.13,23.1,4.2,0.187,1.494,1.263,false
+Z04,Z09,Salamanca,Moncloa-Aravaca,2,3.314,23.7,4.3,0.19,1.499,1.266,false
+Z04,Z10,Salamanca,Latina,2,3.848,25.3,4.6,0.198,1.515,1.277,false
+Z04,Z11,Salamanca,Carabanchel,2,4.031,25.9,4.7,0.2,1.521,1.281,false
+Z04,Z12,Salamanca,Usera,3,3.624,27.8,5.0,0.234,1.709,1.422,false
+Z04,Z13,Salamanca,Puente de Vallecas,2,2.8,22.1,4.0,0.182,1.484,1.256,false
+Z04,Z14,Salamanca,Moratalaz,2,2.163,20.1,3.6,0.172,1.465,1.243,false
+Z04,Z15,Salamanca,Ciudad Lineal,1,1.6,15.2,2.7,0.124,1.248,1.082,false
+Z04,Z16,Salamanca,Hortaleza,2,2.193,20.2,3.6,0.173,1.466,1.244,false
+Z04,Z17,Salamanca,Villaverde,3,5.057,32.3,5.8,0.256,1.752,1.451,false
+Z04,Z18,Salamanca,Villa de Vallecas,3,4.617,30.9,5.6,0.249,1.739,1.442,false
+Z04,Z19,Salamanca,Vicálvaro,3,4.046,29.1,5.2,0.241,1.721,1.431,false
+Z04,Z20,Salamanca,San Blas-Canillejas,2,2.766,22.0,4.0,0.181,1.483,1.255,false
+Z04,Z21,Salamanca,Barajas,3,4.016,30.6,5.5,0.27,1.72,1.43,false
+Z05,Z01,Chamartín,Centro,2,2.195,21.2,3.8,0.213,1.466,1.244,false
+Z05,Z02,Chamartín,Arganzuela,3,3.289,26.8,4.8,0.229,1.699,1.416,false
+Z05,Z03,Chamartín,Retiro,2,2.1,19.9,3.6,0.172,1.463,1.242,false
+Z05,Z04,Chamartín,Salamanca,1,1.14,13.7,2.5,0.117,1.234,1.073,false
+Z05,Z05,Chamartín,Chamartín,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z05,Z06,Chamartín,Tetuán,1,1.005,13.3,2.4,0.115,1.23,1.07,false
+Z05,Z07,Chamartín,Chamberí,1,1.345,14.4,2.6,0.12,1.24,1.077,false
+Z05,Z08,Chamartín,Fuencarral-El Pardo,1,2.025,16.5,3.0,0.13,1.261,1.09,false
+Z05,Z09,Chamartín,Moncloa-Aravaca,2,3.105,23.0,4.1,0.187,1.493,1.262,false
+Z05,Z10,Chamartín,Latina,3,4.187,29.6,5.3,0.243,1.726,1.434,false
+Z05,Z11,Chamartín,Carabanchel,3,4.687,31.1,5.6,0.25,1.741,1.444,false
+Z05,Z12,Chamartín,Usera,4,4.522,33.8,6.1,0.288,1.936,1.59,false
+Z05,Z13,Chamartín,Puente de Vallecas,3,3.912,28.7,5.2,0.239,1.717,1.428,false
+Z05,Z14,Chamartín,Moratalaz,2,3.265,23.5,4.2,0.189,1.498,1.265,false
+Z05,Z15,Chamartín,Ciudad Lineal,1,2.195,17.0,3.1,0.133,1.266,1.094,false
+Z05,Z16,Chamartín,Hortaleza,1,1.942,16.2,2.9,0.129,1.258,1.089,false
+Z05,Z17,Chamartín,Villaverde,4,5.977,38.3,6.9,0.31,1.979,1.62,false
+Z05,Z18,Chamartín,Villa de Vallecas,3,5.757,34.4,6.2,0.266,1.773,1.465,false
+Z05,Z19,Chamartín,Vicálvaro,3,5.104,32.4,5.8,0.257,1.753,1.452,false
+Z05,Z20,Chamartín,San Blas-Canillejas,2,3.448,24.1,4.3,0.192,1.503,1.269,false
+Z05,Z21,Chamartín,Barajas,2,4.105,27.6,5.0,0.232,1.523,1.282,false
+Z06,Z01,Tetuán,Centro,2,1.803,20.0,3.6,0.207,1.454,1.236,false
+Z06,Z02,Tetuán,Arganzuela,3,3.002,25.9,4.7,0.225,1.69,1.41,false
+Z06,Z03,Tetuán,Retiro,3,2.236,23.5,4.2,0.214,1.667,1.395,false
+Z06,Z04,Tetuán,Salamanca,2,1.64,18.5,3.3,0.165,1.449,1.233,false
+Z06,Z05,Tetuán,Chamartín,1,1.005,13.3,2.4,0.115,1.23,1.07,false
+Z06,Z06,Tetuán,Tetuán,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z06,Z07,Tetuán,Chamberí,1,0.906,13.0,2.3,0.114,1.227,1.068,false
+Z06,Z08,Tetuán,Fuencarral-El Pardo,1,1.803,15.8,2.8,0.127,1.254,1.086,false
+Z06,Z09,Tetuán,Moncloa-Aravaca,1,2.119,16.8,3.0,0.132,1.264,1.092,false
+Z06,Z10,Tetuán,Latina,2,3.406,24.0,4.3,0.191,1.502,1.268,false
+Z06,Z11,Tetuán,Carabanchel,3,4.123,29.4,5.3,0.242,1.724,1.432,false
+Z06,Z12,Tetuán,Usera,4,4.219,32.9,5.9,0.283,1.927,1.584,false
+Z06,Z13,Tetuán,Puente de Vallecas,3,4.016,29.1,5.2,0.24,1.72,1.43,false
+Z06,Z14,Tetuán,Moratalaz,3,3.754,28.2,5.1,0.236,1.713,1.425,false
+Z06,Z15,Tetuán,Ciudad Lineal,2,3.068,22.9,4.1,0.186,1.492,1.261,false
+Z06,Z16,Tetuán,Hortaleza,2,2.943,22.5,4.0,0.184,1.488,1.259,false
+Z06,Z17,Tetuán,Villaverde,4,5.657,37.3,6.7,0.305,1.97,1.613,false
+Z06,Z18,Tetuán,Villa de Vallecas,4,6.037,38.5,6.9,0.311,1.981,1.621,false
+Z06,Z19,Tetuán,Vicálvaro,4,5.659,37.3,6.7,0.305,1.97,1.613,false
+Z06,Z20,Tetuán,San Blas-Canillejas,3,4.308,30.0,5.4,0.245,1.729,1.436,false
+Z06,Z21,Tetuán,Barajas,2,5.109,30.7,5.5,0.247,1.553,1.302,false
+Z07,Z01,Chamberí,Centro,1,0.922,14.1,2.5,0.154,1.228,1.068,false
+Z07,Z02,Chamberí,Arganzuela,2,2.11,19.9,3.6,0.172,1.463,1.242,false
+Z07,Z03,Chamberí,Retiro,2,1.421,17.8,3.2,0.161,1.443,1.228,false
+Z07,Z04,Chamberí,Salamanca,1,1.204,13.9,2.5,0.118,1.236,1.074,false
+Z07,Z05,Chamberí,Chamartín,1,1.345,14.4,2.6,0.12,1.24,1.077,false
+Z07,Z06,Chamberí,Tetuán,1,0.906,13.0,2.3,0.114,1.227,1.068,false
+Z07,Z07,Chamberí,Chamberí,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z07,Z08,Chamberí,Fuencarral-El Pardo,2,2.707,21.8,3.9,0.181,1.481,1.254,false
+Z07,Z09,Chamberí,Moncloa-Aravaca,1,2.11,16.7,3.0,0.132,1.263,1.092,false
+Z07,Z10,Chamberí,Latina,2,2.86,22.3,4.0,0.183,1.486,1.257,false
+Z07,Z11,Chamberí,Carabanchel,2,3.362,23.8,4.3,0.19,1.501,1.267,false
+Z07,Z12,Chamberí,Usera,3,3.338,26.9,4.8,0.23,1.7,1.417,false
+Z07,Z13,Chamberí,Puente de Vallecas,2,3.138,23.1,4.2,0.187,1.494,1.263,false
+Z07,Z14,Chamberí,Moratalaz,3,3.061,26.1,4.7,0.226,1.692,1.411,false
+Z07,Z15,Chamberí,Ciudad Lineal,2,2.802,22.1,4.0,0.182,1.484,1.256,false
+Z07,Z16,Chamberí,Hortaleza,2,3.13,23.1,4.2,0.187,1.494,1.263,false
+Z07,Z17,Chamberí,Villaverde,3,4.785,31.4,5.7,0.252,1.744,1.446,false
+Z07,Z18,Chamberí,Villa de Vallecas,3,5.197,32.7,5.9,0.258,1.756,1.454,false
+Z07,Z19,Chamberí,Vicálvaro,3,4.968,32.0,5.8,0.255,1.749,1.449,false
+Z07,Z20,Chamberí,San Blas-Canillejas,3,3.962,28.9,5.2,0.239,1.719,1.429,false
+Z07,Z21,Chamberí,Barajas,3,5.142,34.0,6.1,0.287,1.754,1.453,false
+Z08,Z01,Fuencarral-El Pardo,Centro,2,3.6,25.6,4.6,0.234,1.508,1.272,false
+Z08,Z02,Fuencarral-El Pardo,Arganzuela,3,4.8,31.5,5.7,0.252,1.744,1.446,false
+Z08,Z03,Fuencarral-El Pardo,Retiro,3,3.956,28.9,5.2,0.239,1.719,1.429,false
+Z08,Z04,Fuencarral-El Pardo,Salamanca,2,3.13,23.1,4.2,0.187,1.494,1.263,false
+Z08,Z05,Fuencarral-El Pardo,Chamartín,1,2.025,16.5,3.0,0.13,1.261,1.09,false
+Z08,Z06,Fuencarral-El Pardo,Tetuán,1,1.803,15.8,2.8,0.127,1.254,1.086,false
+Z08,Z07,Fuencarral-El Pardo,Chamberí,2,2.707,21.8,3.9,0.181,1.481,1.254,false
+Z08,Z08,Fuencarral-El Pardo,Fuencarral-El Pardo,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z08,Z09,Fuencarral-El Pardo,Moncloa-Aravaca,1,3.14,19.9,3.6,0.147,1.294,1.113,false
+Z08,Z10,Fuencarral-El Pardo,Latina,2,4.875,28.5,5.1,0.213,1.546,1.298,false
+Z08,Z11,Fuencarral-El Pardo,Carabanchel,3,5.797,34.6,6.2,0.267,1.774,1.466,false
+Z08,Z12,Fuencarral-El Pardo,Usera,4,6.007,38.4,6.9,0.31,1.98,1.62,false
+Z08,Z13,Fuencarral-El Pardo,Puente de Vallecas,3,5.772,34.5,6.2,0.267,1.773,1.465,false
+Z08,Z14,Fuencarral-El Pardo,Moratalaz,3,5.284,33.0,5.9,0.259,1.759,1.456,false
+Z08,Z15,Fuencarral-El Pardo,Ciudad Lineal,2,4.104,26.1,4.7,0.202,1.523,1.282,false
+Z08,Z16,Fuencarral-El Pardo,Hortaleza,1,3.27,20.3,3.7,0.149,1.298,1.115,false
+Z08,Z17,Fuencarral-El Pardo,Villaverde,4,7.433,42.8,7.7,0.331,2.023,1.649,false
+Z08,Z18,Fuencarral-El Pardo,Villa de Vallecas,3,7.725,40.5,7.3,0.296,1.832,1.505,false
+Z08,Z19,Fuencarral-El Pardo,Vicálvaro,3,7.128,38.7,7.0,0.287,1.814,1.493,false
+Z08,Z20,Fuencarral-El Pardo,San Blas-Canillejas,2,5.326,29.9,5.4,0.22,1.56,1.307,false
+Z08,Z21,Fuencarral-El Pardo,Barajas,1,5.412,28.5,5.1,0.211,1.362,1.158,false
+Z09,Z01,Moncloa-Aravaca,Centro,1,2.195,18.0,3.2,0.173,1.266,1.094,false
+Z09,Z02,Moncloa-Aravaca,Arganzuela,2,2.983,22.6,4.1,0.185,1.489,1.26,false
+Z09,Z03,Moncloa-Aravaca,Retiro,2,3.27,23.5,4.2,0.189,1.498,1.265,false
+Z09,Z04,Moncloa-Aravaca,Salamanca,2,3.314,23.7,4.3,0.19,1.499,1.266,false
+Z09,Z05,Moncloa-Aravaca,Chamartín,2,3.105,23.0,4.1,0.187,1.493,1.262,false
+Z09,Z06,Moncloa-Aravaca,Tetuán,1,2.119,16.8,3.0,0.132,1.264,1.092,false
+Z09,Z07,Moncloa-Aravaca,Chamberí,1,2.11,16.7,3.0,0.132,1.263,1.092,false
+Z09,Z08,Moncloa-Aravaca,Fuencarral-El Pardo,1,3.14,19.9,3.6,0.147,1.294,1.113,false
+Z09,Z09,Moncloa-Aravaca,Moncloa-Aravaca,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z09,Z10,Moncloa-Aravaca,Latina,1,1.91,16.1,2.9,0.129,1.257,1.088,false
+Z09,Z11,Moncloa-Aravaca,Carabanchel,2,3.126,23.1,4.2,0.187,1.494,1.263,false
+Z09,Z12,Moncloa-Aravaca,Usera,3,3.848,28.5,5.1,0.238,1.715,1.427,false
+Z09,Z13,Moncloa-Aravaca,Puente de Vallecas,2,4.528,27.4,4.9,0.208,1.536,1.291,false
+Z09,Z14,Moncloa-Aravaca,Moratalaz,3,4.966,32.0,5.8,0.254,1.749,1.449,false
+Z09,Z15,Moncloa-Aravaca,Ciudad Lineal,3,4.909,31.8,5.7,0.254,1.747,1.448,false
+Z09,Z16,Moncloa-Aravaca,Hortaleza,2,5.045,29.0,5.2,0.216,1.551,1.301,false
+Z09,Z17,Moncloa-Aravaca,Villaverde,3,5.045,32.2,5.8,0.256,1.751,1.451,false
+Z09,Z18,Moncloa-Aravaca,Villa de Vallecas,3,6.647,37.2,6.7,0.28,1.799,1.483,false
+Z09,Z19,Moncloa-Aravaca,Vicálvaro,3,6.81,37.7,6.8,0.282,1.804,1.486,false
+Z09,Z20,Moncloa-Aravaca,San Blas-Canillejas,3,6.067,35.4,6.4,0.271,1.782,1.471,false
+Z09,Z21,Moncloa-Aravaca,Barajas,2,7.17,37.1,6.7,0.278,1.615,1.343,false
+Z10,Z01,Latina,Centro,1,2.247,18.2,3.3,0.174,1.267,1.095,false
+Z10,Z02,Latina,Arganzuela,1,2.138,16.8,3.0,0.132,1.264,1.093,false
+Z10,Z03,Latina,Retiro,2,3.256,23.5,4.2,0.189,1.498,1.265,false
+Z10,Z04,Latina,Salamanca,2,3.848,25.3,4.6,0.198,1.515,1.277,false
+Z10,Z05,Latina,Chamartín,3,4.187,29.6,5.3,0.243,1.726,1.434,false
+Z10,Z06,Latina,Tetuán,2,3.406,24.0,4.3,0.191,1.502,1.268,false
+Z10,Z07,Latina,Chamberí,2,2.86,22.3,4.0,0.183,1.486,1.257,false
+Z10,Z08,Latina,Fuencarral-El Pardo,2,4.875,28.5,5.1,0.213,1.546,1.298,false
+Z10,Z09,Latina,Moncloa-Aravaca,1,1.91,16.1,2.9,0.129,1.257,1.088,false
+Z10,Z10,Latina,Latina,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z10,Z11,Latina,Carabanchel,1,1.342,14.4,2.6,0.12,1.24,1.077,false
+Z10,Z12,Latina,Usera,2,2.408,20.9,3.8,0.176,1.472,1.248,false
+Z10,Z13,Latina,Puente de Vallecas,2,3.7,24.9,4.5,0.196,1.511,1.274,false
+Z10,Z14,Latina,Moratalaz,3,4.704,31.2,5.6,0.251,1.741,1.444,false
+Z10,Z15,Latina,Ciudad Lineal,3,5.345,33.2,6.0,0.26,1.76,1.457,false
+Z10,Z16,Latina,Hortaleza,3,5.968,35.1,6.3,0.27,1.779,1.469,false
+Z10,Z17,Latina,Villaverde,2,3.311,23.7,4.3,0.19,1.499,1.266,false
+Z10,Z18,Latina,Villa de Vallecas,3,5.644,34.1,6.1,0.265,1.769,1.463,false
+Z10,Z19,Latina,Vicálvaro,3,6.282,36.1,6.5,0.274,1.788,1.476,false
+Z10,Z20,Latina,San Blas-Canillejas,4,6.28,39.3,7.1,0.314,1.988,1.626,false
+Z10,Z21,Latina,Barajas,3,7.855,42.5,7.6,0.328,1.836,1.507,false
+Z11,Z01,Carabanchel,Centro,1,2.5,18.9,3.4,0.178,1.275,1.1,false
+Z11,Z02,Carabanchel,Arganzuela,1,1.7,15.5,2.8,0.126,1.251,1.084,false
+Z11,Z03,Carabanchel,Retiro,2,3.162,23.2,4.2,0.187,1.495,1.263,false
+Z11,Z04,Carabanchel,Salamanca,2,4.031,25.9,4.7,0.2,1.521,1.281,false
+Z11,Z05,Carabanchel,Chamartín,3,4.687,31.1,5.6,0.25,1.741,1.444,false
+Z11,Z06,Carabanchel,Tetuán,3,4.123,29.4,5.3,0.242,1.724,1.432,false
+Z11,Z07,Carabanchel,Chamberí,2,3.362,23.8,4.3,0.19,1.501,1.267,false
+Z11,Z08,Carabanchel,Fuencarral-El Pardo,3,5.797,34.6,6.2,0.267,1.774,1.466,false
+Z11,Z09,Carabanchel,Moncloa-Aravaca,2,3.126,23.1,4.2,0.187,1.494,1.263,false
+Z11,Z10,Carabanchel,Latina,1,1.342,14.4,2.6,0.12,1.24,1.077,false
+Z11,Z11,Carabanchel,Carabanchel,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z11,Z12,Carabanchel,Usera,1,1.265,14.1,2.5,0.119,1.238,1.075,false
+Z11,Z13,Carabanchel,Puente de Vallecas,1,2.9,19.2,3.5,0.144,1.287,1.108,false
+Z11,Z14,Carabanchel,Moratalaz,2,4.22,26.5,4.8,0.203,1.527,1.284,false
+Z11,Z15,Carabanchel,Ciudad Lineal,3,5.3,33.0,5.9,0.26,1.759,1.456,false
+Z11,Z16,Carabanchel,Hortaleza,4,6.224,39.1,7.0,0.313,1.987,1.624,false
+Z11,Z17,Carabanchel,Villaverde,1,1.97,16.3,2.9,0.13,1.259,1.089,false
+Z11,Z18,Carabanchel,Villa de Vallecas,2,4.588,27.6,5.0,0.209,1.538,1.292,false
+Z11,Z19,Carabanchel,Vicálvaro,2,5.508,30.5,5.5,0.223,1.565,1.31,false
+Z11,Z20,Carabanchel,San Blas-Canillejas,3,6.017,35.3,6.4,0.27,1.78,1.47,false
+Z11,Z21,Carabanchel,Barajas,4,7.855,45.7,8.2,0.368,2.036,1.657,false
+Z12,Z01,Usera,Centro,2,2.419,21.9,3.9,0.216,1.473,1.248,false
+Z12,Z02,Usera,Arganzuela,1,1.237,14.0,2.5,0.119,1.237,1.075,false
+Z12,Z03,Usera,Retiro,2,2.608,21.5,3.9,0.179,1.478,1.252,false
+Z12,Z04,Usera,Salamanca,3,3.624,27.8,5.0,0.234,1.709,1.422,false
+Z12,Z05,Usera,Chamartín,4,4.522,33.8,6.1,0.288,1.936,1.59,false
+Z12,Z06,Usera,Tetuán,4,4.219,32.9,5.9,0.283,1.927,1.584,false
+Z12,Z07,Usera,Chamberí,3,3.338,26.9,4.8,0.23,1.7,1.417,false
+Z12,Z08,Usera,Fuencarral-El Pardo,4,6.007,38.4,6.9,0.31,1.98,1.62,false
+Z12,Z09,Usera,Moncloa-Aravaca,3,3.848,28.5,5.1,0.238,1.715,1.427,false
+Z12,Z10,Usera,Latina,2,2.408,20.9,3.8,0.176,1.472,1.248,false
+Z12,Z11,Usera,Carabanchel,1,1.265,14.1,2.5,0.119,1.238,1.075,false
+Z12,Z12,Usera,Usera,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z12,Z13,Usera,Puente de Vallecas,1,1.746,15.6,2.8,0.126,1.252,1.085,false
+Z12,Z14,Usera,Moratalaz,2,3.22,23.4,4.2,0.188,1.497,1.264,false
+Z12,Z15,Usera,Ciudad Lineal,3,4.597,30.8,5.5,0.249,1.738,1.442,false
+Z12,Z16,Usera,Hortaleza,4,5.743,37.6,6.8,0.306,1.972,1.615,false
+Z12,Z17,Usera,Villaverde,1,1.456,14.7,2.6,0.122,1.244,1.079,false
+Z12,Z18,Usera,Villa de Vallecas,2,3.324,23.7,4.3,0.19,1.5,1.266,false
+Z12,Z19,Usera,Vicálvaro,2,4.301,26.7,4.8,0.205,1.529,1.286,false
+Z12,Z20,Usera,San Blas-Canillejas,3,5.111,32.4,5.8,0.257,1.753,1.452,false
+Z12,Z21,Usera,Barajas,4,7.106,43.3,7.8,0.357,2.013,1.642,false
+Z13,Z01,Puente de Vallecas,Centro,1,2.441,18.8,3.4,0.177,1.273,1.099,false
+Z13,Z02,Puente de Vallecas,Arganzuela,1,1.612,15.2,2.7,0.124,1.248,1.082,false
+Z13,Z03,Puente de Vallecas,Retiro,1,1.825,15.9,2.9,0.127,1.255,1.086,false
+Z13,Z04,Puente de Vallecas,Salamanca,2,2.8,22.1,4.0,0.182,1.484,1.256,false
+Z13,Z05,Puente de Vallecas,Chamartín,3,3.912,28.7,5.2,0.239,1.717,1.428,false
+Z13,Z06,Puente de Vallecas,Tetuán,3,4.016,29.1,5.2,0.24,1.72,1.43,false
+Z13,Z07,Puente de Vallecas,Chamberí,2,3.138,23.1,4.2,0.187,1.494,1.263,false
+Z13,Z08,Puente de Vallecas,Fuencarral-El Pardo,3,5.772,34.5,6.2,0.267,1.773,1.465,false
+Z13,Z09,Puente de Vallecas,Moncloa-Aravaca,2,4.528,27.4,4.9,0.208,1.536,1.291,false
+Z13,Z10,Puente de Vallecas,Latina,2,3.7,24.9,4.5,0.196,1.511,1.274,false
+Z13,Z11,Puente de Vallecas,Carabanchel,1,2.9,19.2,3.5,0.144,1.287,1.108,false
+Z13,Z12,Puente de Vallecas,Usera,1,1.746,15.6,2.8,0.126,1.252,1.085,false
+Z13,Z13,Puente de Vallecas,Puente de Vallecas,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z13,Z14,Puente de Vallecas,Moratalaz,1,1.562,15.0,2.7,0.123,1.247,1.081,false
+Z13,Z15,Puente de Vallecas,Ciudad Lineal,2,3.225,23.4,4.2,0.188,1.497,1.264,false
+Z13,Z16,Puente de Vallecas,Hortaleza,3,4.588,30.8,5.5,0.249,1.738,1.442,false
+Z13,Z17,Puente de Vallecas,Villaverde,2,2.766,22.0,4.0,0.181,1.483,1.255,false
+Z13,Z18,Puente de Vallecas,Villa de Vallecas,1,2.126,16.8,3.0,0.132,1.264,1.093,false
+Z13,Z19,Puente de Vallecas,Vicálvaro,1,2.617,18.3,3.3,0.139,1.279,1.102,false
+Z13,Z20,Puente de Vallecas,San Blas-Canillejas,2,3.483,24.2,4.4,0.192,1.504,1.27,false
+Z13,Z21,Puente de Vallecas,Barajas,3,5.59,35.4,6.4,0.294,1.768,1.462,false
+Z14,Z01,Moratalaz,Centro,2,2.786,23.0,4.1,0.222,1.484,1.256,false
+Z14,Z02,Moratalaz,Arganzuela,2,2.608,21.5,3.9,0.179,1.478,1.252,false
+Z14,Z03,Moratalaz,Retiro,1,1.7,15.5,2.8,0.126,1.251,1.084,false
+Z14,Z04,Moratalaz,Salamanca,2,2.163,20.1,3.6,0.172,1.465,1.243,false
+Z14,Z05,Moratalaz,Chamartín,2,3.265,23.5,4.2,0.189,1.498,1.265,false
+Z14,Z06,Moratalaz,Tetuán,3,3.754,28.2,5.1,0.236,1.713,1.425,false
+Z14,Z07,Moratalaz,Chamberí,3,3.061,26.1,4.7,0.226,1.692,1.411,false
+Z14,Z08,Moratalaz,Fuencarral-El Pardo,3,5.284,33.0,5.9,0.259,1.759,1.456,false
+Z14,Z09,Moratalaz,Moncloa-Aravaca,3,4.966,32.0,5.8,0.254,1.749,1.449,false
+Z14,Z10,Moratalaz,Latina,3,4.704,31.2,5.6,0.251,1.741,1.444,false
+Z14,Z11,Moratalaz,Carabanchel,2,4.22,26.5,4.8,0.203,1.527,1.284,false
+Z14,Z12,Moratalaz,Usera,2,3.22,23.4,4.2,0.188,1.497,1.264,false
+Z14,Z13,Moratalaz,Puente de Vallecas,1,1.562,15.0,2.7,0.123,1.247,1.081,false
+Z14,Z14,Moratalaz,Moratalaz,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z14,Z15,Moratalaz,Ciudad Lineal,1,1.844,15.9,2.9,0.128,1.255,1.087,false
+Z14,Z16,Moratalaz,Hortaleza,2,3.324,23.7,4.3,0.19,1.5,1.266,false
+Z14,Z17,Moratalaz,Villaverde,3,4.328,30.0,5.4,0.245,1.73,1.437,false
+Z14,Z18,Moratalaz,Villa de Vallecas,2,2.608,21.5,3.9,0.179,1.478,1.252,false
+Z14,Z19,Moratalaz,Vicálvaro,1,1.91,16.1,2.9,0.129,1.257,1.088,false
+Z14,Z20,Moratalaz,San Blas-Canillejas,2,1.921,19.4,3.5,0.169,1.458,1.238,false
+Z14,Z21,Moratalaz,Barajas,3,4.046,30.6,5.5,0.271,1.721,1.431,false
+Z15,Z01,Ciudad Lineal,Centro,2,3.105,24.0,4.3,0.227,1.493,1.262,false
+Z15,Z02,Ciudad Lineal,Arganzuela,2,3.606,24.6,4.4,0.194,1.508,1.272,false
+Z15,Z03,Ciudad Lineal,Retiro,1,2.147,16.9,3.0,0.132,1.264,1.093,false
+Z15,Z04,Ciudad Lineal,Salamanca,1,1.6,15.2,2.7,0.124,1.248,1.082,false
+Z15,Z05,Ciudad Lineal,Chamartín,1,2.195,17.0,3.1,0.133,1.266,1.094,false
+Z15,Z06,Ciudad Lineal,Tetuán,2,3.068,22.9,4.1,0.186,1.492,1.261,false
+Z15,Z07,Ciudad Lineal,Chamberí,2,2.802,22.1,4.0,0.182,1.484,1.256,false
+Z15,Z08,Ciudad Lineal,Fuencarral-El Pardo,2,4.104,26.1,4.7,0.202,1.523,1.282,false
+Z15,Z09,Ciudad Lineal,Moncloa-Aravaca,3,4.909,31.8,5.7,0.254,1.747,1.448,false
+Z15,Z10,Ciudad Lineal,Latina,3,5.345,33.2,6.0,0.26,1.76,1.457,false
+Z15,Z11,Ciudad Lineal,Carabanchel,3,5.3,33.0,5.9,0.26,1.759,1.456,false
+Z15,Z12,Ciudad Lineal,Usera,3,4.597,30.8,5.5,0.249,1.738,1.442,false
+Z15,Z13,Ciudad Lineal,Puente de Vallecas,2,3.225,23.4,4.2,0.188,1.497,1.264,false
+Z15,Z14,Ciudad Lineal,Moratalaz,1,1.844,15.9,2.9,0.128,1.255,1.087,false
+Z15,Z15,Ciudad Lineal,Ciudad Lineal,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z15,Z16,Ciudad Lineal,Hortaleza,1,1.5,14.8,2.7,0.122,1.245,1.08,false
+Z15,Z17,Ciudad Lineal,Villaverde,3,5.903,34.9,6.3,0.269,1.777,1.468,false
+Z15,Z18,Ciudad Lineal,Villa de Vallecas,2,4.405,27.1,4.9,0.206,1.532,1.288,false
+Z15,Z19,Ciudad Lineal,Vicálvaro,2,3.257,23.5,4.2,0.189,1.498,1.265,false
+Z15,Z20,Ciudad Lineal,San Blas-Canillejas,1,1.253,14.1,2.5,0.119,1.238,1.075,false
+Z15,Z21,Ciudad Lineal,Barajas,2,2.555,22.8,4.1,0.208,1.477,1.251,false
+Z16,Z01,Hortaleza,Centro,3,3.78,29.3,5.3,0.277,1.713,1.426,false
+Z16,Z02,Hortaleza,Arganzuela,3,4.61,30.9,5.6,0.249,1.738,1.442,false
+Z16,Z03,Hortaleza,Retiro,2,3.14,23.1,4.2,0.187,1.494,1.263,false
+Z16,Z04,Hortaleza,Salamanca,2,2.193,20.2,3.6,0.173,1.466,1.244,false
+Z16,Z05,Hortaleza,Chamartín,1,1.942,16.2,2.9,0.129,1.258,1.089,false
+Z16,Z06,Hortaleza,Tetuán,2,2.943,22.5,4.0,0.184,1.488,1.259,false
+Z16,Z07,Hortaleza,Chamberí,2,3.13,23.1,4.2,0.187,1.494,1.263,false
+Z16,Z08,Hortaleza,Fuencarral-El Pardo,1,3.27,20.3,3.7,0.149,1.298,1.115,false
+Z16,Z09,Hortaleza,Moncloa-Aravaca,2,5.045,29.0,5.2,0.216,1.551,1.301,false
+Z16,Z10,Hortaleza,Latina,3,5.968,35.1,6.3,0.27,1.779,1.469,false
+Z16,Z11,Hortaleza,Carabanchel,4,6.224,39.1,7.0,0.313,1.987,1.624,false
+Z16,Z12,Hortaleza,Usera,4,5.743,37.6,6.8,0.306,1.972,1.615,false
+Z16,Z13,Hortaleza,Puente de Vallecas,3,4.588,30.8,5.5,0.249,1.738,1.442,false
+Z16,Z14,Hortaleza,Moratalaz,2,3.324,23.7,4.3,0.19,1.5,1.266,false
+Z16,Z15,Hortaleza,Ciudad Lineal,1,1.5,14.8,2.7,0.122,1.245,1.08,false
+Z16,Z16,Hortaleza,Hortaleza,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z16,Z17,Hortaleza,Villaverde,3,7.134,38.7,7.0,0.287,1.814,1.493,false
+Z16,Z18,Hortaleza,Villa de Vallecas,2,5.903,31.7,5.7,0.229,1.577,1.318,false
+Z16,Z19,Hortaleza,Vicálvaro,2,4.707,28.0,5.0,0.211,1.541,1.294,false
+Z16,Z20,Hortaleza,San Blas-Canillejas,1,2.371,17.5,3.1,0.136,1.271,1.097,false
+Z16,Z21,Hortaleza,Barajas,1,2.209,18.5,3.3,0.163,1.266,1.094,false
+Z17,Z01,Villaverde,Centro,2,3.864,26.4,4.8,0.238,1.516,1.277,false
+Z17,Z02,Villaverde,Arganzuela,2,2.693,21.7,3.9,0.18,1.481,1.254,false
+Z17,Z03,Villaverde,Retiro,3,4.025,29.1,5.2,0.24,1.721,1.43,false
+Z17,Z04,Villaverde,Salamanca,3,5.057,32.3,5.8,0.256,1.752,1.451,false
+Z17,Z05,Villaverde,Chamartín,4,5.977,38.3,6.9,0.31,1.979,1.62,false
+Z17,Z06,Villaverde,Tetuán,4,5.657,37.3,6.7,0.305,1.97,1.613,false
+Z17,Z07,Villaverde,Chamberí,3,4.785,31.4,5.7,0.252,1.744,1.446,false
+Z17,Z08,Villaverde,Fuencarral-El Pardo,4,7.433,42.8,7.7,0.331,2.023,1.649,false
+Z17,Z09,Villaverde,Moncloa-Aravaca,3,5.045,32.2,5.8,0.256,1.751,1.451,false
+Z17,Z10,Villaverde,Latina,2,3.311,23.7,4.3,0.19,1.499,1.266,false
+Z17,Z11,Villaverde,Carabanchel,1,1.97,16.3,2.9,0.13,1.259,1.089,false
+Z17,Z12,Villaverde,Usera,1,1.456,14.7,2.6,0.122,1.244,1.079,false
+Z17,Z13,Villaverde,Puente de Vallecas,2,2.766,22.0,4.0,0.181,1.483,1.255,false
+Z17,Z14,Villaverde,Moratalaz,3,4.328,30.0,5.4,0.245,1.73,1.437,false
+Z17,Z15,Villaverde,Ciudad Lineal,3,5.903,34.9,6.3,0.269,1.777,1.468,false
+Z17,Z16,Villaverde,Hortaleza,3,7.134,38.7,7.0,0.287,1.814,1.493,false
+Z17,Z17,Villaverde,Villaverde,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z17,Z18,Villaverde,Villa de Vallecas,1,3.506,21.1,3.8,0.153,1.305,1.12,false
+Z17,Z19,Villaverde,Vicálvaro,2,4.934,28.7,5.2,0.214,1.548,1.299,false
+Z17,Z20,Villaverde,San Blas-Canillejas,2,6.248,32.8,5.9,0.234,1.587,1.325,false
+Z17,Z21,Villaverde,Barajas,3,8.344,44.0,7.9,0.335,1.85,1.517,false
+Z18,Z01,Villa de Vallecas,Centro,2,4.561,28.5,5.1,0.248,1.537,1.291,false
+Z18,Z02,Villa de Vallecas,Arganzuela,2,3.688,24.8,4.5,0.195,1.511,1.274,false
+Z18,Z03,Villa de Vallecas,Retiro,2,3.801,25.2,4.5,0.197,1.514,1.276,false
+Z18,Z04,Villa de Vallecas,Salamanca,3,4.617,30.9,5.6,0.249,1.739,1.442,false
+Z18,Z05,Villa de Vallecas,Chamartín,3,5.757,34.4,6.2,0.266,1.773,1.465,false
+Z18,Z06,Villa de Vallecas,Tetuán,4,6.037,38.5,6.9,0.311,1.981,1.621,false
+Z18,Z07,Villa de Vallecas,Chamberí,3,5.197,32.7,5.9,0.258,1.756,1.454,false
+Z18,Z08,Villa de Vallecas,Fuencarral-El Pardo,3,7.725,40.5,7.3,0.296,1.832,1.505,false
+Z18,Z09,Villa de Vallecas,Moncloa-Aravaca,3,6.647,37.2,6.7,0.28,1.799,1.483,false
+Z18,Z10,Villa de Vallecas,Latina,3,5.644,34.1,6.1,0.265,1.769,1.463,false
+Z18,Z11,Villa de Vallecas,Carabanchel,2,4.588,27.6,5.0,0.209,1.538,1.292,false
+Z18,Z12,Villa de Vallecas,Usera,2,3.324,23.7,4.3,0.19,1.5,1.266,false
+Z18,Z13,Villa de Vallecas,Puente de Vallecas,1,2.126,16.8,3.0,0.132,1.264,1.093,false
+Z18,Z14,Villa de Vallecas,Moratalaz,2,2.608,21.5,3.9,0.179,1.478,1.252,false
+Z18,Z15,Villa de Vallecas,Ciudad Lineal,2,4.405,27.1,4.9,0.206,1.532,1.288,false
+Z18,Z16,Villa de Vallecas,Hortaleza,2,5.903,31.7,5.7,0.229,1.577,1.318,false
+Z18,Z17,Villa de Vallecas,Villaverde,1,3.506,21.1,3.8,0.153,1.305,1.12,false
+Z18,Z18,Villa de Vallecas,Villa de Vallecas,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z18,Z19,Villa de Vallecas,Vicálvaro,1,1.769,15.7,2.8,0.127,1.253,1.085,false
+Z18,Z20,Villa de Vallecas,San Blas-Canillejas,1,4.016,22.7,4.1,0.16,1.32,1.13,false
+Z18,Z21,Villa de Vallecas,Barajas,2,6.185,34.1,6.1,0.263,1.586,1.324,false
+Z19,Z01,Vicálvaro,Centro,2,4.614,28.7,5.2,0.249,1.538,1.292,false
+Z19,Z02,Vicálvaro,Arganzuela,2,4.148,26.3,4.7,0.202,1.524,1.283,false
+Z19,Z03,Vicálvaro,Retiro,2,3.581,24.5,4.4,0.194,1.507,1.272,false
+Z19,Z04,Vicálvaro,Salamanca,3,4.046,29.1,5.2,0.241,1.721,1.431,false
+Z19,Z05,Vicálvaro,Chamartín,3,5.104,32.4,5.8,0.257,1.753,1.452,false
+Z19,Z06,Vicálvaro,Tetuán,4,5.659,37.3,6.7,0.305,1.97,1.613,false
+Z19,Z07,Vicálvaro,Chamberí,3,4.968,32.0,5.8,0.255,1.749,1.449,false
+Z19,Z08,Vicálvaro,Fuencarral-El Pardo,3,7.128,38.7,7.0,0.287,1.814,1.493,false
+Z19,Z09,Vicálvaro,Moncloa-Aravaca,3,6.81,37.7,6.8,0.282,1.804,1.486,false
+Z19,Z10,Vicálvaro,Latina,3,6.282,36.1,6.5,0.274,1.788,1.476,false
+Z19,Z11,Vicálvaro,Carabanchel,2,5.508,30.5,5.5,0.223,1.565,1.31,false
+Z19,Z12,Vicálvaro,Usera,2,4.301,26.7,4.8,0.205,1.529,1.286,false
+Z19,Z13,Vicálvaro,Puente de Vallecas,1,2.617,18.3,3.3,0.139,1.279,1.102,false
+Z19,Z14,Vicálvaro,Moratalaz,1,1.91,16.1,2.9,0.129,1.257,1.088,false
+Z19,Z15,Vicálvaro,Ciudad Lineal,2,3.257,23.5,4.2,0.189,1.498,1.265,false
+Z19,Z16,Vicálvaro,Hortaleza,2,4.707,28.0,5.0,0.211,1.541,1.294,false
+Z19,Z17,Vicálvaro,Villaverde,2,4.934,28.7,5.2,0.214,1.548,1.299,false
+Z19,Z18,Vicálvaro,Villa de Vallecas,1,1.769,15.7,2.8,0.127,1.253,1.085,false
+Z19,Z19,Vicálvaro,Vicálvaro,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z19,Z20,Vicálvaro,San Blas-Canillejas,1,2.502,18.0,3.2,0.138,1.275,1.1,false
+Z19,Z21,Vicálvaro,Barajas,2,4.561,29.0,5.2,0.238,1.537,1.291,false
+Z20,Z01,San Blas-Canillejas,Centro,3,4.105,30.3,5.5,0.282,1.723,1.432,false
+Z20,Z02,San Blas-Canillejas,Arganzuela,3,4.332,30.0,5.4,0.245,1.73,1.437,false
+Z20,Z03,San Blas-Canillejas,Retiro,2,3.027,22.8,4.1,0.185,1.491,1.261,false
+Z20,Z04,San Blas-Canillejas,Salamanca,2,2.766,22.0,4.0,0.181,1.483,1.255,false
+Z20,Z05,San Blas-Canillejas,Chamartín,2,3.448,24.1,4.3,0.192,1.503,1.269,false
+Z20,Z06,San Blas-Canillejas,Tetuán,3,4.308,30.0,5.4,0.245,1.729,1.436,false
+Z20,Z07,San Blas-Canillejas,Chamberí,3,3.962,28.9,5.2,0.239,1.719,1.429,false
+Z20,Z08,San Blas-Canillejas,Fuencarral-El Pardo,2,5.326,29.9,5.4,0.22,1.56,1.307,false
+Z20,Z09,San Blas-Canillejas,Moncloa-Aravaca,3,6.067,35.4,6.4,0.271,1.782,1.471,false
+Z20,Z10,San Blas-Canillejas,Latina,4,6.28,39.3,7.1,0.314,1.988,1.626,false
+Z20,Z11,San Blas-Canillejas,Carabanchel,3,6.017,35.3,6.4,0.27,1.78,1.47,false
+Z20,Z12,San Blas-Canillejas,Usera,3,5.111,32.4,5.8,0.257,1.753,1.452,false
+Z20,Z13,San Blas-Canillejas,Puente de Vallecas,2,3.483,24.2,4.4,0.192,1.504,1.27,false
+Z20,Z14,San Blas-Canillejas,Moratalaz,2,1.921,19.4,3.5,0.169,1.458,1.238,false
+Z20,Z15,San Blas-Canillejas,Ciudad Lineal,1,1.253,14.1,2.5,0.119,1.238,1.075,false
+Z20,Z16,San Blas-Canillejas,Hortaleza,1,2.371,17.5,3.1,0.136,1.271,1.097,false
+Z20,Z17,San Blas-Canillejas,Villaverde,2,6.248,32.8,5.9,0.234,1.587,1.325,false
+Z20,Z18,San Blas-Canillejas,Villa de Vallecas,1,4.016,22.7,4.1,0.16,1.32,1.13,false
+Z20,Z19,San Blas-Canillejas,Vicálvaro,1,2.502,18.0,3.2,0.138,1.275,1.1,false
+Z20,Z20,San Blas-Canillejas,San Blas-Canillejas,0,0.0,8.0,2.0,0.06,1.0,0.9,true
+Z20,Z21,San Blas-Canillejas,Barajas,1,2.195,18.5,3.3,0.163,1.266,1.094,false
+Z21,Z01,Barajas,Centro,3,5.608,36.5,6.6,0.334,1.768,1.462,false
+Z21,Z02,Barajas,Arganzuela,4,6.159,40.4,7.3,0.342,1.985,1.623,false
+Z21,Z03,Barajas,Retiro,3,4.701,32.7,5.9,0.281,1.741,1.444,false
+Z21,Z04,Barajas,Salamanca,3,4.016,30.6,5.5,0.27,1.72,1.43,false
+Z21,Z05,Barajas,Chamartín,2,4.105,27.6,5.0,0.232,1.523,1.282,false
+Z21,Z06,Barajas,Tetuán,2,5.109,30.7,5.5,0.247,1.553,1.302,false
+Z21,Z07,Barajas,Chamberí,3,5.142,34.0,6.1,0.287,1.754,1.453,false
+Z21,Z08,Barajas,Fuencarral-El Pardo,1,5.412,28.5,5.1,0.211,1.362,1.158,false
+Z21,Z09,Barajas,Moncloa-Aravaca,2,7.17,37.1,6.7,0.278,1.615,1.343,false
+Z21,Z10,Barajas,Latina,3,7.855,42.5,7.6,0.328,1.836,1.507,false
+Z21,Z11,Barajas,Carabanchel,4,7.855,45.7,8.2,0.368,2.036,1.657,false
+Z21,Z12,Barajas,Usera,4,7.106,43.3,7.8,0.357,2.013,1.642,false
+Z21,Z13,Barajas,Puente de Vallecas,3,5.59,35.4,6.4,0.294,1.768,1.462,false
+Z21,Z14,Barajas,Moratalaz,3,4.046,30.6,5.5,0.271,1.721,1.431,false
+Z21,Z15,Barajas,Ciudad Lineal,2,2.555,22.8,4.1,0.208,1.477,1.251,false
+Z21,Z16,Barajas,Hortaleza,1,2.209,18.5,3.3,0.163,1.266,1.094,false
+Z21,Z17,Barajas,Villaverde,3,8.344,44.0,7.9,0.335,1.85,1.517,false
+Z21,Z18,Barajas,Villa de Vallecas,2,6.185,34.1,6.1,0.263,1.586,1.324,false
+Z21,Z19,Barajas,Vicálvaro,2,4.561,29.0,5.2,0.238,1.537,1.291,false
+Z21,Z20,Barajas,San Blas-Canillejas,1,2.195,18.5,3.3,0.163,1.266,1.094,false
+Z21,Z21,Barajas,Barajas,0,0.0,8.0,2.0,0.09,1.0,0.9,true

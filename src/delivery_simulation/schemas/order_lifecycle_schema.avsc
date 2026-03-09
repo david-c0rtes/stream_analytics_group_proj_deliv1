@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "OrderLifecycleEvent",
+  "namespace": "com.madrid.delivery.order.v1",
+  "doc": "Order lifecycle events for food delivery streaming analytics. Supports prep time, pickup wait, delivery duration, cancellation behavior, and SLA monitoring.",
+  "fields": [
+    {"name": "event_id", "type": "string", "doc": "Unique identifier for this event"},
+    {"name": "event_type", "type": {"type": "enum", "name": "OrderEventType", "symbols": ["order_created", "order_confirmed", "order_preparing", "order_ready_for_pickup", "order_picked_up", "order_delivered", "order_cancelled_user", "order_cancelled_restaurant", "order_cancelled_system"]}, "doc": "Lifecycle stage of the order"},
+    {"name": "event_version", "type": "string", "default": "1.0", "doc": "Schema version for evolution"},
+    {"name": "event_time", "type": "long", "doc": "Business event timestamp (epoch milliseconds)"},
+    {"name": "ingestion_time", "type": "long", "doc": "When event was ingested (epoch milliseconds)"},
+    {"name": "is_late_event", "type": "boolean", "default": false, "doc": "True if event arrived out-of-order"},
+    {"name": "event_delay_seconds", "type": ["null", "int"], "default": null, "doc": "Delay in seconds if late"},
+    {"name": "order_id", "type": "string", "doc": "Order identifier for joins"},
+    {"name": "user_id", "type": "string", "doc": "Customer identifier"},
+    {"name": "restaurant_id", "type": "string", "doc": "Restaurant identifier for joins"},
+    {"name": "courier_id", "type": ["null", "string"], "default": null, "doc": "Courier identifier when assigned"},
+    {"name": "user_zone_id", "type": "string", "doc": "Delivery zone identifier"},
+    {"name": "restaurant_zone_id", "type": "string", "doc": "Restaurant zone identifier"},
+    {"name": "estimated_prep_time", "type": ["null", "int"], "default": null, "doc": "Estimated prep time in minutes"},
+    {"name": "actual_prep_time", "type": ["null", "int"], "default": null, "doc": "Actual prep time in minutes"},
+    {"name": "estimated_delivery_time", "type": ["null", "int"], "default": null, "doc": "Estimated delivery time in minutes"},
+    {"name": "actual_delivery_time", "type": ["null", "int"], "default": null, "doc": "Actual delivery time in minutes"},
+    {"name": "promo_applied", "type": ["null", "string"], "default": null, "doc": "Promotion code if applied"},
+    {"name": "restaurant_category", "type": "string", "doc": "Restaurant food category"},
+    {"name": "match_day_flag", "type": "boolean", "default": false, "doc": "True if match day demand surge"},
+    {"name": "holiday_flag", "type": "boolean", "default": false, "doc": "True if holiday period"},
+    {"name": "anomaly_flag", "type": "boolean", "default": false, "doc": "True if event is anomalous"}
+  ]
+}

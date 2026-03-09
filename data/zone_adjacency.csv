@@ -1,0 +1,107 @@
+district,adjacent_district
+Arganzuela,Carabanchel
+Arganzuela,Centro
+Arganzuela,Latina
+Arganzuela,Puente de Vallecas
+Arganzuela,Retiro
+Arganzuela,Usera
+Barajas,Fuencarral-El Pardo
+Barajas,Hortaleza
+Barajas,San Blas-Canillejas
+Carabanchel,Arganzuela
+Carabanchel,Centro
+Carabanchel,Latina
+Carabanchel,Puente de Vallecas
+Carabanchel,Usera
+Carabanchel,Villaverde
+Centro,Arganzuela
+Centro,Carabanchel
+Centro,Chamberí
+Centro,Latina
+Centro,Moncloa-Aravaca
+Centro,Puente de Vallecas
+Centro,Retiro
+Centro,Salamanca
+Chamartín,Chamberí
+Chamartín,Ciudad Lineal
+Chamartín,Fuencarral-El Pardo
+Chamartín,Hortaleza
+Chamartín,Salamanca
+Chamartín,Tetuán
+Chamberí,Centro
+Chamberí,Chamartín
+Chamberí,Moncloa-Aravaca
+Chamberí,Salamanca
+Chamberí,Tetuán
+Ciudad Lineal,Chamartín
+Ciudad Lineal,Hortaleza
+Ciudad Lineal,Moratalaz
+Ciudad Lineal,Retiro
+Ciudad Lineal,Salamanca
+Ciudad Lineal,San Blas-Canillejas
+Fuencarral-El Pardo,Barajas
+Fuencarral-El Pardo,Chamartín
+Fuencarral-El Pardo,Hortaleza
+Fuencarral-El Pardo,Moncloa-Aravaca
+Fuencarral-El Pardo,Tetuán
+Hortaleza,Barajas
+Hortaleza,Chamartín
+Hortaleza,Ciudad Lineal
+Hortaleza,Fuencarral-El Pardo
+Hortaleza,San Blas-Canillejas
+Latina,Arganzuela
+Latina,Carabanchel
+Latina,Centro
+Latina,Moncloa-Aravaca
+Moncloa-Aravaca,Centro
+Moncloa-Aravaca,Chamberí
+Moncloa-Aravaca,Fuencarral-El Pardo
+Moncloa-Aravaca,Latina
+Moncloa-Aravaca,Tetuán
+Moratalaz,Ciudad Lineal
+Moratalaz,Puente de Vallecas
+Moratalaz,Retiro
+Moratalaz,Vicálvaro
+Puente de Vallecas,Arganzuela
+Puente de Vallecas,Carabanchel
+Puente de Vallecas,Centro
+Puente de Vallecas,Moratalaz
+Puente de Vallecas,Retiro
+Puente de Vallecas,Usera
+Puente de Vallecas,Vicálvaro
+Puente de Vallecas,Villa de Vallecas
+Retiro,Arganzuela
+Retiro,Centro
+Retiro,Ciudad Lineal
+Retiro,Moratalaz
+Retiro,Puente de Vallecas
+Retiro,Salamanca
+Salamanca,Centro
+Salamanca,Chamartín
+Salamanca,Chamberí
+Salamanca,Ciudad Lineal
+Salamanca,Retiro
+San Blas-Canillejas,Barajas
+San Blas-Canillejas,Ciudad Lineal
+San Blas-Canillejas,Hortaleza
+San Blas-Canillejas,Vicálvaro
+San Blas-Canillejas,Villa de Vallecas
+Tetuán,Chamartín
+Tetuán,Chamberí
+Tetuán,Fuencarral-El Pardo
+Tetuán,Moncloa-Aravaca
+Usera,Arganzuela
+Usera,Carabanchel
+Usera,Puente de Vallecas
+Usera,Villaverde
+Vicálvaro,Moratalaz
+Vicálvaro,Puente de Vallecas
+Vicálvaro,San Blas-Canillejas
+Vicálvaro,Villa de Vallecas
+Villa de Vallecas,Puente de Vallecas
+Villa de Vallecas,San Blas-Canillejas
+Villa de Vallecas,Vicálvaro
+Villa de Vallecas,Villaverde
+Villaverde,Carabanchel
+Villaverde,Usera
+Villaverde,Villa de Vallecas

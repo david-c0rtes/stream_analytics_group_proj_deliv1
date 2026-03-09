@@ -1,0 +1,136 @@
+# Madrid Food Delivery Streaming Simulation - Configuration
+# Canonical run: one full week with realistic time-of-day and weekday/weekend distribution.
+
+simulation:
+  # One full week = 7 * 24 * 60 = 10080 minutes
+  duration_minutes: 10080
+  # Time step in minutes for each simulation tick
+  tick_interval_minutes: 1
+  # Random seed for reproducibility
+  seed: 42
+  # Monday 8am start → Mon–Sun with weekday (1.0x) vs weekend (1.3x) demand
+  # Hours: lunch peak 12:00–14:30 (2.5x), dinner peak 19:30–22:00 (2.2x)
+  simulation_start: "2025-03-03 08:00"
+  realtime_mode: false
+  real_seconds_per_sim_minute: 1
+
+datasets:
+  # Path to Madrid datasets (relative to project root or absolute)
+  base_path: data
+  zones_file: madrid_zones_population.csv
+  adjacency_file: zone_adjacency.csv
+  travel_matrix_file: zone_travel_matrix.csv
+  restaurants_file: madrid_restaurants.csv
+  football_effects_file: football_effects_reference.csv
+
+restaurants:
+  # 500 restaurants for Madrid-scale week simulation
+  max_count: 500
+  # Filter by categories (null = use all)
+  categories: null
+
+couriers:
+  # 200 couriers for week-scale load
+  count: 200
+  initial_online_fraction: 0.7
+
+demand:
+  # Base rate; scaled by smooth time-of-day curve and random multipliers
+  base_orders_per_minute: 3.0
+  # Multiplier ranges: sampled randomly each time (not fixed values)
+  # Format: [min, max] - e.g. lunch picks uniformly between 2.0 and 3.0
+  lunch_peak_multiplier_range: [2.0, 3.0]
+  dinner_peak_multiplier_range: [1.8, 2.6]
+  weekend_multiplier_range: [1.1, 1.5]
+  holiday_multiplier_range: [1.2, 1.7]
+  # Per-minute spawn jitter: multiply base prob by uniform(1 - jitter, 1 + jitter)
+  spawn_jitter: 0.12
+  # Smooth time curve: true = gradual ramps, false = step changes at peak boundaries
+  smooth_time_curve: true
+
+promotions:
+  # Recurring promotions (day_of_week: 0=Monday, 6=Sunday)
+  recurring:
+    - name: "Taco Tuesday 2x1"
+      day_of_week: 1
+      categories: [mexican]
+      demand_multiplier: 1.8
+    - name: "Weekend Burger Deal"
+      day_of_week: 5
+      categories: [burger]
+      demand_multiplier: 1.3
+  # Random flash promo probability per tick
+  random_flash_probability: 0.02
+
+holidays:
+  # Spanish holidays (YYYY-MM-DD) - demand shifts
+  - "2025-01-01"
+  - "2025-01-06"
+  - "2025-04-18"
+  - "2025-05-01"
+  - "2025-08-15"
+  - "2025-10-12"
+  - "2025-12-06"
+  - "2025-12-25"
+
+football_matches:
+  # One game per team per week, randomly assigned day and time
+  random_schedule: true
+  # Teams and their home zones (used when random_schedule: true)
+  teams:
+    - home_team: "Real Madrid"
+      primary_zone: Chamartín
+    - home_team: "Atlético Madrid"
+      primary_zone: San Blas-Canillejas
+  # Constraints for random schedule
+  start_time_range: ["16:00", "21:00"]  # [earliest, latest] kickoff
+  duration_minutes: 120
+
+streaming_edge_cases:
+  # Distributions: exponential (right-skewed delays), beta (bounded probabilities)
+  # Late event: delayed ingestion. Exponential = most delays small, few very large.
+  late_event_probability:
+    type: beta
+    alpha: 2
+    beta: 98   # mean ≈ 0.02, bounded [0,1]
+  late_event_delay_seconds:
+    type: exponential
+    mean: 120  # rate = 1/mean; right-skewed: many small, few large delays
+    min: 10
+    max: 300
+  # Duplicate event: same event ingested twice
+  duplicate_event_probability:
+    type: beta
+    alpha: 1
+    beta: 199  # mean ≈ 0.005
+  # Out-of-order event emission probability
+  out_of_order_probability:
+    type: beta
+    alpha: 1
+    beta: 99
+  # Delivered without picked up
+  missing_step_probability:
+    type: beta
+    alpha: 1
+    beta: 99
+  # Courier goes offline during active delivery
+  courier_offline_mid_delivery_probability:
+    type: beta
+    alpha: 1
+    beta: 99
+  # Impossible duration / anomaly injection
+  anomaly_injection_probability:
+    type: beta
+    alpha: 1
+    beta: 499
+
+output:
+  # Output directory
+  directory: output
+  # Formats to generate
+  formats: [json, avro]
+  # Events per file (for batching)
+  events_per_file: 1000
+  # Separate feeds
+  order_feed_prefix: order_lifecycle
+  courier_feed_prefix: courier_operations
