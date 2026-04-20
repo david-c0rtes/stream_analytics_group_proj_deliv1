@@ -154,6 +154,7 @@ def main() -> None:
     from pyspark.sql.avro.functions import from_avro
     from pyspark.sql.functions import (
         avg,
+        coalesce,
         col,
         count,
         from_json,
@@ -161,6 +162,7 @@ def main() -> None:
         lit,
         to_timestamp,
         to_utc_timestamp,
+        when,
         window,
     )
 
@@ -265,28 +267,146 @@ def main() -> None:
     orders_stream = _read_topic(ORDERS_HUB, _order_schema(), order_avro_schema)
     couriers_stream = _read_topic(COURIERS_HUB, _courier_schema(), courier_avro_schema)
 
-    # Event-time analytics stream: 5-minute tumbling window with watermark.
     orders_event_time = orders_stream.withColumn(
-        "event_time_ts",
-        to_timestamp(col("event_time")),
+        "event_time_ts", to_timestamp(col("event_time"))
     )
-    orders_windowed_kpi = (
+    couriers_event_time = couriers_stream.withColumn(
+        "event_time_ts", to_timestamp(col("event_time"))
+    )
+
+    # ── UC1a: Tumbling window — 5-min, global order throughput + avg delivery ──
+    orders_tumbling_kpi = (
         orders_event_time
         .withWatermark("event_time_ts", "15 minutes")
         .groupBy(window(col("event_time_ts"), "5 minutes"))
         .agg(
-            count("*").alias("orders_events"),
+            count("*").alias("event_count"),
+            count(when(col("event_type") == "order_created", 1)).alias("orders_created"),
+            count(when(col("event_type") == "order_delivered", 1)).alias("orders_delivered"),
             avg(col("actual_delivery_time")).alias("avg_delivery_time_min"),
         )
         .select(
             col("window.start").alias("window_start"),
             col("window.end").alias("window_end"),
-            col("orders_events"),
+            col("event_count"),
+            col("orders_created"),
+            col("orders_delivered"),
             col("avg_delivery_time_min"),
         )
     )
 
-    # Write each micro-batch to Azure Blob as Parquet (native Spark sink).
+    # ── UC1b: Hopping window — 10-min window sliding every 5 min, per zone ─────
+    # Overlapping buckets smooth short-lived spikes and reveal zone-level trends
+    # that a non-overlapping tumbling window would split across boundaries.
+    orders_hopping_kpi = (
+        orders_event_time
+        .withWatermark("event_time_ts", "20 minutes")
+        .groupBy(
+            window(col("event_time_ts"), "10 minutes", "5 minutes"),
+            col("user_zone_id").alias("zone_id"),
+        )
+        .agg(
+            count("*").alias("event_count"),
+            count(when(col("event_type") == "order_created", 1)).alias("orders_created"),
+            count(when(col("event_type") == "order_delivered", 1)).alias("orders_delivered"),
+            avg(col("actual_delivery_time")).alias("avg_delivery_time_min"),
+        )
+        .select(
+            col("window.start").alias("window_start"),
+            col("window.end").alias("window_end"),
+            col("zone_id"),
+            col("event_count"),
+            col("orders_created"),
+            col("orders_delivered"),
+            col("avg_delivery_time_min"),
+        )
+    )
+
+    # ── UC2: Zone demand-supply health (stateful stream-stream join) ────────────
+    # Demand side: orders that have reached ready_for_pickup (waiting for a courier).
+    orders_waiting = (
+        orders_event_time
+        .filter(col("event_type") == "order_ready_for_pickup")
+        .withWatermark("event_time_ts", "15 minutes")
+        .groupBy(
+            window(col("event_time_ts"), "5 minutes"),
+            col("restaurant_zone_id").alias("zone_id"),
+        )
+        .agg(count("*").alias("orders_awaiting_pickup"))
+    )
+
+    # Supply side: couriers dispatched (assigned_order) per zone in the same window.
+    couriers_dispatched = (
+        couriers_event_time
+        .filter(col("event_type") == "courier_assigned_order")
+        .withWatermark("event_time_ts", "15 minutes")
+        .groupBy(
+            window(col("event_time_ts"), "5 minutes"),
+            col("courier_zone_id").alias("zone_id"),
+        )
+        .agg(count("*").alias("couriers_dispatched"))
+    )
+
+    # Stream-stream left join on matching window + zone.
+    # supply_gap > 0 means more orders waiting than couriers dispatched → stress.
+    zone_health = (
+        orders_waiting.alias("o")
+        .join(
+            couriers_dispatched.alias("c"),
+            (col("o.window") == col("c.window")) &
+            (col("o.zone_id") == col("c.zone_id")),
+            "left",
+        )
+        .select(
+            col("o.window.start").alias("window_start"),
+            col("o.window.end").alias("window_end"),
+            col("o.zone_id").alias("zone_id"),
+            col("o.orders_awaiting_pickup"),
+            coalesce(col("c.couriers_dispatched"), lit(0)).alias("couriers_dispatched"),
+            (
+                col("o.orders_awaiting_pickup")
+                - coalesce(col("c.couriers_dispatched"), lit(0))
+            ).alias("supply_gap"),
+        )
+    )
+
+    # ── UC3: Anomaly detection — delivery SLA breaches + injected anomaly flags ─
+    # Flags a zone-window as anomalous if:
+    #   (a) avg actual delivery time exceeds SLA_MINUTES, OR
+    #   (b) more than ANOMALY_RATE_THRESHOLD of events carry anomaly_flag=true.
+    # Late events are handled by the 15-min watermark — they still fall into the
+    # correct window as long as they arrive within the tolerance.
+    _SLA_MINUTES = 45.0
+    _ANOMALY_RATE_THRESHOLD = 0.05  # 5 % of events flagged → zone alert
+
+    orders_anomaly = (
+        orders_event_time
+        .withWatermark("event_time_ts", "15 minutes")
+        .groupBy(
+            window(col("event_time_ts"), "5 minutes"),
+            col("user_zone_id").alias("zone_id"),
+        )
+        .agg(
+            count("*").alias("total_events"),
+            count(when(col("anomaly_flag") == True, 1)).alias("anomaly_count"),
+            avg(col("actual_delivery_time")).alias("avg_delivery_min"),
+        )
+        .select(
+            col("window.start").alias("window_start"),
+            col("window.end").alias("window_end"),
+            col("zone_id"),
+            col("total_events"),
+            col("anomaly_count"),
+            col("avg_delivery_min"),
+            (col("anomaly_count") / col("total_events")).alias("anomaly_rate"),
+            (
+                (col("avg_delivery_min") > lit(_SLA_MINUTES)) |
+                (col("anomaly_count") / col("total_events") > lit(_ANOMALY_RATE_THRESHOLD))
+            ).alias("zone_flagged"),
+        )
+    )
+
+    # ── Sink: raw events to Parquet (data at rest) ─────────────────────────────
     q_orders = (
         orders_stream.writeStream
         .format("parquet")
@@ -305,27 +425,64 @@ def main() -> None:
         .start()
     )
 
-    q_orders_kpi = (
-        orders_windowed_kpi.writeStream
+    # ── Sink: UC1a tumbling KPIs ───────────────────────────────────────────────
+    q_tumbling_kpi = (
+        orders_tumbling_kpi.writeStream
         .format("parquet")
-        .option("path", f"{output_base}/kpi_orders_5min")
-        .option("checkpointLocation", f"{checkpoint_base}/kpi_orders_5min")
+        .option("path", f"{output_base}/kpi_orders_5min_tumbling")
+        .option("checkpointLocation", f"{checkpoint_base}/kpi_orders_5min_tumbling")
         .outputMode("append")
         .trigger(processingTime="10 seconds")
         .start()
     )
 
-    print("\n[Spark] streams running — raw + windowed Parquet written to Blob every 10 seconds")
-    print("[Spark] dashboard will refresh automatically")
-    print("[Spark] press Ctrl+C to stop\n")
+    # ── Sink: UC1b hopping KPIs per zone ──────────────────────────────────────
+    q_hopping_kpi = (
+        orders_hopping_kpi.writeStream
+        .format("parquet")
+        .option("path", f"{output_base}/kpi_orders_10min_hop5")
+        .option("checkpointLocation", f"{checkpoint_base}/kpi_orders_10min_hop5")
+        .outputMode("append")
+        .trigger(processingTime="10 seconds")
+        .start()
+    )
+
+    # ── Sink: UC2 zone demand-supply health ────────────────────────────────────
+    q_zone_health = (
+        zone_health.writeStream
+        .format("parquet")
+        .option("path", f"{output_base}/kpi_zone_health")
+        .option("checkpointLocation", f"{checkpoint_base}/kpi_zone_health")
+        .outputMode("append")
+        .trigger(processingTime="10 seconds")
+        .start()
+    )
+
+    # ── Sink: UC3 anomaly detection per zone ───────────────────────────────────
+    q_anomaly = (
+        orders_anomaly.writeStream
+        .format("parquet")
+        .option("path", f"{output_base}/kpi_anomaly_zones")
+        .option("checkpointLocation", f"{checkpoint_base}/kpi_anomaly_zones")
+        .outputMode("append")
+        .trigger(processingTime="10 seconds")
+        .start()
+    )
+
+    print("\n[Spark] 7 streams running:")
+    print("  raw      → /orders, /couriers")
+    print("  UC1a     → /kpi_orders_5min_tumbling      (tumbling window, global)")
+    print("  UC1b     → /kpi_orders_10min_hop5         (hopping window 10min/5min, per zone)")
+    print("  UC2      → /kpi_zone_health               (demand-supply gap per zone)")
+    print("  UC3      → /kpi_anomaly_zones             (SLA breach + anomaly flag detection)")
+    print("[Spark] Parquet written to Blob every 10 seconds. Ctrl+C to stop.\n")
 
     try:
         spark.streams.awaitAnyTermination()
     except KeyboardInterrupt:
         print("\n[Spark] shutting down...")
-        q_orders.stop()
-        q_couriers.stop()
-        q_orders_kpi.stop()
+        for q in [q_orders, q_couriers, q_tumbling_kpi, q_hopping_kpi, q_zone_health, q_anomaly]:
+            q.stop()
         spark.stop()
         print("[Spark] stopped.")
 
