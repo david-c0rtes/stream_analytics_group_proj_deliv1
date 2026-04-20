@@ -414,3 +414,104 @@ This section maps the professor requirements to the current implementation.
   - `simulation_config_live.yaml`
   - `requirements*.txt` (`requirements_all.txt` for full install)
 - Optional notes and examples should be kept outside the runtime path.
+
+---
+
+## 16. End-to-End Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          PRODUCER LAYER                                     │
+│                                                                             │
+│   run_simulation.py  ──►  event_publisher.py  ──►  Azure Event Hub         │
+│   (tick-based engine)     (async queues,           group_10_orders          │
+│   500 restaurants         AVRO or JSON,            group_10_couriers        │
+│   200 couriers            per-hub threads)         (Kafka endpoint :9093)   │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        SPARK STREAMING LAYER                                │
+│                                                                             │
+│   spark_streaming_job.py                                                    │
+│   ├── readStream.format("kafka") on both hubs                               │
+│   ├── Dual decode: AVRO preferred + JSON fallback                           │
+│   ├── Dedup by event_id                                                     │
+│   ├── UC1a  Tumbling window  5 min global KPIs                              │
+│   ├── UC1b  Hopping window   10 min / 5 min slide, per zone                 │
+│   ├── UC2   Stream-stream join — zone demand vs supply health               │
+│   ├── UC3   Anomaly detection — SLA breach + anomaly flag per zone          │
+│   └── writeStream → Parquet micro-batches every 10s                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          STORAGE LAYER                                      │
+│                                                                             │
+│   Azure Blob Storage  (container: group10)                                  │
+│   ├── stream-output/orders/          raw order events (Parquet)             │
+│   ├── stream-output/couriers/        raw courier events (Parquet)           │
+│   ├── stream-output/kpi_orders_5min_tumbling/                               │
+│   ├── stream-output/kpi_orders_10min_hop5/                                  │
+│   ├── stream-output/kpi_zone_health/                                        │
+│   ├── stream-output/kpi_anomaly_zones/                                      │
+│   └── checkpoint/                   Spark fault-tolerance offsets           │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         DASHBOARD LAYER                                     │
+│                                                                             │
+│   streamlit_app.py  ──►  dashboard/data/loader.py                          │
+│   (auto-refresh 1s)      ├── Primary:  Azure Blob Parquet (cached 10s)     │
+│                          └── Fallback: local NDJSON (cached 1s)            │
+│                                                                             │
+│   Displays: KPI cards, Madrid zone map, orders over time,                   │
+│   delivery SLA, courier activity, anomaly flags                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Azure Blob Folders Explained
+
+| Folder | Written by | Purpose |
+| --- | --- | --- |
+| `stream-output/` | Spark | Parquet sink for all 6 streaming queries |
+| `checkpoint/` | Spark | Stores Event Hub offsets for fault-tolerant restarts |
+
+> **Note:** Before each fresh run, delete both `stream-output/` and `checkpoint/` from the blob container. The checkpoint records the last processed Event Hub offset — if it exists from a previous run, Spark resumes from that position rather than reading from the beginning.
+
+---
+
+## 17. Milestone 2.5 — Reflection & Discussion
+
+### What We Learned About Streaming Tradeoffs
+
+Building this pipeline forced real decisions between correctness and latency. The biggest lesson was **watermarking**: setting a 15–20 minute tolerance for late events means accepting slightly stale windows in exchange for not dropping data that arrives delayed through Event Hub. Too tight and you lose late events; too loose and aggregations take longer to emit.
+
+We also felt the **stateful vs. stateless** tradeoff directly. The stream-stream join (UC2 — zone demand/supply health) requires Spark to buffer both sides of the join in memory until the watermark advances. This is expensive compared to the simple tumbling window in UC1a, but it is the only way to correlate orders waiting for pickup against couriers dispatched in the same zone and time window.
+
+Finally, **AVRO vs. JSON**: AVRO cuts payload size by ~70% and enforces schema at write time, but adds operational overhead (schema registry, serialization code). For a prototype, JSON is faster to debug. For scale, AVRO is necessary.
+
+### How We Designed Our Data to Enable Analytics
+
+The schema was designed analytics-first. Every event carries its own context — `user_zone_id`, `restaurant_zone_id`, `courier_zone_id`, timestamps for each lifecycle stage, and flags (`anomaly_flag`, `match_day_flag`, `holiday_flag`) — so no joins against static tables are needed at query time. This makes windowed aggregations cheap.
+
+We separated the two feeds intentionally: `order_lifecycle` tracks what happens to an order, `courier_operations` tracks what a courier does. This mirrors a real medallion architecture where raw feeds stay clean and analytics are derived downstream by Spark.
+
+The simulation injects realistic edge cases (late events via Beta distribution, duplicates, missing steps, out-of-order delivery) so the pipeline is tested against conditions it would actually face in production — not just the happy path.
+
+### What We Would Need to Improve for Production Readiness
+
+**Reliability**
+- The Spark job runs in `local[2]` mode — a single process with no fault tolerance. Production would require a proper cluster (Azure HDInsight, Databricks, or AKS) with driver restart policies.
+- Event Hub consumer group is shared; multiple Spark instances would conflict. Each consumer should use a dedicated group.
+- Credentials are stored in `.env` — production requires Azure Key Vault or environment secrets injected at deploy time, never in source control.
+
+**Scalability**
+- Event Hub is provisioned at 1 partition per hub. At peak demand (lunch/dinner + match day), throughput could saturate a single partition. Production sizing should be 4–8 partitions based on expected events/second, with Spark parallelism matched to partition count.
+- The dashboard polls blob every 10 seconds with a full file scan. At scale this becomes slow — a proper solution would use Delta Lake with incremental reads or a materialized view layer.
+
+**Maintainability**
+- Schema evolution is unversioned beyond the `event_version` string field. A schema registry (Confluent or Azure Schema Registry) would enforce compatibility and prevent breaking consumers silently.
+- There are no automated tests on the streaming logic. Window correctness, watermark behavior, and dedup logic should be covered by unit tests using Spark's `MemoryStream` for deterministic replay.
+- The simulation and Spark job are started manually in separate terminals. A production setup would use a workflow orchestrator (Airflow, Azure Data Factory) to manage dependencies and restarts.
