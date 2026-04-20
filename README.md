@@ -508,8 +508,8 @@ The simulation injects realistic edge cases (late events via Beta distribution, 
 - Credentials are stored in `.env` — production requires Azure Key Vault or environment secrets injected at deploy time, never in source control.
 
 **Scalability**
-- Event Hub is provisioned at 1 partition per hub. At peak demand (lunch/dinner + match day), throughput could saturate a single partition. Production sizing should be 4–8 partitions based on expected events/second, with Spark parallelism matched to partition count.
-- The dashboard polls blob every 10 seconds with a full file scan. At scale this becomes slow — a proper solution would use Delta Lake with incremental reads or a materialized view layer.
+- Event Hub is provisioned at **6 partitions** (`group_10_orders`) and **5 partitions** (`group_10_couriers`). This is well-sized for the current simulation load (~3–8 orders/minute at peak). Partitions act as parallel lanes: Spark spawns one task per partition, so 6 partitions on the orders hub means up to 6 parallel readers. If throughput were to scale 10×–20× (real Madrid-scale volumes), the partition count would need to increase proportionally — Event Hub partitions are fixed at creation time and cannot be changed without recreating the hub.
+- The dashboard polls blob every 10 seconds with a full file scan — on every refresh it lists and downloads all Parquet files in the container. As data accumulates over a long run this becomes progressively slower. A proper solution would use Delta Lake with incremental reads or a materialized view layer.
 
 **Maintainability**
 - Schema evolution is unversioned beyond the `event_version` string field. A schema registry (Confluent or Azure Schema Registry) would enforce compatibility and prevent breaking consumers silently.
