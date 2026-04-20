@@ -1,0 +1,11 @@
+# Spark streaming job dependencies
+# Install with: pip install -r requirements_spark.txt
+pyspark==3.5.1
+pyarrow>=14.0.0
+azure-storage-blob>=12.19.0
+python-dotenv>=1.0.0
+fastavro>=1.9.0
+
+# Spark pulls Kafka + Avro connectors via spark.jars.packages in spark_streaming_job.py:
+#   org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1
+#   org.apache.spark:spark-avro_2.12:3.5.1

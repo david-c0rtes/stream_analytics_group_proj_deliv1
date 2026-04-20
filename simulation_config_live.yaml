@@ -1,0 +1,106 @@
+# Live streaming config — events are written to output/json/ in real time.
+# Dashboard at localhost:8501 picks them up every second.
+#
+# Speed: 1 real second = 1 simulated minute
+#   → lunch peak (13:00) reached after ~5 real minutes
+#   → a full 8-hour day takes ~8 real minutes
+# Press Ctrl+C at any time — partial data is fine, dashboard handles it.
+
+simulation:
+  duration_minutes: 10080          # 1 week; just Ctrl+C when you're done
+  tick_interval_minutes: 1
+  seed: 42
+  simulation_start: "2025-03-03 08:00"
+  realtime_mode: true
+  real_seconds_per_sim_minute: 1   # 1 real second per sim minute — full day in ~24 real minutes
+
+datasets:
+  base_path: data
+  zones_file: madrid_zones_population.csv
+  adjacency_file: zone_adjacency.csv
+  travel_matrix_file: zone_travel_matrix.csv
+  restaurants_file: madrid_restaurants.csv
+  football_effects_file: football_effects_reference.csv
+
+restaurants:
+  max_count: 500
+  categories: null
+
+couriers:
+  count: 200
+  initial_online_fraction: 0.7
+
+demand:
+  base_orders_per_minute: 8.0
+  lunch_peak_multiplier_range: [2.0, 3.0]
+  dinner_peak_multiplier_range: [1.8, 2.6]
+  weekend_multiplier_range: [1.1, 1.5]
+  holiday_multiplier_range: [1.2, 1.7]
+  spawn_jitter: 0.12
+  smooth_time_curve: true
+
+promotions:
+  recurring:
+    - name: "Taco Tuesday 2x1"
+      day_of_week: 1
+      categories: [mexican]
+      demand_multiplier: 1.8
+    - name: "Weekend Burger Deal"
+      day_of_week: 5
+      categories: [burger]
+      demand_multiplier: 1.3
+  random_flash_probability: 0.02
+
+holidays:
+  - "2025-01-01"
+  - "2025-04-18"
+  - "2025-05-01"
+  - "2025-12-25"
+
+football_matches:
+  random_schedule: true
+  teams:
+    - home_team: "Real Madrid"
+      primary_zone: Chamartín
+    - home_team: "Atlético Madrid"
+      primary_zone: San Blas-Canillejas
+  start_time_range: ["16:00", "21:00"]
+  duration_minutes: 120
+
+streaming_edge_cases:
+  late_event_probability:
+    type: beta
+    alpha: 2
+    beta: 98
+  late_event_delay_seconds:
+    type: exponential
+    mean: 120
+    min: 10
+    max: 300
+  duplicate_event_probability:
+    type: beta
+    alpha: 1
+    beta: 199
+  out_of_order_probability:
+    type: beta
+    alpha: 1
+    beta: 99
+  missing_step_probability:
+    type: beta
+    alpha: 1
+    beta: 99
+  courier_offline_mid_delivery_probability:
+    type: beta
+    alpha: 1
+    beta: 99
+  anomaly_injection_probability:
+    type: beta
+    alpha: 1
+    beta: 499
+
+output:
+  directory: output
+  formats: [json]           # avro skipped for live mode — faster writes
+  events_per_file: 10000   # large file limit so everything stays in one file
+  order_feed_prefix: order_lifecycle
+  courier_feed_prefix: courier_operations

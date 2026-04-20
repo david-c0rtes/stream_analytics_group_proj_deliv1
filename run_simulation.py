@@ -9,9 +9,9 @@ Usage:
 """
 
 from __future__ import annotations
-
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -184,7 +184,18 @@ def main() -> int:
         default=None,
         help="With --live: custom path for event log (default: logs/live_events.log)",
     )
+    parser.add_argument(
+        "--eventhub-payload-format",
+        choices=["json", "avro"],
+        default=None,
+        help="Override Event Hub payload format (defaults to EVENTHUB_PAYLOAD_FORMAT env var or json).",
+    )
     args = parser.parse_args()
+
+    if args.eventhub_payload_format:
+        os.environ["EVENTHUB_PAYLOAD_FORMAT"] = args.eventhub_payload_format
+
+    from event_publisher import send_order_event, send_courier_event, close_producers
 
     if not args.config.exists():
         print(f"Error: Config file not found: {args.config}")
@@ -231,12 +242,15 @@ def main() -> int:
     json_dir.mkdir(parents=True, exist_ok=True)
     avro_dir.mkdir(parents=True, exist_ok=True)
 
-    # Clean up previous JSON/AVRO/log outputs so each run starts fresh
+    # Clean up previous simulation outputs (numbered simulation files only).
+    import re as _re
+    _sim_file_re = _re.compile(r"_\d{4}\.ndjson$")
     for f in json_dir.glob("*.ndjson"):
-        try:
-            f.unlink()
-        except OSError:
-            pass
+        if _sim_file_re.search(f.name):
+            try:
+                f.unlink()
+            except OSError:
+                pass
     for f in avro_dir.glob("*.avro"):
         try:
             f.unlink()
@@ -278,11 +292,14 @@ def main() -> int:
                 json_order.write(event)
             if avro_order:
                 avro_order.write(event)
+            send_order_event(event)
+
         else:
             if json_courier:
                 json_courier.write(event)
             if avro_courier:
                 avro_courier.write(event)
+            send_courier_event(event)    
 
     def _close_writers() -> None:
         """Close all stream writers (flush AVRO buffers, close JSON files)."""
@@ -294,6 +311,8 @@ def main() -> int:
             avro_order.close()
         if avro_courier:
             avro_courier.close()
+
+        close_producers()    
 
     order_events: list[dict] = []
     courier_events: list[dict] = []

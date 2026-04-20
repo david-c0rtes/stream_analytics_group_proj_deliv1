@@ -2,15 +2,20 @@
 venv/
 .venv/
 env/
+.env
 
 # Output
 output/
+spark_checkpoints/
+spark_output.log
+logs/*.log
 
 # Python
 __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
+.DS_Store
 
 # IDE
 .idea/

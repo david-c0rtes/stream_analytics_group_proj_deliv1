@@ -39,7 +39,7 @@ During execution:
 
 Run with:
 ```bash
-python run_simulation.py
+python3 run_simulation.py
 ```
 
 ### Mode 2 — Live Simulation Mode
@@ -52,12 +52,12 @@ In this mode the simulator behaves more like a real streaming environment. Inste
 This creates a stream that behaves similarly to a real production event feed.
 
 ```bash
-python run_simulation.py --live
+python3 run_simulation.py --live
 ```
 
 To replay strictly by event time for demos:
 ```bash
-python run_simulation.py --live --live-sort-by-event-time
+python3 run_simulation.py --live --live-sort-by-event-time
 ```
 
 ---
@@ -343,3 +343,74 @@ The generated streams are designed for ingestion into a streaming analytics pipe
 ## 14. Repository Access
 
 *To be completed when the GitHub repository is finalized.*
+
+---
+
+## 15. Milestone 2 Compliance (Spark + Kafka/Event Hub)
+
+This section maps the professor requirements to the current implementation.
+
+### Requirement Mapping
+
+| Professor requirement | Implementation in this repo |
+| --- | --- |
+| Spark consumes Event Hub through Kafka-compatible endpoint | `spark_streaming_job.py` uses `spark.readStream.format("kafka")` and subscribes to Event Hub names from environment variables |
+| `kafka.bootstrap.servers = {namespace}.servicebus.windows.net:9093` | Built as `KAFKA_BOOTSTRAP` from `EVENTHUB_CONN_STR` in `spark_streaming_job.py` |
+| `kafka.sasl.mechanism = PLAIN` | Set in `kafka_opts` in `spark_streaming_job.py` |
+| `kafka.security.protocol = SASL_SSL` | Set in `kafka_opts` in `spark_streaming_job.py` |
+| JAAS string with username `$ConnectionString` and full Event Hub connection string as password | Set in `KAFKA_SASL` and passed to `kafka.sasl.jaas.config` in `spark_streaming_job.py` |
+| Producer publishes AVRO data | `event_publisher.py` supports AVRO payloads when `EVENTHUB_PAYLOAD_FORMAT=avro` (JSON remains supported for compatibility) |
+| Spark Structured Streaming persists to Parquet | `spark_streaming_job.py` writes micro-batches to Blob as Parquet with `foreachBatch` |
+
+### Runbook (End-to-End)
+
+1. Install dependencies:
+   ```bash
+   # One-command full environment:
+   python3 -m pip install -r requirements_all.txt
+
+   # Or install only the layer you need:
+   python3 -m pip install -r requirements.txt
+   python3 -m pip install -r requirements_spark.txt
+   python3 -m pip install -r requirements_dashboard.txt
+   ```
+2. Configure `.env` with:
+   - `EVENTHUB_CONN_STR`
+   - `EVENTHUB_ORDERS`
+   - `EVENTHUB_COURIERS`
+   - `AZURE_STORAGE_CONNECTION_STRING`
+   - `AZURE_STORAGE_CONTAINER` (optional, defaults to `dashboard-data`)
+3. Terminal A (Spark consumer):
+   ```bash
+   python3 spark_streaming_job.py
+   ```
+4. Terminal B (simulator producer in AVRO mode):
+   ```bash
+   python3 run_simulation.py --config simulation_config_live.yaml --live --eventhub-payload-format avro
+   ```
+5. Terminal C (dashboard):
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+### Validation Evidence Checklist
+
+- Spark startup logs show the Event Hub Kafka endpoint and stream startup.
+- Spark logs show periodic Blob writes: `order_lifecycle_events_spark_*.parquet` and `courier_operations_events_spark_*.parquet`.
+- Streamlit dashboard updates while simulation is running (Blob-first; local fallback if Blob unavailable).
+- If needed for backward compatibility tests, rerun simulator with `--eventhub-payload-format json`.
+
+### Runtime Entry Points and Organization
+
+- Core runtime entry points:
+  - `run_simulation.py`
+  - `spark_streaming_job.py`
+  - `streamlit_app.py`
+- Primary application packages:
+  - `src/delivery_simulation/`
+  - `dashboard/`
+- Config and dependencies:
+  - `simulation_config.yaml`
+  - `simulation_config_live.yaml`
+  - `requirements*.txt` (`requirements_all.txt` for full install)
+- Optional notes and examples should be kept outside the runtime path.

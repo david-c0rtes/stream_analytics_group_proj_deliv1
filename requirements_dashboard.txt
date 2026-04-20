@@ -1,0 +1,11 @@
+# Dashboard dependencies — install with: pip install -r requirements_dashboard.txt
+streamlit>=1.32.0
+pandas>=2.0.0
+plotly>=5.18.0
+python-dotenv>=1.0.0
+streamlit-autorefresh>=1.0.1
+# Optional Event Hub SDK tooling support
+azure-eventhub>=5.11.0
+# Blob fallback in dashboard/data/loader.py (required for Spark->Blob mode)
+azure-storage-blob>=12.19.0
+pyarrow>=14.0.0
