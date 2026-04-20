@@ -82,11 +82,11 @@ def load_order_events() -> pd.DataFrame:
       1. Local NDJSON (instant — used during live simulation)
       2. Azure Blob Parquet (Spark output — used when no local files present)
     """
-    blob_df = _load_blob_parquet("order_lifecycle_events_")
-    if blob_df is not None and not blob_df.empty:
-        return _finalise(blob_df)
     local_df = _load_local_ndjson("order_lifecycle_events_*.ndjson")
-    return _finalise(local_df)
+    if not local_df.empty:
+        return _finalise(local_df)
+    blob_df = _load_blob_parquet("order_lifecycle_events_")
+    return _finalise(blob_df) if blob_df is not None else pd.DataFrame()
 
 
 @st.cache_data(ttl=1, show_spinner=False)
@@ -96,11 +96,11 @@ def load_courier_events() -> pd.DataFrame:
       1. Local NDJSON (instant — used during live simulation)
       2. Azure Blob Parquet (Spark output — used when no local files present)
     """
-    blob_df = _load_blob_parquet("courier_operations_events_")
-    if blob_df is not None and not blob_df.empty:
-        return _finalise(blob_df)
     local_df = _load_local_ndjson("courier_operations_events_*.ndjson")
-    return _finalise(local_df)
+    if not local_df.empty:
+        return _finalise(local_df)
+    blob_df = _load_blob_parquet("courier_operations_events_")
+    return _finalise(blob_df) if blob_df is not None else pd.DataFrame()
 
 
 def data_freshness(df_orders: pd.DataFrame, df_couriers: pd.DataFrame) -> dict:
